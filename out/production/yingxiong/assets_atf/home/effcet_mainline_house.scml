@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="effcet_mainline_house3.png" width="343" height="228" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effcet_mainline_house2.png" width="104" height="103" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="effcet_mainline_house1.png" width="82" height="96" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="effcet_mainline_house4.png" width="99" height="94" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effcet_mainline_house" length="3000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="0" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="617">
+                    <object_ref id="0" timeline="1" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="0" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                </key>
+                <key id="2" time="1442">
+                    <object_ref id="0" timeline="1" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="0" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                </key>
+                <key id="3" time="2289">
+                    <object_ref id="0" timeline="1" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="0" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="3" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effcet_mainline_house3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="617" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="2" time="1442" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="3" time="2289" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="effcet_mainline_house2">
+                <key id="0">
+                    <object folder="0" file="1" x="198.213258" y="-133.689876" pivot_x="0.501177" pivot_y="0.508854" angle="0" scale_x="0.784651" scale_y="0.797972"/>
+                </key>
+                <key id="1" time="617">
+                    <object folder="0" file="1" x="198.213258" y="-133.689876" pivot_x="0.501177" pivot_y="0.508854" angle="88.327323" scale_x="0.784651" scale_y="0.797972"/>
+                </key>
+                <key id="2" time="1442">
+                    <object folder="0" file="1" x="198.213258" y="-133.689876" pivot_x="0.501177" pivot_y="0.508854" angle="180.053052" scale_x="0.784651" scale_y="0.797972"/>
+                </key>
+                <key id="3" time="2289">
+                    <object folder="0" file="1" x="198.213258" y="-133.689876" pivot_x="0.501177" pivot_y="0.508854" angle="271.28775" scale_x="0.784651" scale_y="0.797972"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="effcet_mainline_house2_000">
+                <key id="0" spin="-1">
+                    <object folder="0" file="1" x="199.982418" y="-139.702293" pivot_x="0.517582" pivot_y="0.509985" angle="177.23581" scale_x="0.659589" scale_y="0.674395"/>
+                </key>
+                <key id="1" time="617" spin="-1">
+                    <object folder="0" file="1" x="199.982418" y="-139.702293" pivot_x="0.517582" pivot_y="0.509985" angle="88.087379" scale_x="0.659589" scale_y="0.674395"/>
+                </key>
+                <key id="2" time="1442" spin="-1">
+                    <object folder="0" file="1" x="199.982418" y="-139.702293" pivot_x="0.517582" pivot_y="0.509985" angle="356.833909" scale_x="0.659589" scale_y="0.674395"/>
+                </key>
+                <key id="3" time="2289" spin="-1">
+                    <object folder="0" file="1" x="199.982418" y="-139.702293" pivot_x="0.517582" pivot_y="0.509985" angle="270.674508" scale_x="0.659589" scale_y="0.674395"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="effcet_mainline_house1">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="190.143652" y="-139.71134" pivot_x="0.510195" pivot_y="0.519033" angle="0" scale_x="0.938521"/>
+                </key>
+                <key id="1" time="617" spin="0">
+                    <object folder="0" file="2" x="190.143652" y="-139.71134" pivot_x="0.510195" pivot_y="0.519033" angle="0" scale_x="0.938521"/>
+                </key>
+                <key id="2" time="1442" spin="0">
+                    <object folder="0" file="2" x="190.143652" y="-139.71134" pivot_x="0.510195" pivot_y="0.519033" angle="0" scale_x="0.938521"/>
+                </key>
+                <key id="3" time="2289" spin="0">
+                    <object folder="0" file="2" x="190.143652" y="-139.71134" pivot_x="0.510195" pivot_y="0.519033" angle="0" scale_x="0.938521"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="effcet_mainline_house4">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="198.061882" y="-140.91979" pivot_x="0.77541" pivot_y="0.564683" angle="0" scale_x="1.046469"/>
+                </key>
+                <key id="1" time="617" spin="0">
+                    <object folder="0" file="3" x="198.061882" y="-140.91979" pivot_x="0.77541" pivot_y="0.564683" angle="0" scale_x="1.046469" a="0"/>
+                </key>
+                <key id="2" time="1442" spin="0">
+                    <object folder="0" file="3" x="198.061882" y="-140.91979" pivot_x="0.77541" pivot_y="0.564683" angle="0" scale_x="1.046469"/>
+                </key>
+                <key id="3" time="2289" spin="0">
+                    <object folder="0" file="3" x="198.061882" y="-140.91979" pivot_x="0.77541" pivot_y="0.564683" angle="0" scale_x="1.046469" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

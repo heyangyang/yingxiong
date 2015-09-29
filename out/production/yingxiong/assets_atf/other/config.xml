@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<isAutoLogin>false</isAutoLogin>  <!--是否自动登录 -->
+	<isWarPass>false</isWarPass>    <!--是否战斗跳过 -->
+	<isNewPass>false</isNewPass>    <!--是否新手引导跳过 -->
+	<checkUpdate>true</checkUpdate>  <!--是否检测游戏更新-->
+	<device_bar>true</device_bar>  <!--是否显示平台条-->
+</root>

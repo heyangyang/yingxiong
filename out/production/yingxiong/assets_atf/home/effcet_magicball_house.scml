@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="effcet_magicball_house1.png" width="305" height="203" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effcet_magicball_house5.png" width="75" height="100" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="effcet_magicball_house2.png" width="28" height="35" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="effcet_magicball_house7.png" width="11" height="13" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="effcet_magicball_house8.png" width="12" height="10" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="effcet_magicball_house4.png" width="17" height="16" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effcet_magicball_house" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="490">
+                    <object_ref id="0" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effcet_magicball_house1">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="effcet_magicball_house5">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="184.493637" y="-45.982795" pivot_x="0.432593" pivot_y="0.17132" angle="4.357412"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="effcet_magicball_house2">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="187.450196" y="-24.013124" pivot_x="0.517835" pivot_y="0.472203" angle="0"/>
+                </key>
+                <key id="1" time="490" spin="0">
+                    <object folder="0" file="2" x="187.278963" y="-14.081617" pivot_x="0.517835" pivot_y="0.472203" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="effcet_magicball_house7">
+                <key id="0">
+                    <object folder="0" file="3" x="188.032928" y="-24.103307" pivot_x="-0.832161" pivot_y="0.306631" angle="0"/>
+                </key>
+                <key id="1" time="490" spin="-1">
+                    <object folder="0" file="3" x="192.894163" y="-10.113358" pivot_x="-0.832161" pivot_y="0.306631" angle="18.926443"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="effcet_magicball_house8">
+                <key id="0" spin="-1">
+                    <object folder="0" file="4" x="185.92288" y="-25.797489" pivot_x="1.533642" pivot_y="1.489305" angle="0"/>
+                </key>
+                <key id="1" time="490">
+                    <object folder="0" file="4" x="184.376739" y="-14.866157" pivot_x="1.533642" pivot_y="1.489305" angle="357.62734"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="effcet_magicball_house7_000">
+                <key id="0">
+                    <object folder="0" file="3" x="186.735495" y="-21.670129" pivot_x="-0.449028" pivot_y="1.142694" angle="183.676904"/>
+                </key>
+                <key id="1" time="490" spin="-1">
+                    <object folder="0" file="3" x="182.830496" y="-11.576285" pivot_x="-0.449028" pivot_y="1.142694" angle="199.159264"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="effcet_magicball_house4">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="186.393085" y="-18.460204" pivot_x="0.4966" pivot_y="0.478828" angle="0" scale_x="0.529086" scale_y="0.727006" a="0"/>
+                </key>
+                <key id="1" time="490" spin="0">
+                    <object folder="0" file="5" x="185.965734" y="-9.058494" pivot_x="0.4966" pivot_y="0.478828" angle="0" scale_x="1.186465" scale_y="1.331076"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

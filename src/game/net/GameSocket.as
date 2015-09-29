@@ -145,6 +145,7 @@ package game.net
 		{
 			if (SSingleGameData.isSingleGame)
 			{
+				ShowLoader.remove();
 				SSingleNotify.getInstance().receiveMessage(dataBase);
 				return;
 			}
@@ -197,7 +198,7 @@ package game.net
 			ShowLoader.remove();
 		}
 
-		override protected function dispatchData(dataBase : INotification) : void
+		override public function dispatchData(dataBase : INotification) : void
 		{
 			var cmd : int = int(dataBase.getName());
 			delete _hash[cmd];

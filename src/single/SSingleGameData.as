@@ -9,8 +9,11 @@ package single
 
 	import avmplus.getQualifiedClassName;
 
+	import game.data.Goods;
 	import game.data.HeroData;
+	import game.data.WidgetData;
 	import game.net.data.IData;
+	import game.net.data.s.SAllgoods;
 	import game.net.data.s.SGet_all_hero;
 	import game.net.data.s.SGet_game_data;
 	import game.net.data.vo.HeroVO;
@@ -40,8 +43,30 @@ package single
 			return instance;
 		}
 
+		/**
+		 * 所有数据
+		 */
 		private var mBytes : Object;
+		/**
+		 * 是否创建了角色
+		 */
 		private var mIsCreate : Boolean;
+		/**
+		 * 所搜英雄的cd
+		 */
+		internal var mSearchHeroCD : Number;
+		/**
+		 * 玩家基础信息数据
+		 */
+		internal var mGameData : SGet_game_data;
+		/**
+		 * 玩家所有英雄数据
+		 */
+		internal var mGameHeros : SGet_all_hero;
+		/**
+		 * 玩家所有物品数据
+		 */
+		internal var mGameGoods : SAllgoods;
 
 		private function init() : void
 		{
@@ -67,25 +92,37 @@ package single
 			}
 
 			mIsCreate = mBytes.mIsCreate;
+			mSearchHeroCD = mBytes.mSearchHeroCD;
 		}
 
+		/**
+		 * 检测是否创建了角色
+		 *
+		 */
 		public function checkIsCreateRole() : void
 		{
 			if (!mIsCreate)
 			{
-				var data : SGet_game_data = new SGet_game_data();
-				data.level = 1;
-				data.tollgateid = 1;
-				data.tired = 100;
-				data.diamond = data.coin = 100;
-				data.arenaname = "";
-				mBytes.data = data;
+				mGameData = new SGet_game_data();
+				mGameData.level = 99;
+				mGameData.tollgateid = 99;
+				mGameData.tired = 100;
+				mGameData.diamond = mGameData.coin = 99999;
+				mGameData.arenaname = "";
+				mGameData.herotab = 8;
+				mGameData.bagequ = mGameData.bagmat = mGameData.bagprop = 20;
+				mBytes.data = mGameData;
 
-				var allHeros : SGet_all_hero = new SGet_all_hero();
+				mGameHeros = new SGet_all_hero();
 				var heros : Vector.<IData> = new Vector.<IData>();
 				heros.push(createRoleByType(30013));
-				allHeros.heroes = heros;
-				mBytes.heros = allHeros;
+				mGameHeros.heroes = heros;
+				mBytes.heros = mGameHeros;
+
+				mGameGoods = new SAllgoods();
+				mGameGoods.equip = new Vector.<IData>();
+				mGameGoods.props = new Vector.<IData>();
+				mBytes.goods = mGameGoods;
 			}
 			mIsCreate = true;
 			readRoleInfomation();
@@ -98,11 +135,14 @@ package single
 		 */
 		private function readRoleInfomation() : void
 		{
-			var data : SGet_game_data = mBytes.data;
-			ViewDispatcher.dispatch(data.getCmd() + "", data);
+			mGameData = mBytes.data;
+			ViewDispatcher.dispatch(mGameData.getCmd() + "", mGameData);
 
-			var allHeros : SGet_all_hero = mBytes.heros;
-			ViewDispatcher.dispatch(allHeros.getCmd() + "", allHeros);
+			mGameHeros = mBytes.heros;
+			ViewDispatcher.dispatch(mGameHeros.getCmd() + "", mGameHeros);
+
+			mGameGoods = mBytes.goods;
+			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
 		}
 
 		/**
@@ -111,7 +151,7 @@ package single
 		 * @return
 		 *
 		 */
-		public function createRoleByType(type : int) : HeroVO
+		internal function createRoleByType(type : int) : HeroVO
 		{
 			var heroData : HeroData = HeroData.hero.getValue(type) as HeroData;
 			var heroVo : HeroVO = new HeroVO();
@@ -132,6 +172,24 @@ package single
 			return heroVo;
 		}
 
+		internal function addGoodsByType(type : int, count : int) : Goods
+		{
+			var data : WidgetData = new WidgetData(Goods.goods.getValue(type));
+			switch (data.tab)
+			{
+				//材料
+				case 1:
+					break;
+				//道具
+				case 2:
+					break;
+				//装备
+				case 5:
+					break;
+			}
+			return null;
+		}
+
 		/**
 		 * 根据type获取英雄
 		 * @param type
@@ -147,26 +205,6 @@ package single
 					return hero;
 			}
 			return null;
-		}
-
-		/**
-		 * 存档
-		 *
-		 */
-		public function save() : void
-		{
-			var bytes : ByteArray = new ByteArray();
-			var data : Object = {};
-			var child : Object;
-			for (var key : String in mBytes)
-			{
-				if (!(mBytes[key] is IData))
-					continue;
-				data[key] = changeData2Object(mBytes[key]);
-			}
-			data.mIsCreate = mIsCreate;
-			bytes.writeObject(data);
-			EncryptedLocalStore.setItem("s_d", bytes);
 		}
 
 		/**
@@ -191,6 +229,25 @@ package single
 			return data;
 		}
 
-
+		/**
+		 * 存档
+		 *
+		 */
+		public function save() : void
+		{
+			var bytes : ByteArray = new ByteArray();
+			var data : Object = {};
+			var child : Object;
+			for (var key : String in mBytes)
+			{
+				if (!(mBytes[key] is IData))
+					continue;
+				data[key] = changeData2Object(mBytes[key]);
+			}
+			data.mIsCreate = mIsCreate;
+			data.mSearchHeroCD = mSearchHeroCD;
+			bytes.writeObject(data);
+			EncryptedLocalStore.setItem("s_d", bytes);
+		}
 	}
 }

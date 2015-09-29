@@ -139,7 +139,7 @@ package game.view.dispark {
             if (disparks.length <= 0)
                 return;
             DisparkControl.instance.disparkList = getDisparkVector(disparks);
-            DialogMgr.instance.open(DisparkDialog, null, null, null, "translucence", 0x000000, 0.5);
+            //DialogMgr.instance.open(DisparkDialog, null, null, null, "translucence", 0x000000, 0.5);
         }
 
 
@@ -157,7 +157,7 @@ package game.view.dispark {
             if (disparks.length <= 0)
                 return;
             DisparkControl.instance.disparkList = getDisparkVector(disparks);
-            DialogMgr.instance.open(DisparkDialog, null, null, null, "translucence", 0x000000, 0.5);
+           //DialogMgr.instance.open(DisparkDialog, null, null, null, "translucence", 0x000000, 0.5);
         }
 
 

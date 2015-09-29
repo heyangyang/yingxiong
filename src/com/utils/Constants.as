@@ -10,7 +10,7 @@ package com.utils {
         // set the "aspectRatio" element in the config XML to "landscape". (You'll also have to
         // update the background, startup- and "Default" graphics accordingly.)
 
-        public static var frameRate:int = 30;
+        public static var frameRate:int = 60;
 
         public static const standardWidth:int = 960;
         public static const standardHeight:int = 640;

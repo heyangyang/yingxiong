@@ -175,7 +175,7 @@ import starling.core.Starling;
 			}
 		}
 
-		protected function dispatchData(dataBase : INotification) : void
+		public function dispatchData(dataBase : INotification) : void
 		{
 			notifyObserver(dataBase);
 		}

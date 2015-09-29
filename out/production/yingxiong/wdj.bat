@@ -1,0 +1,2 @@
+adt -package -target apk-captive-runtime -storetype pkcs12 -keystore ../../../cert/hyy.p12 -storepass 2065223 ´ò°ü/wdj.apk GameStartWdj-app.xml GameStartWdj.swf -extdir ../../../assets_mst/ane -extdir ../../../assets_mst/device_ane/android_wdj icon/icon assets_android assets_wdj441.apk
+pause

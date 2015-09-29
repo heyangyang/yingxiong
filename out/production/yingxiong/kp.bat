@@ -1,0 +1,2 @@
+adt -package -target apk-captive-runtime -storetype pkcs12 -keystore ../../../cert/hyy.p12 -storepass 2065223 ´ò°ü/kp.apk GameStartKp-app.xml GameStartKp.swf -extdir ../../../assets_mst/ane -extdir ../../../assets_mst/device_ane/android_kp icon/icon assets_android yingxiong.swf
+pause

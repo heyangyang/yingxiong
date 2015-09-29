@@ -1,0 +1,25 @@
+1.新建一个系统环境变量名 AIR_SDK  值就是你AIR SDK 的路径,但是结束后面加    反斜杠
+
+2.再次把你上面配置的路径 在 Path 环境配置一次 配置到bin下面
+
+3.ATF打包的资源选择 安卓  三合一
+
+4.如果想从新编译代码。需要把swf删除。否则不会再生成swf
+
+5.打包要把 应用id 前面的air.去掉，要在环境变量新建   AIR_NOANDROIDFLAIR  true
+
+6.打包参数
+set DEV=GameStartAndroid		// 该平台主程序文件
+set DEV_ANE=android				// 该平台ANE文件夹
+set DEV_PACK=googlePlay			// apk,ipa输出文件名
+
+
+7.针对ios的推送开发签名用development发行签名用production
+<Entitlements> 
+      <![CDATA[ 
+         <key>aps-environment</key> 
+         <!-- <string>production</string>  -->
+			<string>development</string> 
+         
+     	 ]]> 
+  	 </Entitlements>

@@ -1,0 +1,458 @@
+﻿Starling 框架修改
+
+1.Starling   去除帧频事件派发	
+
+ public function advanceTime(passedTime:Number):void
+        {
+            makeCurrent();
+            
+            mTouchProcessor.advanceTime(passedTime);
+//            mStage.advanceTime(passedTime);		// 注释掉			
+            mJuggler.advanceTime(passedTime);
+        }
+
+
+3.StatsDisplay 去除帧频事件派发，恢复帧频观察器
+
+internal class StatsDisplay extends Sprite implements IAnimatable
+
+public function advanceTime(time:Number):void
+		{
+			mTotalTime += time;
+			mFrameCount++;
+			
+			if (mTotalTime > UPDATE_INTERVAL)
+			{
+				update();
+				mFrameCount = mTotalTime = 0;
+			}
+		}
+		
+        private function onAddedToStage():void
+        {
+            addEventListener(Event.ENTER_FRAME, onEnterFrame);
+			Starling.juggler.add(this);
+            mTotalTime = mFrameCount = 0;
+            update();
+        }
+        
+        private function onRemovedFromStage():void
+        {
+			Starling.juggler.remove(this);
+            removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+        }
+
+
+5.AssetManager  添加注册音频
+
+ public function addSound(name:String, sound:Sound):void
+        {
+            log("Adding sound '" + name + "'");
+            
+            if (name in mSounds)
+                log("Warning: name was already in use; the previous sound will be replaced.");
+            SoundManager.instance.addSound(name,sound);		//   ���
+            mSounds[name] = sound;
+        }
+        
+
+6. DisplayObject  暴露mParent属性
+
+public var mParent:DisplayObjectContainer;
+
+7.DisplayObjectContainer  	添加3个优化方法	
+		public function addQuiackChild(child:DisplayObject):void{
+			if(child.mParent){
+				child.mParent.removeQuickChild(child);
+			}
+			mChildren.push(child);
+			child.mParent = this;
+		}
+		
+				
+		public function addQuiackChildAt(child:DisplayObject, index:int):DisplayObject
+		{
+			var numChildren:int = mChildren.length; 
+			
+			if (index >= 0 && index <= numChildren)
+			{
+				if(child.mParent){
+					child.mParent.removeQuickChild(child);
+				}
+				
+				if (index == numChildren) mChildren.push(child);
+				else                      mChildren.splice(index, 0, child);
+				
+				child.setParent(this);
+				child.mParent = this;
+				
+				return child;
+			}
+			else
+			{
+				throw new RangeError("Invalid child index");
+			}
+		}
+		
+		public function removeQuickChild(child:DisplayObject):void{
+			var index:int = mChildren.indexOf(child);
+			if(index != -1){
+				child.mParent = null;
+				mChildren.splice(index, 1);
+			}
+		}
+		
+			
+		public function clearChild():void{
+			var length:int = mChildren.length;
+			for (var i:int = 0; i < length; i++) {
+				mChildren[i].mParent = null;
+			}
+			mChildren.splice(0,length);
+		}
+
+8.  跳帧策略 AutoSkip
+Starling:
+
+ private  var _autoSkip:AutoSkip;
+ _autoSkip = new AutoSkip(stage);
+
+  public function render():void
+        {
+            if(_autoSkip.requestFrameSkip()) return; 
+            if (!mContextValid)
+                return;
+                
+                
+                
+ 
+ 
+ 9.  Starling 构造方法里改为 if (viewPort == null) viewPort = new Rectangle(0, 0, stage.fullScreenWidth, stage.fullScreenHeight);
+ 
+ 10.TextureAtlas
+ 
+ 	private var _XMLScale:Number = 1.0;
+
+    parseAtlasXml方法改为：
+
+     protected function parseAtlasXml(atlasXml:XML):void {
+        var scale:Number = mAtlasTexture.scale;
+        var str:String = atlasXml.attribute("scale")
+        // 添加
+        if (str != "") {
+            _XMLScale = parseFloat(str);
+        }
+        else {
+            _XMLScale = 1.0;
+        }
+
+
+        for each (var subTexture:XML in atlasXml.SubTexture) {
+            var name:String = subTexture.attribute("name");
+            var x:Number = parseFloat(subTexture.attribute("x")) / scale;
+            var y:Number = parseFloat(subTexture.attribute("y")) / scale;
+            var width:Number = parseFloat(subTexture.attribute("width")) / scale;
+            var height:Number = parseFloat(subTexture.attribute("height")) / scale;
+            var frameX:Number = parseFloat(subTexture.attribute("frameX")) / scale;
+            var frameY:Number = parseFloat(subTexture.attribute("frameY")) / scale;
+            var frameWidth:Number = parseFloat(subTexture.attribute("frameWidth")) / scale;
+            var frameHeight:Number = parseFloat(subTexture.attribute("frameHeight")) / scale;
+
+            var region:Rectangle = new Rectangle(x, y, width, height);
+            var frame:Rectangle = frameWidth > 0 && frameHeight > 0 ?
+                    // 添加_XMLScale
+                    new Rectangle(frameX / _XMLScale, frameY / _XMLScale, frameWidth / _XMLScale, frameHeight / _XMLScale) : null;
+            addRegion(name, region, frame);
+        }
+
+         public function getTexture(name:String):Texture {
+        var region:Rectangle = mTextureRegions[name];
+
+        if (region == null) return null;
+        else return Texture.fromTexture(mAtlasTexture, region, mTextureFrames[name], _XMLScale);// 添加_XMLScale
+    }
+    }
+
+
+    11. Texture 类修改
+
+     public static function fromTexture(texture:Texture, region:Rectangle = null, frame:Rectangle = null, XMLScale:Number = 1.0):Texture {
+        var subTexture:Texture = new SubTexture(texture, region, XMLScale);
+        subTexture.mFrame = frame;
+        return subTexture;
+    }
+
+    empty  方法修改 return new SubTexture(concreteTexture, new Rectangle(0, 0, width, height),1.0, true);
+
+
+    12.SubTexture类修改
+  private var _XMLScale:Number = 1.0;
+
+   public function SubTexture(parentTexture:Texture, region:Rectangle, XMLScale:Number, ownsParent:Boolean = false) {
+        mParent = parentTexture;
+        mOwnsParent = ownsParent;
+
+        _XMLScale = XMLScale;              //修改
+
+           /** @inheritDoc */
+    public override function get width():Number { //修改
+        return mParent.width * mClipping.width / _XMLScale;
+    }
+
+    /** @inheritDoc */
+    public override function get height():Number {//修改
+        return mParent.height * mClipping.height / _XMLScale;
+    }
+
+
+    13.AssestManger purge  方法添加
+
+      for each (var bytes:ByteArray in mByteArrays) {
+            bytes.clear();
+        }
+
+         _dict = {};
+
+         private var _dict:Object = {};    // 去除重复加载
+
+14.AssetManager   enqueueWithName 方法添加
+// 去除重复加载
+        if (_dict[asset]) {
+            return null;
+        }
+        else {
+            _dict[asset] = true;
+        }
+
+15.  AssetManager  process方法添加extension参数
+        function process(asset:Object,extension:String):void {
+16.AssetManager  processRawAsset方法添加 xmlBytes:Vector.<ByteArray>参数
+
+        private function processRawAsset(name:String, rawAsset:Object, xmls:Vector.<XML>, xmlBytes:Vector.<ByteArray>, onProgress:Function, onComplete:Function):void {
+        var canceled:Boolean = false;
+
+
+17.AssetManager  processRawAsset修改
+
+else if (asset is ByteArray) {
+                bytes = asset as ByteArray;
+                if (extension == "scmlx") {
+                    asset.endian = Endian.LITTLE_ENDIAN;
+                    // AnimationCreator.instance.generationSCMLFromBytes(name, asset as ByteArray);
+                    addByteArray(name, asset as ByteArray);
+                    onComplete();
+                }
+                else if (extension == "xmld") {
+                    bytes.endian = Endian.LITTLE_ENDIAN;
+                    xmlBytes.push(bytes);
+                    onComplete();
+                }
+
+
+18.DisplayObjectContainer  dispose方法
+
+
+  if (this is IAnimatable) {
+            Starling.juggler.remove(this as IAnimatable);
+
+            if (this is SpriterClip) {
+                var spriterClip:SpriterClip = this as SpriterClip;
+                spriterClip.clearCallbacks();
+                spriterClip.animationComplete.removeAll();
+            }
+            }
+
+19.Starling  render
+
+
+            public function render():void
+        {
+            if(_autoSkip.requestFrameSkip()) return;
+            if (!contextValid)
+                return;
+            
+            makeCurrent();
+//            updateViewPort();
+//            updateNativeOverlay();
+            mSupport.nextFrame();
+            
+            if (!mShareContext)
+                RenderSupport.clear(mStage.color, 1.0);
+            
+//            var scaleX:Number = mViewPort.width  / mStage.stageWidth;
+//            var scaleY:Number = mViewPort.height / mStage.stageHeight;
+            
+            mContext.setDepthTest(false, Context3DCompareMode.ALWAYS);
+            mContext.setCulling(Context3DTriangleFace.NONE);
+            
+            mSupport.renderTarget = null; // back buffer
+           /* mSupport.setOrthographicProjection(
+         mViewPort.x < 0 ? -mViewPort.x / scaleX : 0.0,
+         mViewPort.y < 0 ? -mViewPort.y / scaleY : 0.0,
+         mClippedViewPort.width  / scaleX,
+         mClippedViewPort.height / scaleY);*/
+
+20.Starling构造方法
+
+ if (viewPort == null) viewPort = new Rectangle(0, 0, stage.fullScreenWidth, stage.fullScreenHeight);
+
+
+ 21.AssetManager
+
+  public function addAtfTexture(name:String, bytes:ByteArray):void
+        {
+            var texture:Texture;
+            if (AtfData.isAtfData(bytes))
+            {
+                texture=Texture.fromData(bytes);
+                texture.root.onRestore=function():void
+                {
+                    mNumLostTextures++;
+                };
+
+                bytes.clear();
+                addTexture(name, texture);
+            }
+        }
+
+
+        22.AssetManager 
+
+         if (texture)
+                        {
+                            log("Adding bitmap font '" + name + "'");
+                            var fontName:String = String(xml.info.@face);
+                            var bitmapFont:BitmapFont = TextField.getBitmapFont(fontName);
+                            if(!bitmapFont)
+                            {
+                                TextField.registerBitmapFont(new BitmapFont(texture, xml), fontName);
+                            }
+                            else
+                            {
+                                bitmapFont.parseFontXml(texture, xml);
+                            }
+
+                            removeTexture(name, false);
+                            System.disposeXML(xml);
+                        }
+
+                        23.BitmapFont: public function parseFontXml(mTexture:Texture,fontXml:XML):void
+
+
+                        24.TextField  构造方法：this.fontName = "myFont";
+
+
+25.AssetManager process：
+                         //atf+xml+scml合并解析
+                function dealAXS(tmp_bytes:ByteArray,texture:Texture = null):void
+            {
+//                var tmp_bytes:ByteArray=asset as ByteArray;
+                var tmp_extension:String;
+                var tmp_filebytes:ByteArray;
+                var tmp_FileName:String;
+                var tmp_len:int;
+                tmp_bytes.uncompress();
+                tmp_bytes.position=0;
+
+                while (tmp_bytes.bytesAvailable)
+                {
+                    tmp_filebytes=new ByteArray();
+                    tmp_FileName=tmp_bytes.readUTF();
+                    tmp_len=tmp_bytes.readUnsignedInt();
+
+                    name=tmp_FileName.split(".")[0];
+                    tmp_extension=tmp_FileName.split(".")[1];
+
+                    if (tmp_extension == "atf")
+                    {
+                        tmp_bytes.readBytes(tmp_filebytes, 0, tmp_len);
+                        options.onReady = prependCallback(options.onReady, onComplete);
+                        if(!texture)
+                        {
+                            texture = Texture.fromData(tmp_filebytes, options);
+                            texture.root.onRestore = function():void
+                            {
+                                mNumLostTextures++;
+                                loadRawAsset(rawAsset, null, function(asset:Object):void
+                                {
+                                    var bit:ByteArray = asset as ByteArray;
+                                    dealAXS(bit,texture);
+                                });
+                            };
+
+                            tmp_filebytes.clear();
+                            addTexture(name, texture);
+                        }
+                        else
+                        {
+                            try { texture.root.uploadAtfData(tmp_filebytes, 0, true); }
+                            catch (e:Error) { log("Texture restoration failed: " + e.message); }
+
+                            tmp_filebytes.clear();
+                            mNumRestoredTextures++;
+
+                            if (mNumLostTextures == mNumRestoredTextures)
+                                dispatchEventWith(Event.TEXTURES_RESTORED);
+                        }
+                    }
+                    else if (tmp_extension == "xml")
+                    {
+                        tmp_bytes.readBytes(tmp_filebytes, 0, tmp_len);
+                        var xml:XML = new XML(tmp_filebytes);
+                        if (xml.localName() == "TextureAtlas" || xml.localName() == "font")
+                            xmls.push(xml);
+                        else
+                            addXml(name, xml);
+                    }
+                    else if (tmp_extension == "scml")
+                    {
+                        mObjects[name]=tmp_bytes.readObject();
+                    }
+                }
+                tmp_bytes.clear();
+            }
+            
+
+                26.Button:  public function get container():DisplayObjectContainer
+        {
+            return mContents;
+        }
+
+
+        27.AssetManager  if (rawAsset["isDirectory"])
+                        {
+                            var getDirectoryListing:Array = _fileList[rawAsset["url"]];
+                            if(!getDirectoryListing)
+                            {
+                                getDirectoryListing =  rawAsset["getDirectoryListing"]();
+                                _fileList[rawAsset["url"]] = getDirectoryListing;
+                            }
+                            enqueue.apply(this,getDirectoryListing);
+                        }
+                        else
+                            enqueueWithName(rawAsset);
+             28.AssetManager                 
+else if (rawAsset is String)
+            {
+                url = rawAsset as String;
+                extension = getExtensionFromUrl(url);
+            
+//                urlLoader = new URLLoader();
+//                urlLoader.dataFormat = URLLoaderDataFormat.BINARY;
+//                urlLoader.addEventListener(IOErrorEvent.IO_ERROR, onIoError);
+//                urlLoader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onSecurityError);
+//                urlLoader.addEventListener(HTTP_RESPONSE_STATUS, onHttpResponseStatus);
+//                urlLoader.addEventListener(ProgressEvent.PROGRESS, onLoadProgress);
+//                urlLoader.addEventListener(Event.COMPLETE, onUrlLoaderComplete);
+//                urlLoader.load(new URLRequest(url));
+
+                var byte:ByteArray = new ByteArray();
+                var file:File = new File(url);
+                var fileSteam:FileStream = new FileStream();
+                fileSteam.open(file, FileMode.READ);
+                fileSteam.readBytes(byte, 0, fileSteam.bytesAvailable);
+                fileSteam.close();
+
+
+                onUrlLoaderComplete(byte);
+            }

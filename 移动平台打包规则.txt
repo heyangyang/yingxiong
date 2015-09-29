@@ -1,0 +1,42 @@
+
+
+1.设置服务器请求地址：HttpServerList.ServerListAddress = "http://x.x.x.x/mst/servers.php";
+2.设置前后端验证地址地址：HttpServerList.VervionCheckAddress = "http://x.x.x.x/mst/check.php";
+3.设置assets目录下update.txt文件内的，游戏文件更新地址"http://x.x.x.x/mst/check_assets.php"
+4.设置资源加载目录：ConverURL.AssetsRoot = "XXX/";  
+5.应用配置XML文件内更改版本号
+<versionNumber>x.x.x</versionNumber>
+  <versionLabel>x.x.x</versionLabel>
+6. 设置钻石商城表 DataDecompress.ShopDataType = "diamond_shop"  // 趣玩，IOS简体，360等
+DataDecompress.ShopDataType = "diamond_shop_ft_ios"		//繁体ios
+
+7.简繁体转化设置：
+ 设置简体转繁体语言包 ：FontJFData.init(new Assets.jf_map_data());
+ 设置全局繁体标识：Constants.isFontFt= true;
+
+ 8.支付界面处理
+ VipDlg.VipChargeViewClass = VipChargeView ;	//IOS简繁体，360等
+ VipDlg.VipChargeViewClass = VipChargeView_IOS_FT //趣玩
+
+Android平台注意事项：
+
+1.修改类GameStartLoader
+private static const swf_type : String = "xxx.swf";		// 游戏主SWF文件
+private static const AssetsRoot = "xxx/";				// 游戏资源目录
+
+
+
+iOS平台注意事项：
+
+
+ 1.设置苹果推送服务器地址： PushNotifications.PushAddress = "http://x.x.x.x/push/";
+
+
+  2.应用配置XML文件内，<iPhone>节点下，production值要与发布证书匹配，development值与开发证书匹配;
+         <Entitlements>
+            <![CDATA[ 
+         <key>aps-environment</key> 
+         <!-- <string>production</string>  -->
+			<string>development</string> 
+     	 ]]>
+        </Entitlements>

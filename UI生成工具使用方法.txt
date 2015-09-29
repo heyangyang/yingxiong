@@ -1,0 +1,30 @@
+UI生成工具使用方法：
+
+1.在flash ->文件->ActionScript设置
+把项目源码路径scr添加到源路径。
+
+2.把需要导出类的界面封装在MovieClip元件内
+在元件库内设置该元件的导出类名，并右击打开元件属性，勾选为“ActionScrip导出”,在基类框填入基类名字，包路径用点号.。
+
+3.用文本打开“UI生成工具”，设置导出类文件保存位置。
+
+
+
+
+组件命名规则：
+
+1.此工具基于flash 和flash 脚本jsfl，生产as布局代码
+2. 生成的显示对象元素有：Image，Sprite，TextField，Button，TextInput，TabMenu，TabButton，List，Scale9Image，Scale9Button 除此之外的元素暂不支持
+3.Image：生成Starling 的Image,没有用Flash影片剪辑封装的图片显示对象对外不可见,匿名
+4.Sprite:生成Starling Sprite,需用Flash影片剪辑封装，Sprite必须输入名字，flash属性窗输入的名字就是对于访问的名字
+
+5.TextField：flash里的动态文本映射Staring的TextField，须命名
+
+6.Button：flash里的用图片封装的按钮映射Staring的Button,按钮仅且一帧和一层，且有一个动态文本名字为：“txt”,
+动态文本必须有内容，本脚本会获取文本的字体大小、颜色、内容到生成的布局代码里，须命名
+
+7.TabButton：两层两帧的flash影片剪辑，第一层是命名为“txt”动态文本，1、2帧分别是TabButton按下和弹起状态，TabButton映射自定义的TabButton显示对象，须命名
+
+8.Scale9Button仅且一帧和一层的flash影片剪辑，须命名，须有九宫格分割线，和命名为“txt”动态文本
+，需命名，
+9.Scale9Image仅且一帧和一层的flash影片剪辑，须命名，须有九宫格分割线

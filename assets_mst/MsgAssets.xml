@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:7bd6f8d962010bd857b2b5205096e953:1/1$ -->
+<TextureAtlas imagePath="MsgAssets.png">
+    <SubTexture name="ui_lv03_01_anniu" x="2" y="144" width="116" height="62"/>
+    <SubTexture name="ui_tipstanchukuangdi01_jiemian" x="2" y="2" width="140" height="140"/>
+    <SubTexture name="ui_tishi_xiaotaitou_wenzi" x="12" y="208" width="54" height="30"/>
+    <SubTexture name="ui_zhuangshihuawen01_jiemian" x="2" y="243" width="33" height="8"/>
+    <SubTexture name="ui_zhuangshihuawen02_jiemian" x="2" y="208" width="8" height="33"/>
+    <SubTexture name="ui_zhuangshixianquan02_jiemian" x="2" y="253" width="9" height="1"/>
+</TextureAtlas>

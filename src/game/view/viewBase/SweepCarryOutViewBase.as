@@ -1,0 +1,172 @@
+package  game.view.viewBase
+{
+    import starling.display.Image;
+    import game.manager.AssetMgr;
+    import starling.utils.AssetManager;
+    import starling.display.Sprite;
+    import starling.textures.Texture;
+    import starling.text.TextField;
+    import starling.display.Button;
+    import flash.geom.Rectangle;
+    import com.utils.Constants;
+    import feathers.controls.TextInput;
+    import feathers.controls.List;
+    import feathers.display.Scale9Image;
+    import feathers.textures.Scale9Textures;
+    import com.components.Scale9Button;
+    import feathers.controls.renderers.DefaultListItemRenderer;
+
+    public class SweepCarryOutViewBase extends DefaultListItemRenderer
+    {
+        public var ui_zhuangshixianquan02_jiemian6298:Scale9Image;
+        public var ui_zhuangshixianquan01_jiemian0260:Scale9Image;
+        public var ui_zhuangshixianquan02_jiemian6299:Scale9Image;
+        public var text_reward:TextField;
+        public var list_carry:List;
+        public var ui_zhuangshixianquan01_jiemian00:Scale9Image;
+        public var ui_zhuangshixianquan02_jiemian676:Scale9Image;
+        public var ui_zhuangshixianquan02_jiemian675:Scale9Image;
+        public var ui_zhuangshixianquan02_jiemian639:Scale9Image;
+        public var ui_zhuangshixianquan02_jiemian638:Scale9Image;
+        public var text_chip:TextField;
+        public var text_round:TextField;
+        public var list_results:List;
+
+        public function SweepCarryOutViewBase()
+        {
+            var texture:Texture;
+            var textField:TextField;
+            var input_txt:TextInput;
+            var image:Image;
+            var button:Button;
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian6298Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian62989ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian6298Rect);
+            ui_zhuangshixianquan02_jiemian6298 = new Scale9Image(ui_zhuangshixianquan02_jiemian62989ScaleTexture);
+            ui_zhuangshixianquan02_jiemian6298.x = 6;
+            ui_zhuangshixianquan02_jiemian6298.y = 298;
+            ui_zhuangshixianquan02_jiemian6298.width = 500;
+            ui_zhuangshixianquan02_jiemian6298.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian6298);
+            texture =assetMgr.getTexture('saodangwanbi');
+            image = new Image(texture);
+            image.x = 183;
+            image.y = 213;
+            image.width = 147;
+            image.height = 42;
+            image.touchable = false;
+            image.smoothing= Constants.smoothing;
+            this.addQuiackChild(image);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan01_jiemian');
+            var ui_zhuangshixianquan01_jiemian0260Rect:Rectangle = new Rectangle(12,12,20,20);
+            var ui_zhuangshixianquan01_jiemian02609ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan01_jiemian0260Rect);
+            ui_zhuangshixianquan01_jiemian0260 = new Scale9Image(ui_zhuangshixianquan01_jiemian02609ScaleTexture);
+            ui_zhuangshixianquan01_jiemian0260.y = 260;
+            ui_zhuangshixianquan01_jiemian0260.width = 512;
+            ui_zhuangshixianquan01_jiemian0260.height = 158;
+            this.addQuiackChild(ui_zhuangshixianquan01_jiemian0260);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian6299Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian62999ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian6299Rect);
+            ui_zhuangshixianquan02_jiemian6299 = new Scale9Image(ui_zhuangshixianquan02_jiemian62999ScaleTexture);
+            ui_zhuangshixianquan02_jiemian6299.x = 6;
+            ui_zhuangshixianquan02_jiemian6299.y = 299;
+            ui_zhuangshixianquan02_jiemian6299.width = 500;
+            ui_zhuangshixianquan02_jiemian6299.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian6299);
+            text_reward = new TextField(324,32,'','',24,0xFFFFFF,false);
+            text_reward.touchable = false;
+            text_reward.hAlign= 'center';
+            text_reward.text= '';
+            text_reward.x = 94;
+            text_reward.y = 265;
+            this.addQuiackChild(text_reward);
+            list_carry = new List();
+            list_carry.x = 6;
+            list_carry.y = 306;
+            list_carry.width = 500;
+            list_carry.height = 104;
+            this.addQuiackChild(list_carry);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan01_jiemian');
+            var ui_zhuangshixianquan01_jiemian00Rect:Rectangle = new Rectangle(12,12,20,20);
+            var ui_zhuangshixianquan01_jiemian009ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan01_jiemian00Rect);
+            ui_zhuangshixianquan01_jiemian00 = new Scale9Image(ui_zhuangshixianquan01_jiemian009ScaleTexture);
+            ui_zhuangshixianquan01_jiemian00.width = 512;
+            ui_zhuangshixianquan01_jiemian00.height = 207;
+            this.addQuiackChild(ui_zhuangshixianquan01_jiemian00);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian676Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian6769ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian676Rect);
+            ui_zhuangshixianquan02_jiemian676 = new Scale9Image(ui_zhuangshixianquan02_jiemian6769ScaleTexture);
+            ui_zhuangshixianquan02_jiemian676.x = 6;
+            ui_zhuangshixianquan02_jiemian676.y = 76;
+            ui_zhuangshixianquan02_jiemian676.width = 500;
+            ui_zhuangshixianquan02_jiemian676.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian676);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian675Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian6759ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian675Rect);
+            ui_zhuangshixianquan02_jiemian675 = new Scale9Image(ui_zhuangshixianquan02_jiemian6759ScaleTexture);
+            ui_zhuangshixianquan02_jiemian675.x = 6;
+            ui_zhuangshixianquan02_jiemian675.y = 75;
+            ui_zhuangshixianquan02_jiemian675.width = 500;
+            ui_zhuangshixianquan02_jiemian675.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian675);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian639Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian6399ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian639Rect);
+            ui_zhuangshixianquan02_jiemian639 = new Scale9Image(ui_zhuangshixianquan02_jiemian6399ScaleTexture);
+            ui_zhuangshixianquan02_jiemian639.x = 6;
+            ui_zhuangshixianquan02_jiemian639.y = 39;
+            ui_zhuangshixianquan02_jiemian639.width = 500;
+            ui_zhuangshixianquan02_jiemian639.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian639);
+            texture = assetMgr.getTexture('ui_zhuangshixianquan02_jiemian');
+            var ui_zhuangshixianquan02_jiemian638Rect:Rectangle = new Rectangle(3,0,3,1);
+            var ui_zhuangshixianquan02_jiemian6389ScaleTexture:Scale9Textures = new Scale9Textures(texture,ui_zhuangshixianquan02_jiemian638Rect);
+            ui_zhuangshixianquan02_jiemian638 = new Scale9Image(ui_zhuangshixianquan02_jiemian6389ScaleTexture);
+            ui_zhuangshixianquan02_jiemian638.x = 6;
+            ui_zhuangshixianquan02_jiemian638.y = 38;
+            ui_zhuangshixianquan02_jiemian638.width = 500;
+            ui_zhuangshixianquan02_jiemian638.height = 1;
+            this.addQuiackChild(ui_zhuangshixianquan02_jiemian638);
+            texture =assetMgr.getTexture('ui_jinbi01_tubiao');
+            image = new Image(texture);
+            image.x = 200;
+            image.y = 44;
+            image.width = 25;
+            image.height = 26;
+            image.touchable = false;
+            image.smoothing= Constants.smoothing;
+            this.addQuiackChild(image);
+            text_chip = new TextField(119,31,'','',24,0xFFFFFF,false);
+            text_chip.touchable = false;
+            text_chip.hAlign= 'center';
+            text_chip.text= '';
+            text_chip.x = 229;
+            text_chip.y = 42;
+            this.addQuiackChild(text_chip);
+            text_round = new TextField(324,32,'','',24,0xFFFFFF,false);
+            text_round.touchable = false;
+            text_round.hAlign= 'center';
+            text_round.text= '';
+            text_round.x = 94;
+            text_round.y = 4;
+            this.addQuiackChild(text_round);
+            list_results = new List();
+            list_results.x = 6;
+            list_results.y = 87;
+            list_results.width = 500;
+            list_results.height = 104;
+            this.addQuiackChild(list_results);
+        }
+        public function get assetMgr():AssetManager{return AssetMgr.instance;}
+        override public function dispose():void
+        {
+            list_carry.dispose();
+            list_results.dispose();
+            super.dispose();
+        
+}
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="role_1010_17.png" width="211" height="144" pivot_x="0.319249" pivot_y="0.342466"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_2018" length="500" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="role_1010_17_000" folder="0" file="0" abs_x="13.359692" abs_y="-13.11873" abs_pivot_x="0.319249" abs_pivot_y="0.342466" abs_angle="21.009684" abs_scale_x="-0.957413" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="role_1010_17_002" folder="0" file="0" abs_x="12.426172" abs_y="-13.477256" abs_pivot_x="0.319249" abs_pivot_y="0.342466" abs_angle="21.009684" abs_scale_x="-0.957413" abs_scale_y="1" abs_a="0" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="500">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="role_1010_17_000">
+                <key id="0">
+                    <object folder="0" file="0" x="13.359692" y="-13.11873" angle="21.009684" scale_x="-0.957413"/>
+                </key>
+                <key id="1" time="250" spin="-1">
+                    <object folder="0" file="0" x="13.820782" y="-12.64589" angle="22.011283" scale_x="-1.005977" scale_y="1.003289"/>
+                </key>
+                <key id="2" time="500" spin="0">
+                    <object folder="0" file="0" x="13.359692" y="-13.11873" angle="21.009684" scale_x="-0.957413"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="role_1010_17_002">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" x="12.426172" y="-13.477256" angle="21.009684" scale_x="-0.957413" a="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object folder="0" file="0" x="7.133754" y="-12.113295" angle="15.797908" scale_x="-1.343524" scale_y="1.045246" a="0.29412"/>
+                </key>
+                <key id="2" time="500">
+                    <object folder="0" file="0" x="2.192" y="-10.468" angle="16.629699" scale_x="-1.595507" scale_y="1.245505" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

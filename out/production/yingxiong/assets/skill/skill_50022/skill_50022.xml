@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:f9f0789dde4aa2a1295bc99189560a8f$ -->
+<TextureAtlas imagePath="skill_50022.png" scale="0.85">
+    <SubTexture name="skill_50021_1" x="1" y="1" width="322" height="205"/>
+    <SubTexture name="skill_50021_10" x="173" y="296" width="88" height="87"/>
+    <SubTexture name="skill_50021_11" x="1" y="431" width="85" height="80"/>
+    <SubTexture name="skill_50021_12" x="384" y="305" width="82" height="77"/>
+    <SubTexture name="skill_50021_13" x="260" y="384" width="77" height="84"/>
+    <SubTexture name="skill_50021_14" x="87" y="420" width="87" height="88"/>
+    <SubTexture name="skill_50021_15" x="175" y="384" width="84" height="85"/>
+    <SubTexture name="skill_50021_16" x="338" y="383" width="75" height="79"/>
+    <SubTexture name="skill_50021_17" x="414" y="383" width="72" height="77"/>
+    <SubTexture name="skill_50021_2" x="324" y="1" width="139" height="121"/>
+    <SubTexture name="skill_50021_3" x="384" y="229" width="111" height="75"/>
+    <SubTexture name="skill_50021_4" x="324" y="123" width="139" height="105"/>
+    <SubTexture name="skill_50021_5" x="87" y="207" width="212" height="88"/>
+    <SubTexture name="skill_50021_6" x="50" y="296" width="54" height="123"/>
+    <SubTexture name="skill_50021_7" x="1" y="229" width="48" height="201"/>
+    <SubTexture name="skill_50021_8" x="105" y="296" width="67" height="105"/>
+    <SubTexture name="skill_50021_9" x="300" y="229" width="83" height="146"/>
+</TextureAtlas>

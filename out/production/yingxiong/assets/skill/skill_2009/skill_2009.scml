@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="skill_2009_1.png" width="63" height="65" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_2009" length="1000" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="249">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="490">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="746">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+                <key id="4" time="1000">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="skill_2009_1">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" x="0.214997" y="-0.219988" pivot_x="0.512276" pivot_y="0.492716"/>
+                </key>
+                <key id="1" time="249" spin="-1">
+                    <object folder="0" file="0" x="0.214997" y="-0.219988" pivot_x="0.512276" pivot_y="0.492716" angle="270.043947"/>
+                </key>
+                <key id="2" time="490" spin="-1">
+                    <object folder="0" file="0" x="0.214997" y="-0.219988" pivot_x="0.512276" pivot_y="0.492716" angle="180.880089" scale_x="1"/>
+                </key>
+                <key id="3" time="746" spin="-1">
+                    <object folder="0" file="0" x="0.214997" y="-0.219988" pivot_x="0.512276" pivot_y="0.492716" angle="89.546994" scale_x="1"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="0" x="0.214997" y="-0.219988" pivot_x="0.512276" pivot_y="0.492716"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

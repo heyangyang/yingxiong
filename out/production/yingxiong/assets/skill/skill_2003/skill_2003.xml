@@ -1,0 +1,3 @@
+<TextureAtlas imagePath="skill_2003.png" scale="0.6">
+  <SubTexture name="skill_baozhasheji1" x="2" y="2" width="13" height="14"/>
+</TextureAtlas>

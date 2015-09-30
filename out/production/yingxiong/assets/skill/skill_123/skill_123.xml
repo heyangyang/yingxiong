@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="skill_123.png" scale="0.6">
+  <SubTexture name="skill_123_10" x="130" y="77" width="91" height="72" frameX="0" frameY="-8" frameWidth="91" frameHeight="86"/>
+  <SubTexture name="skill_123_2" x="81" y="294" width="19" height="177" frameX="-6" frameY="0" frameWidth="31" frameHeight="183"/>
+  <SubTexture name="skill_123_3" x="2" y="123" width="14" height="86" frameX="0" frameY="-6" frameWidth="14" frameHeight="98"/>
+  <SubTexture name="skill_123_4" x="81" y="123" width="35" height="169" frameX="-11" frameY="-8" frameWidth="59" frameHeight="183"/>
+  <SubTexture name="skill_123_5" x="227" y="2" width="24" height="207" frameX="-4" frameY="-6" frameWidth="34" frameHeight="227"/>
+  <SubTexture name="skill_123_6" x="2" y="211" width="77" height="271" frameX="-12" frameY="-14" frameWidth="91" frameHeight="301"/>
+  <SubTexture name="skill_123_7" x="2" y="2" width="126" height="119" frameX="0" frameY="-35" frameWidth="126" frameHeight="161"/>
+  <SubTexture name="skill_123_8" x="118" y="151" width="50" height="234" frameX="-6" frameY="-14" frameWidth="64" frameHeight="262"/>
+  <SubTexture name="skill_123_9" x="130" y="2" width="95" height="73" frameX="0" frameY="-7" frameWidth="97" frameHeight="87"/>
+</TextureAtlas>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:3d42d2298b66ac101a2509bbd336e479$ -->
+<TextureAtlas imagePath="skill_50004.png" scale="0.8">
+    <SubTexture name="skill_50004_1" x="0" y="15" width="502" height="314"/>
+    <SubTexture name="skill_50004_10" x="600" y="227" width="334" height="217" frameX="0" frameY="0" frameWidth="334" frameHeight="219"/>
+    <SubTexture name="skill_50004_11" x="0" y="329" width="452" height="92" frameX="0" frameY="-2" frameWidth="454" frameHeight="94"/>
+    <SubTexture name="skill_50004_12" x="0" y="421" width="444" height="42"/>
+    <SubTexture name="skill_50004_13" x="0" y="523" width="289" height="92"/>
+    <SubTexture name="skill_50004_14" x="623" y="881" width="181" height="126" frameX="-4" frameY="-23" frameWidth="193" frameHeight="152"/>
+    <SubTexture name="skill_50004_15" x="419" y="616" width="204" height="366" frameX="-30" frameY="-9" frameWidth="234" frameHeight="382"/>
+    <SubTexture name="skill_50004_16" x="452" y="385" width="144" height="138" frameX="-32" frameY="-43" frameWidth="196" frameHeight="198"/>
+    <SubTexture name="skill_50004_2" x="934" y="227" width="89" height="389" frameX="-2" frameY="0" frameWidth="91" frameHeight="393"/>
+    <SubTexture name="skill_50004_3" x="502" y="15" width="98" height="370"/>
+    <SubTexture name="skill_50004_4" x="289" y="463" width="130" height="239"/>
+    <SubTexture name="skill_50004_5" x="623" y="444" width="290" height="437" frameX="-2" frameY="0" frameWidth="292" frameHeight="437"/>
+    <SubTexture name="skill_50004_6" x="0" y="616" width="175" height="397" frameX="-2" frameY="0" frameWidth="177" frameHeight="397"/>
+    <SubTexture name="skill_50004_7" x="175" y="702" width="221" height="63"/>
+    <SubTexture name="skill_50004_8" x="0" y="0" width="607" height="15"/>
+    <SubTexture name="skill_50004_9" x="607" y="0" width="373" height="227" frameX="0" frameY="-2" frameWidth="377" frameHeight="229"/>
+</TextureAtlas>

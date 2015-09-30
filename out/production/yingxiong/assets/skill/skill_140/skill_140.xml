@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5c5d4fc7b92411841f908f574e0d05c8$ -->
+<TextureAtlas imagePath="skill_140.png">
+    <SubTexture name="role_194_g1" x="294" y="123" width="169" height="183"/>
+    <SubTexture name="role_194_g2" x="283" y="308" width="164" height="186"/>
+    <SubTexture name="role_194_g3" x="137" y="356" width="67" height="211"/>
+    <SubTexture name="role_194_g4" x="2" y="2" width="290" height="167"/>
+    <SubTexture name="role_194_g5" x="2" y="171" width="279" height="183"/>
+    <SubTexture name="role_194_g6" x="294" y="2" width="203" height="119"/>
+    <SubTexture name="role_194_g7" x="2" y="356" width="133" height="127"/>
+</TextureAtlas>

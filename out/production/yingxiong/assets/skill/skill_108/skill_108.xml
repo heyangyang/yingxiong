@@ -1,0 +1,9 @@
+<TextureAtlas imagePath="skill_108.png" scale="0.6">
+  <SubTexture name="skill_baozhasheji1" x="2" y="112" width="13" height="14"/>
+  <SubTexture name="skill_baozhasheji2" x="66" y="106" width="17" height="17"/>
+  <SubTexture name="skill_baozhasheji3" x="81" y="2" width="41" height="33"/>
+  <SubTexture name="skill_baozhasheji4" x="66" y="66" width="57" height="38"/>
+  <SubTexture name="skill_baozhasheji5" x="2" y="66" width="62" height="44"/>
+  <SubTexture name="skill_baozhasheji6" x="17" y="112" width="9" height="13"/>
+  <SubTexture name="skill_baozhasheji7" x="2" y="2" width="77" height="62"/>
+</TextureAtlas>

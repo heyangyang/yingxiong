@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:57ffcdcee7f556ee3b3887cea86c5954$ -->
+<TextureAtlas imagePath="skill_137.png" scale="0.8">
+    <SubTexture name="skill_136_1" x="460" y="27" width="16" height="27" frameX="-1" frameY="-1" frameWidth="18" frameHeight="33"/>
+    <SubTexture name="skill_136_10" x="337" y="286" width="119" height="123" frameX="0" frameY="-2" frameWidth="121" frameHeight="127"/>
+    <SubTexture name="skill_136_11" x="1" y="172" width="121" height="74" frameX="-4" frameY="-8" frameWidth="129" frameHeight="86"/>
+    <SubTexture name="skill_136_12" x="418" y="1" width="41" height="152"/>
+    <SubTexture name="skill_136_2" x="460" y="1" width="40" height="25" frameX="-2" frameY="-2" frameWidth="48" frameHeight="29"/>
+    <SubTexture name="skill_136_3" x="418" y="154" width="56" height="107" frameX="-1" frameY="-1" frameWidth="60" frameHeight="111"/>
+    <SubTexture name="skill_136_4" x="337" y="410" width="111" height="98" frameX="0" frameY="-6" frameWidth="111" frameHeight="108"/>
+    <SubTexture name="skill_136_5" x="195" y="286" width="141" height="161"/>
+    <SubTexture name="skill_136_6" x="1" y="262" width="193" height="233" frameX="0" frameY="0" frameWidth="197" frameHeight="233"/>
+    <SubTexture name="skill_136_7" x="1" y="1" width="416" height="170" frameX="-2" frameY="0" frameWidth="418" frameHeight="170"/>
+    <SubTexture name="skill_136_8" x="195" y="172" width="215" height="113" frameX="0" frameY="-3" frameWidth="223" frameHeight="117"/>
+    <SubTexture name="skill_136_9" x="123" y="172" width="70" height="81" frameX="-3" frameY="-1" frameWidth="76" frameHeight="87"/>
+</TextureAtlas>

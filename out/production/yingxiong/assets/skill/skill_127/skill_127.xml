@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="skill_127.png" scale="0.6">
+  <SubTexture name="skill_127_4" x="146" y="2" width="108" height="48" frameX="-15" frameY="-20" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_127_7" x="2" y="2" width="142" height="58" frameX="-2" frameY="-11" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_shandianfengbao1" x="106" y="62" width="11" height="184"/>
+  <SubTexture name="skill_shandianfengbao2" x="2" y="355" width="43" height="152"/>
+  <SubTexture name="skill_shandianfengbao3" x="146" y="52" width="59" height="193"/>
+  <SubTexture name="skill_shandianfengbao4" x="47" y="62" width="57" height="188"/>
+  <SubTexture name="skill_shandianfengbao5" x="119" y="247" width="56" height="178"/>
+  <SubTexture name="skill_shandianfengbao6" x="207" y="52" width="47" height="175"/>
+  <SubTexture name="skill_shandianfengbao7" x="207" y="229" width="47" height="124"/>
+</TextureAtlas>

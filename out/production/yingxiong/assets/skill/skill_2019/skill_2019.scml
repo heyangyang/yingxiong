@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="role_509_25.png" width="76" height="82" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_2019" length="400">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="role_509_25" folder="0" file="0" abs_x="1.216899" abs_y="1.253912" abs_pivot_x="0.527914" abs_pivot_y="0.490901" abs_angle="25.257151" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="97">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="196">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="295">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="role_509_25">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" x="1.216899" y="1.253912" pivot_x="0.527914" pivot_y="0.490901" angle="25.257151"/>
+                </key>
+                <key id="1" time="97">
+                    <object folder="0" file="0" x="1.216899" y="1.253912" pivot_x="0.527914" pivot_y="0.490901" angle="310.13145" scale_x="1.156207" scale_y="1.156207"/>
+                </key>
+                <key id="2" time="196">
+                    <object folder="0" file="0" x="1.216899" y="1.253912" pivot_x="0.527914" pivot_y="0.490901" angle="348.693998" scale_x="-1.148074" scale_y="1.15784"/>
+                </key>
+                <key id="3" time="295" spin="-1">
+                    <object folder="0" file="0" x="1.216899" y="1.253912" pivot_x="0.527914" pivot_y="0.490901" angle="123.265465" scale_x="-0.991565"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

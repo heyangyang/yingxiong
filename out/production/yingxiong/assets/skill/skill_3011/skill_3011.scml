@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="role_528_ weitutu0001.png" width="227" height="177" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="role_528_ weitutu0002.png" width="226" height="173" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="role_528_ weitutu0003.png" width="228" height="179" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="role_528_ weitutu0004.png" width="228" height="179" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="role_528_ weitutu0005.png" width="228" height="180" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_3011" length="250">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="role_528_ weitutu0001" folder="0" file="0" abs_x="-114" abs_y="121" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="role_528_ weitutu0002" folder="0" file="1" abs_x="-114" abs_y="121" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="role_528_ weitutu0003" folder="0" file="2" abs_x="-114" abs_y="121" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" name="role_528_ weitutu0004" folder="0" file="3" abs_x="-114" abs_y="121" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" name="role_528_ weitutu0005" folder="0" file="4" abs_x="-114" abs_y="121" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="4" key="0" z_index="4"/>
+                </key>
+                <key id="1" time="50">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                </key>
+                <key id="2" time="100">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                </key>
+                <key id="3" time="150">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="3" z_index="4"/>
+                </key>
+                <key id="4" time="200">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="4" z_index="4"/>
+                </key>
+                <key id="5" time="250">
+                    <object_ref id="0" timeline="0" key="5" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="5" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="5" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="5" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="5" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="role_528_ weitutu0001">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="3" time="150" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="4" time="200" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="5" time="250" spin="0">
+                    <object folder="0" file="0" x="-114" y="121" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="role_528_ weitutu0002">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="3" time="150" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="4" time="200" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="5" time="250" spin="0">
+                    <object folder="0" file="1" x="-114" y="121" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="role_528_ weitutu0003">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0"/>
+                </key>
+                <key id="3" time="150" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="4" time="200" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="5" time="250" spin="0">
+                    <object folder="0" file="2" x="-114" y="121" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="role_528_ weitutu0004">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="3" time="150" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0"/>
+                </key>
+                <key id="4" time="200" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="5" time="250" spin="0">
+                    <object folder="0" file="3" x="-114" y="121" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="role_528_ weitutu0005">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="1" time="50" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="2" time="100" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="3" time="150" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0" a="0"/>
+                </key>
+                <key id="4" time="200" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0"/>
+                </key>
+                <key id="5" time="250" spin="0">
+                    <object folder="0" file="4" x="-114" y="121" angle="0" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

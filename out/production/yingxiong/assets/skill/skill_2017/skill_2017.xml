@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:072dab447fbd977a66aa080572c3be34$ -->
+<TextureAtlas imagePath="skill_2017.png" scale="0.87">
+    <SubTexture name="role_528_ hutui_10" x="81" y="2" width="112" height="214" frameX="0" frameY="-1" frameWidth="112" frameHeight="216"/>
+    <SubTexture name="role_528_ hutui_11" x="195" y="2" width="104" height="202" frameX="0" frameY="-1" frameWidth="104" frameHeight="204"/>
+    <SubTexture name="role_528_ hutui_12" x="301" y="2" width="112" height="195" frameX="0" frameY="-1" frameWidth="112" frameHeight="197"/>
+    <SubTexture name="role_528_ weitu3" x="2" y="2" width="77" height="251" frameX="0" frameY="0" frameWidth="77" frameHeight="255"/>
+</TextureAtlas>

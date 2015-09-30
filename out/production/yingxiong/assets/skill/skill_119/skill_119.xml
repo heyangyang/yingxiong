@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5fed1150dd586bc0796383a31287891c$ -->
+<TextureAtlas imagePath="skill_119.png" scale="0.7">
+    <SubTexture name="skill_119_1" x="373" y="79" width="79" height="93" frameX="-8" frameY="-9" frameWidth="97" frameHeight="115"/>
+    <SubTexture name="skill_119_2" x="2" y="184" width="166" height="57" frameX="-10" frameY="-28" frameWidth="190" frameHeight="97"/>
+    <SubTexture name="skill_119_3" x="186" y="2" width="185" height="93" frameX="-10" frameY="-8" frameWidth="197" frameHeight="109"/>
+    <SubTexture name="skill_119_4" x="2" y="2" width="182" height="180" frameX="-8" frameY="-14" frameWidth="190" frameHeight="194"/>
+    <SubTexture name="skill_119_5" x="373" y="2" width="91" height="75" frameX="-5" frameY="-10" frameWidth="103" frameHeight="97"/>
+</TextureAtlas>

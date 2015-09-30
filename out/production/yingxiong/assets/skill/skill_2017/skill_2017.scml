@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b8_1">
+    <folder id="0">
+        <file id="0" name="role_528_ weitu3.png" width="123" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="role_528_ hutui_12.png" width="123" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="role_528_ hutui_11.png" width="123" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="role_528_ hutui_10.png" width="123" height="128" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_2017" length="300" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="99">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+                <key id="2" time="149">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+                <key id="3" time="200">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                </key>
+                <key id="4" time="299">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="role_528_ weitu3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="57.608958" y="-1.024918" pivot_x="0.471458" pivot_y="0.940707" angle="269.942855" scale_x="0.886697" scale_y="0.88725"/>
+                </key>
+                <key id="1" time="149" spin="0">
+                    <object folder="0" file="0" x="59.698347" y="-1.027002" pivot_x="0.471458" pivot_y="0.940707" angle="269.942855" scale_x="0.983365" scale_y="0.770347"/>
+                </key>
+                <key id="2" time="299" spin="0">
+                    <object folder="0" file="0" x="57.608958" y="-1.024918" pivot_x="0.471458" pivot_y="0.940707" angle="269.942855" scale_x="0.886697" scale_y="0.88725"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="role_528_ hutui_12">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="55.482445" y="0.766818" pivot_x="0.467238" pivot_y="0.849185" angle="269.175458" a="0"/>
+                </key>
+                <key id="1" time="99" spin="0">
+                    <object folder="0" file="1" x="55.482445" y="0.766818" pivot_x="0.467238" pivot_y="0.849185" angle="269.175458" a="0"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="1" x="55.482445" y="0.766818" pivot_x="0.467238" pivot_y="0.849185" angle="269.175458"/>
+                </key>
+                <key id="3" time="299" spin="0">
+                    <object folder="0" file="1" x="55.482445" y="0.766818" pivot_x="0.467238" pivot_y="0.849185" angle="269.175458" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="role_528_ hutui_11">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="59.748969" y="0.151924" pivot_x="0.516215" pivot_y="0.791122" angle="269.175458" a="0"/>
+                </key>
+                <key id="1" time="99" spin="0">
+                    <object folder="0" file="2" x="59.748969" y="0.151924" pivot_x="0.516215" pivot_y="0.791122" angle="269.175458"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="2" x="59.748969" y="0.151924" pivot_x="0.516215" pivot_y="0.791122" angle="269.175458" a="0"/>
+                </key>
+                <key id="3" time="299" spin="0">
+                    <object folder="0" file="2" x="59.748969" y="0.151924" pivot_x="0.516215" pivot_y="0.791122" angle="269.175458" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="role_528_ hutui_10">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="58.498934" y="-1.718924" pivot_x="0.434801" pivot_y="0.809285" angle="269.175458"/>
+                </key>
+                <key id="1" time="99" spin="0">
+                    <object folder="0" file="3" x="58.498934" y="-1.718924" pivot_x="0.434801" pivot_y="0.809285" angle="269.175458" a="0"/>
+                </key>
+                <key id="2" time="200" spin="0">
+                    <object folder="0" file="3" x="58.498934" y="-1.718924" pivot_x="0.434801" pivot_y="0.809285" angle="269.175458" a="0"/>
+                </key>
+                <key id="3" time="299" spin="0">
+                    <object folder="0" file="3" x="58.498934" y="-1.718924" pivot_x="0.434801" pivot_y="0.809285" angle="269.175458"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

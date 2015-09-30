@@ -1,0 +1,4 @@
+<TextureAtlas imagePath="skill_10009.png" scale="0.6">
+  <SubTexture name="skill_10009_1" x="2" y="2" width="130" height="42" frameX="-10" frameY="-19" frameWidth="146" frameHeight="74"/>
+  <SubTexture name="skill_10009_2" x="2" y="46" width="34" height="36" frameX="-5" frameY="-5" frameWidth="44" frameHeight="46"/>
+</TextureAtlas>

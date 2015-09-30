@@ -1,0 +1,8 @@
+<TextureAtlas imagePath="skill_3008.png" scale="0.6">
+  <SubTexture name="skill_3008_1" x="110" y="98" width="104" height="44" frameX="-19" frameY="-21" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_3008_2" x="146" y="2" width="108" height="46" frameX="-16" frameY="-20" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_3008_3" x="146" y="50" width="106" height="46" frameX="-18" frameY="-20" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_3008_4" x="2" y="62" width="106" height="44" frameX="-18" frameY="-21" frameWidth="144" frameHeight="82"/>
+  <SubTexture name="skill_3008_5" x="110" y="62" width="25" height="25"/>
+  <SubTexture name="skill_3008_7" x="2" y="2" width="142" height="58" frameX="-2" frameY="-11" frameWidth="144" frameHeight="82"/>
+</TextureAtlas>

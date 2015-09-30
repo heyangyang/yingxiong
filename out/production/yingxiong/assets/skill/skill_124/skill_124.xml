@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:d3eb5ddb9a1153288312f1d78fd71999$ -->
+<TextureAtlas imagePath="skill_124.png" scale="1.0">
+    <SubTexture name="skill_124_1" x="2" y="2" width="343" height="112" frameX="-6" frameY="-9" frameWidth="359" frameHeight="134"/>
+</TextureAtlas>

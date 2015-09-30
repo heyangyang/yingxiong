@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="skill_136_1.png" width="223" height="240" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_136" length="320">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="176">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="320">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="skill_136_1">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" x="0.147306" y="-0.720048" pivot_x="0.457589" pivot_y="0.520747" angle="129.892741" scale_x="0.385599" scale_y="0.428085"/>
+                </key>
+                <key id="1" time="176" spin="-1">
+                    <object folder="0" file="0" x="5.042411" y="-0.020747" pivot_x="0.457589" pivot_y="0.520747"/>
+                </key>
+                <key id="2" time="320" spin="-1">
+                    <object folder="0" file="0" x="3.473634" y="-0.244858" pivot_x="0.457589" pivot_y="0.520747" angle="286.962622" scale_x="1.950786" scale_y="2.319992" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

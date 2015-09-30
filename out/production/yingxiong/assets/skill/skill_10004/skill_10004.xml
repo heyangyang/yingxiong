@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="skill_10004.png" scale="0.6">
+  <SubTexture name="skill_fali1" x="2" y="62" width="34" height="34" frameX="-2" frameY="0" frameWidth="36" frameHeight="34"/>
+  <SubTexture name="skill_fali2" x="63" y="2" width="59" height="56" frameX="-3" frameY="-2" frameWidth="65" frameHeight="60"/>
+  <SubTexture name="skill_fali3" x="63" y="60" width="59" height="54" frameX="-3" frameY="-2" frameWidth="65" frameHeight="60"/>
+  <SubTexture name="skill_fali4" x="2" y="2" width="59" height="58" frameX="-3" frameY="-1" frameWidth="65" frameHeight="60"/>
+</TextureAtlas>

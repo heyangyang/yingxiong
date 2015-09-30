@@ -1,0 +1,6 @@
+<TextureAtlas imagePath="skill_117.png" scale="0.6">
+  <SubTexture name="skill_117_1" x="110" y="160" width="109" height="55" frameX="-12" frameY="-10" frameWidth="127" frameHeight="65"/>
+  <SubTexture name="skill_117_2" x="110" y="96" width="128" height="62" frameX="-2" frameY="-2" frameWidth="136" frameHeight="64"/>
+  <SubTexture name="skill_117_3" x="2" y="2" width="168" height="92" frameX="0" frameY="-7" frameWidth="176" frameHeight="110"/>
+  <SubTexture name="skill_117_4" x="2" y="96" width="106" height="155" frameX="-12" frameY="0" frameWidth="120" frameHeight="155"/>
+</TextureAtlas>

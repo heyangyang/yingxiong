@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:327b9cfa82a925ab88ed6f6263d9b909$ -->
+<TextureAtlas imagePath="skill_50024.png">
+    <SubTexture name="role_194_texiao1" x="2" y="510" width="266" height="168" frameX="-8" frameY="0" frameWidth="294" frameHeight="168"/>
+    <SubTexture name="role_194_texiao2" x="2" y="172" width="286" height="166" frameX="-7" frameY="-2" frameWidth="294" frameHeight="168"/>
+    <SubTexture name="role_194_texiao3" x="2" y="340" width="282" height="168" frameX="-7" frameY="0" frameWidth="294" frameHeight="168"/>
+    <SubTexture name="role_194_texiao4" x="2" y="2" width="294" height="168"/>
+</TextureAtlas>

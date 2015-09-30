@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="skill_3009_7.png" width="240" height="136" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="skill_3009_1.png" width="240" height="136" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="skill_3009_2.png" width="240" height="136" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="skill_3009_3.png" width="240" height="136" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="skill_3009_4.png" width="240" height="136" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="skill_3009_5.png" width="45" height="47" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_3009" length="1000" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="skill_3009_7" folder="0" file="0" abs_x="4.346473" abs_y="-5.012774" abs_pivot_x="0.528527" abs_pivot_y="0.512774" abs_angle="0" abs_scale_x="0.927364" abs_scale_y="0.92698" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="skill_3009_1" folder="0" file="1" abs_x="0" abs_y="-5.592153" abs_pivot_x="0.5" abs_pivot_y="0.467153" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="skill_3009_2" folder="0" file="2" abs_x="0.002593" abs_y="-3.110401" abs_pivot_x="0.497407" abs_pivot_y="0.485401" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" name="skill_3009_3" folder="0" file="3" abs_x="7.466286" abs_y="-1.244526" abs_pivot_x="0.533714" abs_pivot_y="0.494526" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" name="skill_3009_4" folder="0" file="4" abs_x="-0.622407" abs_y="-0.624088" abs_pivot_x="0.497407" abs_pivot_y="0.499088" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" name="skill_3009_5" folder="0" file="5" abs_x="53.777174" abs_y="33.104167" abs_pivot_x="0.472826" abs_pivot_y="0.520833" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" name="skill_3009_5_000" folder="0" file="5" abs_x="20.013587" abs_y="-12.546875" abs_pivot_x="0.486413" abs_pivot_y="0.546875" abs_angle="0" abs_scale_x="1.269997" abs_scale_y="1.177778" abs_a="1" timeline="6" key="0" z_index="6"/>
+                    <object_ref id="7" name="skill_3009_5_001" folder="0" file="5" abs_x="-65.611413" abs_y="19.367188" abs_pivot_x="0.486413" abs_pivot_y="0.507812" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="7" key="0" z_index="7"/>
+                </key>
+                <key id="1" time="233">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                    <object_ref id="7" timeline="7" key="1" z_index="7"/>
+                </key>
+                <key id="2" time="492">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="2" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="2" z_index="6"/>
+                    <object_ref id="7" timeline="7" key="2" z_index="7"/>
+                </key>
+                <key id="3" time="756">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="3" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="3" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="3" z_index="6"/>
+                    <object_ref id="7" timeline="7" key="3" z_index="7"/>
+                </key>
+                <key id="4" time="1000">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="4" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="4" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="4" z_index="6"/>
+                    <object_ref id="7" timeline="7" key="4" z_index="7"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="skill_3009_7">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="4.346473" y="-5.012774" pivot_x="0.528527" pivot_y="0.512774" angle="0" scale_x="0.927364" scale_y="0.92698"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="0" x="4.346473" y="-5.012774" pivot_x="0.528527" pivot_y="0.512774" angle="0" scale_x="0.927364" scale_y="0.92698"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="0" x="4.346473" y="-5.012774" pivot_x="0.528527" pivot_y="0.512774" angle="0" scale_x="0.927364" scale_y="0.92698"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="0" x="4.346473" y="-5.012774" pivot_x="0.528527" pivot_y="0.512774" angle="0" scale_x="0.927364" scale_y="0.92698"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="0" x="4.346473" y="-5.012774" pivot_x="0.528527" pivot_y="0.512774" angle="0" scale_x="0.927364" scale_y="0.92698"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="skill_3009_1">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" y="-5.592153" pivot_x="0.5" pivot_y="0.467153" angle="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="1" y="-5.592153" pivot_x="0.5" pivot_y="0.467153" angle="0" a="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="1" y="-5.592153" pivot_x="0.5" pivot_y="0.467153" angle="0" a="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="1" y="-5.592153" pivot_x="0.5" pivot_y="0.467153" angle="0" a="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="1" y="-5.592153" pivot_x="0.5" pivot_y="0.467153" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="skill_3009_2">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="0.002593" y="-3.110401" pivot_x="0.497407" pivot_y="0.485401" angle="0" a="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="2" x="0.002593" y="-3.110401" pivot_x="0.497407" pivot_y="0.485401" angle="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="2" x="0.002593" y="-3.110401" pivot_x="0.497407" pivot_y="0.485401" angle="0" a="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="2" x="0.002593" y="-3.110401" pivot_x="0.497407" pivot_y="0.485401" angle="0" a="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="2" x="0.002593" y="-3.110401" pivot_x="0.497407" pivot_y="0.485401" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="skill_3009_3">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="7.466286" y="-1.244526" pivot_x="0.533714" pivot_y="0.494526" angle="0" a="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="3" x="7.466286" y="-1.244526" pivot_x="0.533714" pivot_y="0.494526" angle="0" a="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="3" x="7.466286" y="-1.244526" pivot_x="0.533714" pivot_y="0.494526" angle="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="3" x="7.466286" y="-1.244526" pivot_x="0.533714" pivot_y="0.494526" angle="0" a="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="3" x="7.466286" y="-1.244526" pivot_x="0.533714" pivot_y="0.494526" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="skill_3009_4">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-0.622407" y="-0.624088" pivot_x="0.497407" pivot_y="0.499088" angle="0" a="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="4" x="-0.622407" y="-0.624088" pivot_x="0.497407" pivot_y="0.499088" angle="0" a="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="4" x="-0.622407" y="-0.624088" pivot_x="0.497407" pivot_y="0.499088" angle="0" a="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="4" x="-0.622407" y="-0.624088" pivot_x="0.497407" pivot_y="0.499088" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="4" x="-0.622407" y="-0.624088" pivot_x="0.497407" pivot_y="0.499088" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="skill_3009_5">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="53.777174" y="33.104167" pivot_x="0.472826" pivot_y="0.520833" angle="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="5" x="4.474848" y="40.080911" pivot_x="0.472826" pivot_y="0.520833" angle="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="5" x="-62.967012" y="26.127422" pivot_x="0.472826" pivot_y="0.520833" angle="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="5" x="-75.060035" y="-9.221415" pivot_x="0.472826" pivot_y="0.520833" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="5" x="17.96322" y="-17.128391" pivot_x="0.472826" pivot_y="0.520833" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="skill_3009_5_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="20.013587" y="-12.546875" pivot_x="0.486413" pivot_y="0.546875" angle="0" scale_x="1.269997" scale_y="1.177778"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="5" x="60.013587" y="-4.174782" pivot_x="0.486413" pivot_y="0.546875" angle="0" scale_x="1.269997" scale_y="1.177778"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="5" x="58.153122" y="30.243823" pivot_x="0.486413" pivot_y="0.546875" angle="0" scale_x="1.269997" scale_y="1.177778"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="5" x="4.66475" y="42.801962" pivot_x="0.486413" pivot_y="0.546875" angle="0" scale_x="0.984364" scale_y="0.938385"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="5" x="-69.753855" y="17.220567" pivot_x="0.486413" pivot_y="0.546875" angle="0" scale_x="0.984364" scale_y="0.938385"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="skill_3009_5_001">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="-65.611413" y="19.367188" pivot_x="0.486413" pivot_y="0.507812" angle="0"/>
+                </key>
+                <key id="1" time="233" spin="0">
+                    <object folder="0" file="5" x="-46.541646" y="-13.190952" pivot_x="0.486413" pivot_y="0.507812" angle="0"/>
+                </key>
+                <key id="2" time="492" spin="0">
+                    <object folder="0" file="5" x="13.923471" y="-29.470022" pivot_x="0.486413" pivot_y="0.507812" angle="0"/>
+                </key>
+                <key id="3" time="756" spin="0">
+                    <object folder="0" file="5" x="62.295564" y="-8.074673" pivot_x="0.486413" pivot_y="0.507812" angle="0" scale_x="1.242295" scale_y="1.168272"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="5" x="52.528122" y="31.460211" pivot_x="0.486413" pivot_y="0.507812" angle="0" scale_x="0.966512" scale_y="0.991144"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

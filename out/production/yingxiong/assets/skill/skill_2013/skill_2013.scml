@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="role_522_14.png" width="98" height="14" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="skill_2013" length="200">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="role_522_14" folder="0" file="0" abs_x="19.624965" abs_y="0.544134" abs_pivot_x="0.249337" abs_pivot_y="0.514525" abs_angle="0" abs_scale_x="-1.687239" abs_scale_y="0.80016" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="100">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="role_522_14">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="19.624965" y="0.544134" pivot_x="0.249337" pivot_y="0.514525" angle="0" scale_x="-1.687239" scale_y="0.80016"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="0" x="19.624965" y="0.544134" pivot_x="0.249337" pivot_y="0.514525" angle="0" scale_x="-1.086202" scale_y="1.049784"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

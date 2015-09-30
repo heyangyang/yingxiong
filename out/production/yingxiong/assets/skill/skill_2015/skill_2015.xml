@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:299c6871604247d5a5c26103ddaed5ce$ -->
+<TextureAtlas imagePath="skill_2015.png" scale="0.86">
+    <SubTexture name="role_194_ t1" x="2" y="170" width="226" height="53"/>
+    <SubTexture name="role_194_ t2" x="2" y="59" width="243" height="52"/>
+    <SubTexture name="role_194_ t3" x="2" y="113" width="241" height="55"/>
+    <SubTexture name="role_194_ t4" x="2" y="2" width="251" height="55"/>
+</TextureAtlas>

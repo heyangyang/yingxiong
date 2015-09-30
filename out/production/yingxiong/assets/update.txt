@@ -1,0 +1,2 @@
+0
+http://42.62.14.78/ctrl/check_assets.php

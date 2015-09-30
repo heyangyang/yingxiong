@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:b374d77ab1c7c563befa271292de32b5$ -->
+<TextureAtlas imagePath="effect_shibaixiaoguo.png">
+    <SubTexture name="effect_shibaixiaoguo_1" x="206" y="2" width="340" height="329"/>
+    <SubTexture name="effect_shibaixiaoguo_2" x="548" y="2" width="329" height="296"/>
+    <SubTexture name="effect_shibaixiaoguo_3" x="2" y="544" width="463" height="418"/>
+    <SubTexture name="effect_shibaixiaoguo_4" x="2" y="2" width="202" height="540"/>
+</TextureAtlas>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:96a61727665f4c86ca6c4f0aa7cfbd35$ -->
+<TextureAtlas imagePath="effect_zhuxianjiantou.png">
+    <SubTexture name="effect_zhuxianjiantou" x="2" y="2" width="86" height="78" frameX="-2" frameY="-6" frameWidth="92" frameHeight="92"/>
+</TextureAtlas>

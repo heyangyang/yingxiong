@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:3ab09bee49e7b7d2eba7559c5c95069e$ -->
+<TextureAtlas imagePath="effect_52004.png">
+    <SubTexture name="effect_shengji_1" x="251" y="2" width="3" height="83"/>
+    <SubTexture name="effect_shengji_2" x="216" y="2" width="33" height="35"/>
+    <SubTexture name="effect_shengji_3" x="2" y="2" width="97" height="126"/>
+    <SubTexture name="effect_shengji_4" x="101" y="2" width="113" height="42"/>
+</TextureAtlas>

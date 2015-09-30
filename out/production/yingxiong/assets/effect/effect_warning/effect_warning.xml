@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:e03dde1f94766a3d28744bc523886e1f$ -->
+<TextureAtlas imagePath="effect_warning.png">
+    <SubTexture name="ui_zhuxian_zhandoutongguan_new" x="0" y="0" width="52" height="52"/>
+</TextureAtlas>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fc1532a8bbddbaf8449b4e59625bfe42$ -->
+<TextureAtlas imagePath="effect_renwutexiao.png" scale="0.8100">
+    <SubTexture name="effect_renwutexiao1" x="129" y="2" width="125" height="126"/>
+    <SubTexture name="effect_renwutexiao2" x="2" y="2" width="125" height="126"/>
+</TextureAtlas>

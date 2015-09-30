@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:7e7e3c9b05e741f1fa467fd09104880f$ -->
+<TextureAtlas imagePath="effect_bigfinger.png">
+    <SubTexture name="finger_1" x="2" y="118" width="72" height="101"/>
+    <SubTexture name="finger_3" x="2" y="2" width="109" height="114"/>
+</TextureAtlas>

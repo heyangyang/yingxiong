@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:9a97f68a9e90359ea179e1cfc4307f4d$ -->
+<TextureAtlas imagePath="effect_yingxiongdazhao.png">
+    <SubTexture name="effect_yingxiongdazhao3_1" x="2" y="2" width="195" height="195"/>
+</TextureAtlas>

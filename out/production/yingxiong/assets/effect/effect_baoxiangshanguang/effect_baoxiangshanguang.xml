@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:632adc3a5840da9671aee95afb17eb29$ -->
+<TextureAtlas imagePath="effect_baoxiangshanguang.png" scale="0.93">
+    <SubTexture name="2" x="0" y="0" width="127" height="128" frameX="-13" frameY="-6" frameWidth="157" frameHeight="144"/>
+</TextureAtlas>

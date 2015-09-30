@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:c920ebd96aa76f61e14fecff882b6699$ -->
+<TextureAtlas imagePath="town.png" scale="0.999">
+    <SubTexture name="effcet_hecheng_1" x="1294" y="855" width="107" height="70"/>
+    <SubTexture name="effcet_hecheng_2" x="1547" y="899" width="13" height="16"/>
+    <SubTexture name="effcet_hecheng_3" x="1294" y="926" width="18" height="17"/>
+    <SubTexture name="effcet_hecheng_4" x="1487" y="899" width="59" height="38"/>
+    <SubTexture name="effcet_hecheng_5" x="1487" y="855" width="78" height="43"/>
+    <SubTexture name="effcet_hecheng_6" x="1990" y="206" width="42" height="78"/>
+    <SubTexture name="effcet_hecheng_7" x="923" y="946" width="73" height="65"/>
+    <SubTexture name="effcet_hecheng_8" x="1166" y="967" width="58" height="56"/>
+    <SubTexture name="effcet_hecheng_9" x="1883" y="461" width="44" height="38"/>
+    <SubTexture name="effcet_hero_house1" x="1402" y="855" width="84" height="72"/>
+    <SubTexture name="effcet_hero_house2" x="2035" y="1" width="12" height="68"/>
+    <SubTexture name="effcet_hero_house3" x="237" y="968" width="58" height="48"/>
+    <SubTexture name="effcet_hero_house4" x="1990" y="285" width="54" height="50"/>
+    <SubTexture name="effcet_hero_house5" x="355" y="641" width="337" height="177"/>
+    <SubTexture name="effcet_lion_house" x="1801" y="682" width="196" height="188"/>
+    <SubTexture name="effcet_magicball_house1" x="693" y="641" width="305" height="203"/>
+    <SubTexture name="effcet_magicball_house2" x="1883" y="500" width="28" height="35"/>
+    <SubTexture name="effcet_magicball_house4" x="1166" y="927" width="17" height="16"/>
+    <SubTexture name="effcet_magicball_house5" x="923" y="845" width="75" height="100"/>
+    <SubTexture name="effcet_magicball_house7" x="1906" y="391" width="11" height="13"/>
+    <SubTexture name="effcet_magicball_house8" x="2035" y="70" width="12" height="10"/>
+    <SubTexture name="effcet_mainline_house1" x="999" y="927" width="82" height="96"/>
+    <SubTexture name="effcet_mainline_house2" x="1189" y="843" width="104" height="103"/>
+    <SubTexture name="effcet_mainline_house3" x="1298" y="641" width="270" height="213"/>
+    <SubTexture name="effcet_mainline_house4" x="252" y="873" width="99" height="94"/>
+    <SubTexture name="effcet_pvp_house" x="641" y="845" width="281" height="172"/>
+    <SubTexture name="effcet_shop_house1" x="1569" y="641" width="231" height="254"/>
+    <SubTexture name="effcet_shop_house2" x="1801" y="871" width="189" height="95"/>
+    <SubTexture name="effcet_shop_house3" x="1990" y="336" width="50" height="49"/>
+    <SubTexture name="effcet_shop_house4" x="131" y="964" width="33" height="59"/>
+    <SubTexture name="effcet_society_house" x="1" y="641" width="353" height="231"/>
+    <SubTexture name="effcet_tavern_house1" x="355" y="819" width="285" height="181"/>
+    <SubTexture name="effcet_tavern_house3" x="296" y="968" width="54" height="44"/>
+    <SubTexture name="effcet_tavern_house4" x="165" y="964" width="71" height="50"/>
+    <SubTexture name="effcet_tavern_house5" x="641" y="819" width="20" height="25"/>
+    <SubTexture name="effcet_tavern_house6" x="1883" y="413" width="38" height="47"/>
+    <SubTexture name="effcet_transcript_house1" x="999" y="641" width="298" height="201"/>
+    <SubTexture name="effcet_transcript_house2" x="1906" y="1" width="83" height="389"/>
+    <SubTexture name="effcet_transcript_house3" x="1812" y="1" width="93" height="411"/>
+    <SubTexture name="effcet_transcript_house4" x="1990" y="1" width="44" height="204"/>
+    <SubTexture name="effcet_transcript_house5" x="1812" y="413" width="70" height="268"/>
+    <SubTexture name="effcet_transcript_house6" x="1082" y="927" width="83" height="88"/>
+    <SubTexture name="house_label" x="1" y="964" width="129" height="58"/>
+    <SubTexture name="town_bg" x="1" y="1" width="1810" height="639"/>
+    <SubTexture name="town_cloud_layer1" x="999" y="843" width="189" height="83"/>
+    <SubTexture name="town_cloud_layer2" x="1" y="873" width="250" height="90"/>
+</TextureAtlas>

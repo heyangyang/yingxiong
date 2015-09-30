@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:3ba4ae6af0d33d1b1adad8f51a46cc97$ -->
+<TextureAtlas imagePath="effect_shenglixiaoguo.png">
+    <SubTexture name="effect_shenglixiaoguo_1" x="632" y="2" width="346" height="338"/>
+    <SubTexture name="effect_shenglixiaoguo_2" x="632" y="342" width="292" height="299"/>
+    <SubTexture name="effect_shenglixiaoguo_3" x="2" y="2" width="628" height="582"/>
+    <SubTexture name="effect_shenglixiaoguo_4" x="2" y="643" width="204" height="319"/>
+</TextureAtlas>

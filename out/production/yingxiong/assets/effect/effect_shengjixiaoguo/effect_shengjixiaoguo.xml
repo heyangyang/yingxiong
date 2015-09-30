@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:03b810024d5b3cf110155be0e0718fb3$ -->
+<TextureAtlas imagePath="effect_shengjixiaoguo.png" scale="0.99">
+    <SubTexture name="texiaoshengji" x="2" y="2" width="97" height="99" frameX="0" frameY="0" frameWidth="99" frameHeight="99"/>
+    <SubTexture name="texiaoshengji1" x="101" y="2" width="99" height="89" frameX="0" frameY="0" frameWidth="99" frameHeight="99"/>
+    <SubTexture name="ui_jiesan_shengjila" x="101" y="93" width="66" height="29" frameX="0" frameY="-2" frameWidth="66" frameHeight="33"/>
+</TextureAtlas>

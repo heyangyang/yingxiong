@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="effect_050_1.png" width="30" height="33" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effect_051_1.png" width="30" height="33" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_050" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="effect_050_1" folder="0" file="0" abs_x="2.775075" abs_y="-16.419833" abs_pivot_x="0.092533" abs_pivot_y="0.502417" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="487">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_050_1">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="2.775075" y="-16.419833" pivot_x="0.092533" pivot_y="0.502417" angle="0"/>
+                </key>
+                <key id="1" time="487" spin="0">
+                    <object folder="0" file="0" x="5.930748" y="-16.442451" pivot_x="0.092533" pivot_y="0.502417" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="effect_051" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="effect_051_1" folder="0" file="1" abs_x="14.455197" abs_y="-17.968954" abs_pivot_x="0.489247" abs_pivot_y="0.468954" abs_angle="179.810454" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="492">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_051_1">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="14.455197" y="-17.968954" pivot_x="0.489247" pivot_y="0.468954" angle="179.810454"/>
+                </key>
+                <key id="1" time="492" spin="0">
+                    <object folder="0" file="1" x="1.455197" y="-17.968954" pivot_x="0.489247" pivot_y="0.468954" angle="179.810454"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

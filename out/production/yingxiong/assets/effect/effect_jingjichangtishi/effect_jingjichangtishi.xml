@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:fb5b49a4b4d8e287a4d08d766a44f244$ -->
+<TextureAtlas imagePath="effect_jingjichangtishi.png">
+    <SubTexture name="3" x="0" y="0" width="127" height="126" frameX="-21" frameY="-13" frameWidth="149" frameHeight="148"/>
+</TextureAtlas>

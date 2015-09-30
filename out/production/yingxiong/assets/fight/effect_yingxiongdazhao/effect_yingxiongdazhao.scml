@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="effect_yingxiongdazhao3_1.png" width="195" height="195" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_yingxiongdazhao" length="300">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="150">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_009_3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.052814" scale_y="1.052814" a="0.70588"/>
+                </key>
+                <key id="1" time="150" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.080264" scale_y="1.080264"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

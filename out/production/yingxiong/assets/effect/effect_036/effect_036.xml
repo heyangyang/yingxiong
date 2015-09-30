@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:912f279adb6493cd6415b32306306cc2$ -->
+<TextureAtlas imagePath="effect_036.png">
+    <SubTexture name="effect_027_1" x="439" y="2" width="62" height="63" frameX="0" frameY="0" frameWidth="62" frameHeight="65"/>
+    <SubTexture name="effect_027_11" x="326" y="2" width="111" height="110"/>
+    <SubTexture name="effect_027_12" x="326" y="114" width="96" height="98" frameX="-4" frameY="-2" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="effect_027_13" x="424" y="114" width="75" height="67"/>
+    <SubTexture name="effect_027_6" x="170" y="2" width="154" height="149"/>
+    <SubTexture name="effect_027_7" x="439" y="67" width="57" height="33"/>
+    <SubTexture name="effect_027_8" x="2" y="138" width="117" height="127"/>
+    <SubTexture name="effect_027_9" x="2" y="2" width="166" height="134"/>
+</TextureAtlas>

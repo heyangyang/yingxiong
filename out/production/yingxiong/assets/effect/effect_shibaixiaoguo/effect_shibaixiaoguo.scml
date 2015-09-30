@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="effect_shibaixiaoguo_3.PNG" width="463" height="418" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effect_shibaixiaoguo_2.PNG" width="329" height="302" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="effect_shibaixiaoguo_1.PNG" width="340" height="329" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="effect_shibaixiaoguo_4.png" width="202" height="540" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_shibaixiaoguo" length="6000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="1924">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+                <key id="2" time="4197">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="ziseguangquan3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="120.135589" y="-324.372256" pivot_x="0.469504" pivot_y="0.534077" angle="89.204831" scale_x="1.381721" scale_y="0.886925"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="ziseguangquan2">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="126.193004" y="-324.988246" pivot_x="0.504545" pivot_y="0.5033" angle="89.204831" scale_x="1.381721" scale_y="0.886925"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="ziseguangquan1">
+                <key id="0" spin="-1">
+                    <object folder="0" file="2" x="117.026843" y="-320.713351" pivot_x="0.464809" pivot_y="0.501515" angle="89.204831" scale_x="1.813542" scale_y="1.813542"/>
+                </key>
+                <key id="1" time="1924" spin="-1">
+                    <object folder="0" file="2" x="122.221648" y="-316.817247" pivot_x="0.464809" pivot_y="0.501515" angle="324.92269" scale_x="1.813542" scale_y="1.813542"/>
+                </key>
+                <key id="2" time="4197" spin="-1">
+                    <object folder="0" file="2" x="123.520349" y="-310.323741" pivot_x="0.464809" pivot_y="0.501515" angle="220.654207" scale_x="1.813542" scale_y="1.813542"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="未命名-1">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="133.800805" y="-315.50259" pivot_x="0.502012" pivot_y="0.509633" angle="0"/>
+                </key>
+                <key id="1" time="1924" spin="0">
+                    <object folder="0" file="3" x="133.800805" y="-315.50259" pivot_x="0.502012" pivot_y="0.509633" angle="0"/>
+                </key>
+                <key id="2" time="4197" spin="0">
+                    <object folder="0" file="3" x="133.800805" y="-315.50259" pivot_x="0.502012" pivot_y="0.509633" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

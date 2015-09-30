@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:69afe89f9e14f868a8cb2f1afd9708cc$ -->
+<TextureAtlas imagePath="effect_020.png" scale="0.8">
+    <SubTexture name="effect_020_1" x="1" y="394" width="373" height="374"/>
+    <SubTexture name="effect_020_10" x="375" y="333" width="208" height="259"/>
+    <SubTexture name="effect_020_11" x="373" y="1" width="257" height="331"/>
+    <SubTexture name="effect_020_12" x="1" y="1" width="371" height="392"/>
+    <SubTexture name="effect_020_2" x="631" y="190" width="102" height="90"/>
+    <SubTexture name="effect_020_3" x="554" y="593" width="176" height="133"/>
+    <SubTexture name="effect_020_4" x="794" y="1" width="193" height="188"/>
+    <SubTexture name="effect_020_5" x="584" y="333" width="209" height="192"/>
+    <SubTexture name="effect_020_6" x="431" y="755" width="214" height="212"/>
+    <SubTexture name="effect_020_7" x="216" y="769" width="214" height="212"/>
+    <SubTexture name="effect_020_8" x="1" y="769" width="214" height="212"/>
+    <SubTexture name="effect_020_9" x="375" y="593" width="178" height="161"/>
+</TextureAtlas>

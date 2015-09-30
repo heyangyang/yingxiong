@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:161c90f8f8ffdb03a87e361bb0d8957a$ -->
+<TextureAtlas imagePath="effect_video.png">
+    <SubTexture name="effect_video1" x="1" y="1" width="63" height="62" frameX="-15" frameY="-13" frameWidth="93" frameHeight="88"/>
+    <SubTexture name="effect_video2" x="65" y="32" width="22" height="28" frameX="-13" frameY="-12" frameWidth="50" frameHeight="50"/>
+    <SubTexture name="effect_video3" x="65" y="1" width="50" height="30" frameX="0" frameY="-10" frameWidth="50" frameHeight="50"/>
+</TextureAtlas>

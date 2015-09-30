@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5a6f35bbd54f9a945bd097bbf900509d$ -->
+<TextureAtlas imagePath="effect_Newbieguide.png">
+    <SubTexture name="effect_Newbieguide_0" x="433" y="132" width="40" height="72"/>
+    <SubTexture name="effect_Newbieguide_1" x="420" y="250" width="87" height="120"/>
+    <SubTexture name="effect_Newbieguide_2" x="251" y="421" width="113" height="131"/>
+    <SubTexture name="effect_Newbieguide_3" x="364" y="421" width="98" height="159"/>
+    <SubTexture name="effect_Newbieguide_4" x="270" y="250" width="150" height="171"/>
+    <SubTexture name="effect_Newbieguide_5" x="270" y="132" width="163" height="118"/>
+    <SubTexture name="effect_Newbieguide_6" x="0" y="346" width="251" height="128"/>
+    <SubTexture name="effect_Newbieguide_7" x="0" y="174" width="270" height="172"/>
+    <SubTexture name="effect_Newbieguide_8" x="0" y="0" width="270" height="174"/>
+    <SubTexture name="effect_Newbieguide_9" x="270" y="0" width="227" height="132"/>
+</TextureAtlas>

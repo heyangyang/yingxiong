@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="effect_yingxiongdazhao_1.png" width="132" height="133" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effect_yingxiongdazhao_2.png" width="48" height="51" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_yingxiongdazhao2" length="300">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                    <object_ref id="7" timeline="7" key="0" z_index="7"/>
+                    <object_ref id="8" timeline="8" key="0" z_index="8"/>
+                    <object_ref id="9" timeline="9" key="0" z_index="9"/>
+                    <object_ref id="10" timeline="10" key="0" z_index="10"/>
+                    <object_ref id="11" timeline="11" key="0" z_index="11"/>
+                    <object_ref id="12" timeline="12" key="0" z_index="12"/>
+                    <object_ref id="13" timeline="13" key="0" z_index="13"/>
+                    <object_ref id="14" timeline="14" key="0" z_index="14"/>
+                    <object_ref id="15" timeline="15" key="0" z_index="15"/>
+                    <object_ref id="16" timeline="16" key="0" z_index="16"/>
+                    <object_ref id="17" timeline="17" key="1" z_index="17"/>
+                    <object_ref id="18" timeline="18" key="0" z_index="18"/>
+                    <object_ref id="19" timeline="19" key="0" z_index="19"/>
+                    <object_ref id="20" timeline="20" key="0" z_index="20"/>
+                    <object_ref id="21" timeline="21" key="0" z_index="21"/>
+                    <object_ref id="22" timeline="22" key="0" z_index="22"/>
+                    <object_ref id="23" timeline="23" key="0" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="0" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="0" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="0" z_index="26"/>
+                    <object_ref id="27" timeline="27" key="0" z_index="27"/>
+                    <object_ref id="28" timeline="28" key="0" z_index="28"/>
+                </key>
+                <key id="1" time="53">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="1" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="1" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="1" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="2" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="1" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="1" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="1" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="1" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="1" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="1" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="1" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="1" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="1" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="1" z_index="19"/>
+                    <object_ref id="20" timeline="5" key="1" z_index="20"/>
+                    <object_ref id="21" timeline="6" key="1" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="1" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="1" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="1" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="1" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="1" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="1" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="1" z_index="28"/>
+                </key>
+                <key id="2" time="82">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="2" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="2" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="2" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="2" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="2" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="3" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="2" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="2" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="2" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="2" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="2" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="2" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="2" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="2" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="2" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="2" z_index="19"/>
+                    <object_ref id="20" timeline="5" key="2" z_index="20"/>
+                    <object_ref id="21" timeline="6" key="2" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="2" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="2" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="2" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="2" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="2" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="2" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="2" z_index="28"/>
+                </key>
+                <key id="3" time="116">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="3" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="3" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="3" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="3" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="3" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="4" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="3" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="3" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="3" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="3" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="3" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="3" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="3" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="3" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="3" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="3" z_index="19"/>
+                    <object_ref id="20" timeline="6" key="3" z_index="20"/>
+                    <object_ref id="21" timeline="5" key="3" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="3" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="3" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="3" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="3" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="3" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="3" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="3" z_index="28"/>
+                </key>
+                <key id="4" time="164">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="4" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="4" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="4" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="4" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="4" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="6" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="4" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="4" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="4" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="4" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="4" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="4" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="4" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="4" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="4" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="4" z_index="19"/>
+                    <object_ref id="20" timeline="6" key="4" z_index="20"/>
+                    <object_ref id="21" timeline="5" key="4" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="4" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="4" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="4" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="4" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="4" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="4" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="4" z_index="28"/>
+                </key>
+                <key id="5" time="224">
+                    <object_ref id="0" timeline="0" key="5" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="5" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="5" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="5" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="5" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="5" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="5" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="5" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="5" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="7" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="5" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="5" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="5" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="5" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="5" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="5" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="5" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="5" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="5" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="5" z_index="19"/>
+                    <object_ref id="20" timeline="6" key="5" z_index="20"/>
+                    <object_ref id="21" timeline="5" key="5" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="5" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="5" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="5" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="5" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="5" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="5" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="5" z_index="28"/>
+                </key>
+                <key id="6" time="300">
+                    <object_ref id="0" timeline="0" key="6" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="6" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="6" z_index="2"/>
+                    <object_ref id="3" timeline="11" key="6" z_index="3"/>
+                    <object_ref id="4" timeline="12" key="6" z_index="4"/>
+                    <object_ref id="5" timeline="13" key="6" z_index="5"/>
+                    <object_ref id="6" timeline="14" key="6" z_index="6"/>
+                    <object_ref id="7" timeline="15" key="6" z_index="7"/>
+                    <object_ref id="8" timeline="16" key="6" z_index="8"/>
+                    <object_ref id="9" timeline="17" key="8" z_index="9"/>
+                    <object_ref id="10" timeline="18" key="6" z_index="10"/>
+                    <object_ref id="11" timeline="19" key="6" z_index="11"/>
+                    <object_ref id="12" timeline="20" key="6" z_index="12"/>
+                    <object_ref id="13" timeline="21" key="6" z_index="13"/>
+                    <object_ref id="14" timeline="22" key="6" z_index="14"/>
+                    <object_ref id="15" timeline="23" key="6" z_index="15"/>
+                    <object_ref id="16" timeline="27" key="6" z_index="16"/>
+                    <object_ref id="17" timeline="28" key="6" z_index="17"/>
+                    <object_ref id="18" timeline="3" key="6" z_index="18"/>
+                    <object_ref id="19" timeline="4" key="6" z_index="19"/>
+                    <object_ref id="20" timeline="6" key="6" z_index="20"/>
+                    <object_ref id="21" timeline="5" key="6" z_index="21"/>
+                    <object_ref id="22" timeline="7" key="6" z_index="22"/>
+                    <object_ref id="23" timeline="8" key="6" z_index="23"/>
+                    <object_ref id="24" timeline="24" key="6" z_index="24"/>
+                    <object_ref id="25" timeline="25" key="6" z_index="25"/>
+                    <object_ref id="26" timeline="26" key="6" z_index="26"/>
+                    <object_ref id="27" timeline="9" key="6" z_index="27"/>
+                    <object_ref id="28" timeline="10" key="6" z_index="28"/>
+                </key>
+                <key id="7" time="734">
+                    <object_ref id="0" timeline="0" key="7" z_index="0"/>
+                </key>
+                <key id="8" time="1000">
+                    <object_ref id="0" timeline="0" key="8" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_009_3">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="0.917642" scale_y="0.917642" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.052814" scale_y="1.052814"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="0" x="0.176471" y="-1.049457" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.29968" scale_y="1.29968" a="0.689976"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.599011" scale_y="1.596041" a="0.161111"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.735075" scale_y="1.735075" a="0"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.472667" scale_y="1.464842" a="0"/>
+                </key>
+                <key id="6" time="300" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.626548" scale_y="1.626548" a="0"/>
+                </key>
+                <key id="7" time="734" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.603103" scale_y="1.603103" a="0"/>
+                </key>
+                <key id="8" time="1000" spin="0">
+                    <object folder="0" file="0" x="-0.342451" y="-0.013772" pivot_x="0.497623" pivot_y="0.499829" angle="0" scale_x="1.603103" scale_y="1.603103" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="effect_yingxiongdazhao_2">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-27.83984" y="40.871779" pivot_x="0.529519" pivot_y="0.50103" angle="0" scale_x="0.299694" scale_y="0.299694" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="-29.047376" y="44.641827" pivot_x="0.529519" pivot_y="0.50103" angle="0" scale_x="0.499008" scale_y="0.499008"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-37.491015" y="57.286414" pivot_x="0.529519" pivot_y="0.50103" angle="47.181703" scale_x="0.536052" scale_y="0.536052"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-54.107655" y="67.45893" pivot_x="0.529519" pivot_y="0.50103" angle="328.115698" scale_x="0.437116" scale_y="0.462332"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-62.575557" y="76.458072" pivot_x="0.529519" pivot_y="0.50103" angle="328.115698" scale_x="0.46868" scale_y="0.495717" a="0.47059"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-80.02374" y="93.109623" pivot_x="0.529519" pivot_y="0.50103" angle="281.03649" scale_x="0.243146" scale_y="0.255806" a="0.146044"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-90.875426" y="106.357149" pivot_x="0.529519" pivot_y="0.50103" angle="281.03649" scale_x="0.276259" scale_y="0.292196" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="effect_yingxiongdazhao_2_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="4.495601" y="-5.685935" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.318181" scale_y="0.318181" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="16.053953" y="-45.395336" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.481914" scale_y="0.481914"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="17.790061" y="-53.222841" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.517688" scale_y="0.517688"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="20.45707" y="-60.978483" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.595136" scale_y="0.594031"/>
+                </key>
+                <key id="4" time="164">
+                    <object folder="0" file="1" x="21.958975" y="-65.380662" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.63811" scale_y="0.636925" a="0.47059"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="29.013303" y="-86.562782" pivot_x="0.538001" pivot_y="0.493037" angle="79.004538" scale_x="0.535494" scale_y="0.53166" a="0.146044"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="33.011222" y="-98.87505" pivot_x="0.538001" pivot_y="0.493037" angle="79.004538" scale_x="0.608422" scale_y="0.607292" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="effect_yingxiongdazhao_2_001">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="12.953153" y="6.01516" pivot_x="0.538001" pivot_y="0.493037" angle="333.87135" scale_x="0.378499" scale_y="0.378499" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="48.525217" y="16.386273" pivot_x="0.538001" pivot_y="0.493037" angle="333.87135" scale_x="0.559257" scale_y="0.559257"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="60.932123" y="21.084973" pivot_x="0.538001" pivot_y="0.493037" angle="9.654124" scale_x="0.340022" scale_y="0.340022"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="87.466535" y="29.541908" pivot_x="0.538001" pivot_y="0.493037" angle="316.340519" scale_x="0.390891" scale_y="0.390164" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="114.625866" y="41.305822" pivot_x="0.538001" pivot_y="0.493037" angle="260.130741" scale_x="0.419116" scale_y="0.418338" a="0.139958"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="128.334993" y="46.37873" pivot_x="0.538001" pivot_y="0.493037" angle="219.676355" scale_x="0.444033" scale_y="0.440853" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="145.859396" y="52.978424" pivot_x="0.538001" pivot_y="0.493037" angle="219.676355" scale_x="0.504505" scale_y="0.503568" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="effect_yingxiongdazhao_2_002">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-38.168678" y="-6.344663" pivot_x="0.538001" pivot_y="0.493037" angle="329.292023" scale_x="0.315079" scale_y="0.315079" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-43.14145" y="-7.176945" pivot_x="0.538001" pivot_y="0.493037" angle="329.292023" scale_x="0.3565" scale_y="0.3565"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-71.576087" y="-11.662468" pivot_x="0.538001" pivot_y="0.493037" angle="267.468616" scale_x="0.382964" scale_y="0.382964"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="-94.984497" y="-21.384791" pivot_x="0.538001" pivot_y="0.493037" angle="267.468616" scale_x="0.440256" scale_y="0.439439" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-116.525619" y="-20.543364" pivot_x="0.538001" pivot_y="0.493037" angle="175.647872" scale_x="0.301841" scale_y="0.301281" a="0"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-123.432774" y="-21.648295" pivot_x="0.538001" pivot_y="0.493037" angle="175.647872" scale_x="0.319785" scale_y="0.317496" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-140.196275" y="-24.725974" pivot_x="0.538001" pivot_y="0.493037" angle="175.647872" scale_x="0.363337" scale_y="0.362662" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="effect_yingxiongdazhao_2_003">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="6.034726" y="17.121584" pivot_x="0.538001" pivot_y="0.493037" angle="341.863483" scale_x="0.434195" scale_y="0.434195" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="19.502228" y="43.110411" pivot_x="0.538001" pivot_y="0.493037" angle="341.863483" scale_x="0.609946" scale_y="0.609946"/>
+                </key>
+                <key id="2" time="82">
+                    <object folder="0" file="1" x="21.258745" y="56.58361" pivot_x="0.538001" pivot_y="0.493037" angle="341.863483" scale_x="0.655225" scale_y="0.655225"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="27.423572" y="69.675384" pivot_x="0.538001" pivot_y="0.493037" angle="42.998461" scale_x="0.433457" scale_y="0.48825" a="0.90196"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="29.428519" y="74.707544" pivot_x="0.538001" pivot_y="0.493037" angle="42.998461" scale_x="0.464757" scale_y="0.523505" a="0.396773"/>
+                </key>
+                <key id="5" time="224" spin="-1">
+                    <object folder="0" file="1" x="31.19842" y="77.803224" pivot_x="0.538001" pivot_y="0.493037" angle="42.998461" scale_x="0.492387" scale_y="0.551681" a="0.2549"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="41.03735" y="93.295579" pivot_x="0.538001" pivot_y="0.493037" angle="247.852948" scale_x="0.323246" scale_y="0.364107" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="effect_yingxiongdazhao_2_004">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-4.303277" y="-6.207184" pivot_x="0.538001" pivot_y="0.493037" angle="0" scale_x="0.399313" scale_y="0.399313" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="-30.566274" y="-43.53953" pivot_x="0.538001" pivot_y="0.493037" angle="0" scale_x="0.698653" scale_y="0.698653"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-27.108384" y="-61.925601" pivot_x="0.538001" pivot_y="0.493037" angle="0" scale_x="0.521423" scale_y="0.521423"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-31.158308" y="-75.847706" pivot_x="0.538001" pivot_y="0.493037" angle="278.505138" scale_x="0.599429" scale_y="0.598316" a="0.47059"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-33.842038" y="-101.500167" pivot_x="0.538001" pivot_y="0.493037" angle="278.505138" scale_x="0.443401" scale_y="0.480489" a="0.23529"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-35.833607" y="-106.962307" pivot_x="0.538001" pivot_y="0.493037" angle="278.505138" scale_x="0.469761" scale_y="0.50635" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-40.667099" y="-122.176566" pivot_x="0.538001" pivot_y="0.493037" angle="278.505138" scale_x="0.533737" scale_y="0.578382" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="7" name="effect_yingxiongdazhao_2_005">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-19.610912" y="19.913963" pivot_x="0.538001" pivot_y="0.493037" angle="20.979942" scale_x="0.324842" scale_y="0.324842" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-43.6957" y="40.194145" pivot_x="0.538001" pivot_y="0.493037" angle="20.979942" scale_x="0.56418" scale_y="0.56418"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-59.377765" y="58.051633" pivot_x="0.538001" pivot_y="0.493037" angle="322.890291" scale_x="0.299367" scale_y="0.299367"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="-80.901841" y="72.482279" pivot_x="0.538001" pivot_y="0.493037" angle="189.673442" scale_x="0.344153" scale_y="0.343514" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-93.898218" y="86.347985" pivot_x="0.538001" pivot_y="0.493037" angle="104.363865" scale_x="0.369004" scale_y="0.368319" a="0.139958"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-112.635702" y="99.543185" pivot_x="0.538001" pivot_y="0.493037" angle="5.915682" scale_x="0.390942" scale_y="0.388143" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-127.928765" y="113.705934" pivot_x="0.538001" pivot_y="0.493037" angle="5.915682" scale_x="0.444183" scale_y="0.443359" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="8" name="effect_yingxiongdazhao_2_006">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="31.393641" y="-10.539477" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.215399" scale_y="0.215399" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="44.392802" y="-12.72568" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.464133" scale_y="0.464133"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="52.961158" y="-13.677589" pivot_x="0.538001" pivot_y="0.493037" angle="343.496915" scale_x="0.498588" scale_y="0.498588"/>
+                </key>
+                <key id="3" time="116">
+                    <object folder="0" file="1" x="87.811617" y="-18.456925" pivot_x="0.538001" pivot_y="0.493037" angle="343.496915" scale_x="0.416502" scale_y="0.367928" a="0.608299"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="116.187933" y="-22.998593" pivot_x="0.538001" pivot_y="0.493037" angle="88.33141" scale_x="0.446577" scale_y="0.394495" a="0.17647"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="131.708475" y="-25.37528" pivot_x="0.538001" pivot_y="0.493037" angle="88.33141" scale_x="0.473126" scale_y="0.415727" a="0"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="149.692308" y="-28.983151" pivot_x="0.538001" pivot_y="0.493037" angle="88.33141" scale_x="0.537561" scale_y="0.474868" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="9" name="effect_yingxiongdazhao_2_007">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="7.671554" y="3.075768" pivot_x="0.538001" pivot_y="0.493037" angle="31.229921" scale_x="0.62712" scale_y="0.62712" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="43.631959" y="44.407209" pivot_x="0.538001" pivot_y="0.493037" angle="31.229921" scale_x="0.709563" scale_y="0.709563"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="54.497745" y="58.842981" pivot_x="0.538001" pivot_y="0.493037" angle="321.103151" scale_x="0.368104" scale_y="0.368104"/>
+                </key>
+                <key id="3" time="116">
+                    <object folder="0" file="1" x="72.411967" y="74.372764" pivot_x="0.538001" pivot_y="0.493037" angle="224.711711" scale_x="0.307374" scale_y="0.306803" a="0.247597"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="88.212322" y="89.373854" pivot_x="0.538001" pivot_y="0.493037" angle="309.340841" scale_x="0.329569" scale_y="0.328957" a="0.07684"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="93.476953" y="94.18482" pivot_x="0.538001" pivot_y="0.493037" angle="309.340841" scale_x="0.349162" scale_y="0.346662" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="106.254088" y="107.585301" pivot_x="0.538001" pivot_y="0.493037" angle="309.340841" scale_x="0.396714" scale_y="0.395977" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="10" name="effect_yingxiongdazhao_2_008">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-28.282824" y="-20.485194" pivot_x="0.538001" pivot_y="0.493037" angle="41.700987" scale_x="0.290473" scale_y="0.290473" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="-39.98053" y="-31.602233" pivot_x="0.538001" pivot_y="0.493037" angle="41.700987" scale_x="0.445207" scale_y="0.445207"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-51.844137" y="-43.997147" pivot_x="0.538001" pivot_y="0.493037" angle="41.700987" scale_x="0.478257" scale_y="0.478257"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-59.594597" y="-50.392297" pivot_x="0.538001" pivot_y="0.493037" angle="41.700987" scale_x="0.549806" scale_y="0.548784" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-63.873114" y="-54.030062" pivot_x="0.538001" pivot_y="0.493037" angle="41.700987" scale_x="0.589506" scale_y="0.588412" a="0.45098"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-84.835536" y="-68.903218" pivot_x="0.538001" pivot_y="0.493037" angle="313.812101" scale_x="0.350541" scale_y="0.451547" a="0.139958"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-96.342532" y="-78.703276" pivot_x="0.538001" pivot_y="0.493037" angle="313.812101" scale_x="0.39828" scale_y="0.515783" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="11" name="effect_yingxiongdazhao_2_009">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-9.755879" y="4.662529" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.577902" scale_y="0.577902" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="-47.103942" y="12.499401" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.653875" scale_y="0.653875"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-50.11596" y="13.437105" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.493806" scale_y="0.493806"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-66.989705" y="15.511646" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.567681" scale_y="0.566626" a="0.84314"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-69.327377" y="17.045187" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.608672" scale_y="0.607542" a="0.396773"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-88.322659" y="18.533131" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.376036" scale_y="0.37138" a="0.123136"/>
+                </key>
+                <key id="6" time="300" spin="0">
+                    <object folder="0" file="1" x="-100.304562" y="21.171571" pivot_x="0.538001" pivot_y="0.493037" angle="70.439419" scale_x="0.427248" scale_y="0.424211" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="12" name="effect_yingxiongdazhao_2_010">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-6.851588" y="18.952545" pivot_x="0.538001" pivot_y="0.493037" angle="29.456864" scale_x="0.461234" scale_y="0.461234" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-13.827625" y="46.162858" pivot_x="0.538001" pivot_y="0.493037" angle="29.456864" scale_x="0.653875" scale_y="0.653875"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-14.031626" y="53.002621" pivot_x="0.538001" pivot_y="0.493037" angle="342.089547" scale_x="0.702416" scale_y="0.702416"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-21.428001" y="68.661996" pivot_x="0.538001" pivot_y="0.493037" angle="255.133323" scale_x="0.559827" scale_y="0.640839" a="0.84314"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-27.704091" y="77.119786" pivot_x="0.538001" pivot_y="0.493037" angle="255.133323" scale_x="0.409624" scale_y="0.570328" a="0.84314"/>
+                </key>
+                <key id="5" time="224" spin="-1">
+                    <object folder="0" file="1" x="-34.008761" y="85.70468" pivot_x="0.538001" pivot_y="0.493037" angle="255.133323" scale_x="0.36748" scale_y="0.373882" a="0.54902"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="-49.994583" y="108.620145" pivot_x="0.538001" pivot_y="0.493037" angle="179.862681" scale_x="0.40742" scale_y="0.414609" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="13" name="effect_yingxiongdazhao_2_011">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-0.782626" y="41.217404" pivot_x="0.538001" pivot_y="0.493037" angle="29.456864" scale_x="0.354806" scale_y="0.354806" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-0.840493" y="46.637802" pivot_x="0.538001" pivot_y="0.493037" angle="29.456864" scale_x="0.40145" scale_y="0.40145"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="1.568624" y="55.190224" pivot_x="0.538001" pivot_y="0.493037" angle="337.25952" scale_x="0.431252" scale_y="0.431252"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-1.046477" y="77.698686" pivot_x="0.538001" pivot_y="0.493037" angle="337.25952" scale_x="0.495768" scale_y="0.494848" a="0.818058"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-1.097315" y="92.481377" pivot_x="0.538001" pivot_y="0.493037" angle="337.25952" scale_x="0.531567" scale_y="0.530579" a="0.359865"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-1.142192" y="114.553772" pivot_x="0.538001" pivot_y="0.493037" angle="337.25952" scale_x="0.563169" scale_y="0.559136" a="0.111681"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-1.251107" y="130.851894" pivot_x="0.538001" pivot_y="0.493037" angle="337.25952" scale_x="0.639866" scale_y="0.638677" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="14" name="effect_yingxiongdazhao_2_012">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="29.198286" y="37.587202" pivot_x="0.538001" pivot_y="0.493037" angle="306.667661" scale_x="0.354806" scale_y="0.354806" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="33.081817" y="42.530361" pivot_x="0.538001" pivot_y="0.493037" angle="306.667661" scale_x="0.40145" scale_y="0.40145"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="40.029985" y="51.768415" pivot_x="0.538001" pivot_y="0.493037" angle="19.719722" scale_x="0.431252" scale_y="0.431252"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="53.366445" y="72.95646" pivot_x="0.538001" pivot_y="0.493037" angle="19.719722" scale_x="0.495768" scale_y="0.494848" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="57.244691" y="78.225541" pivot_x="0.538001" pivot_y="0.493037" angle="19.719722" scale_x="0.531567" scale_y="0.530579" a="0.212227"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="72.125271" y="92.692997" pivot_x="0.538001" pivot_y="0.493037" angle="284.084101" scale_x="0.444204" scale_y="0.486559" a="0.065863"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="81.99455" y="105.881254" pivot_x="0.538001" pivot_y="0.493037" angle="284.084101" scale_x="0.504699" scale_y="0.555775" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="15" name="effect_yingxiongdazhao_2_013">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="24.607452" y="-3.173953" pivot_x="0.538001" pivot_y="0.493037" angle="306.667661" scale_x="0.376818" scale_y="0.376818" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="47.942498" y="-3.290073" pivot_x="0.538001" pivot_y="0.493037" angle="306.667661" scale_x="0.552025" scale_y="0.552025"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="61.690111" y="-8.096544" pivot_x="0.538001" pivot_y="0.493037" angle="247.160088" scale_x="0.593004" scale_y="0.593004"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="71.328557" y="-6.181374" pivot_x="0.538001" pivot_y="0.493037" angle="247.160088" scale_x="0.68172" scale_y="0.680453" a="0.84314"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="76.506127" y="-6.626729" pivot_x="0.538001" pivot_y="0.493037" angle="247.160088" scale_x="0.532802" scale_y="0.515433" a="0.84314"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="93.481757" y="-6.982648" pivot_x="0.538001" pivot_y="0.493037" angle="247.160088" scale_x="0.566597" scale_y="0.475563" a="0.54902"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="111.488298" y="-8.51084" pivot_x="0.538001" pivot_y="0.493037" angle="247.160088" scale_x="0.544157" scale_y="0.543146" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="16" name="effect_yingxiongdazhao_2_014">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="13.085666" y="-7.732485" pivot_x="0.538001" pivot_y="0.493037" angle="351.293334" scale_x="0.263609" scale_y="0.263609" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="43.91773" y="-40.132178" pivot_x="0.538001" pivot_y="0.493037" angle="351.293334" scale_x="0.658017" scale_y="0.658017"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="47.76204" y="-42.965342" pivot_x="0.538001" pivot_y="0.493037" angle="32.710679" scale_x="0.706865" scale_y="0.706865"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="64.702669" y="-52.471578" pivot_x="0.538001" pivot_y="0.493037" angle="353.545489" scale_x="0.565232" scale_y="0.557617"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="84.531936" y="-64.972105" pivot_x="0.538001" pivot_y="0.493037" angle="353.545489" scale_x="0.505964" scale_y="0.530951" a="0.52941"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="108.481803" y="-75.875731" pivot_x="0.538001" pivot_y="0.493037" angle="294.443783" scale_x="0.133134" scale_y="0.432135" a="0.164298"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="123.302428" y="-86.667683" pivot_x="0.538001" pivot_y="0.493037" angle="294.443783" scale_x="0.151265" scale_y="0.493609" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="17" name="effect_yingxiongdazhao_2_015">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="37.348769" y="-23.648606" pivot_x="0.586181" pivot_y="0.295051" angle="351.293334" scale_x="0.29563" scale_y="0.29563" a="0"/>
+                </key>
+                <key id="1" spin="0">
+                    <object folder="0" file="1" x="37.124828" y="-20.594451" pivot_x="0.538001" pivot_y="0.493037" angle="351.293334" scale_x="0.29563" scale_y="0.29563" a="0"/>
+                </key>
+                <key id="2" time="53" spin="0">
+                    <object folder="0" file="1" x="48.87129" y="-26.509887" pivot_x="0.538001" pivot_y="0.493037" angle="351.293334" scale_x="0.476786" scale_y="0.476786"/>
+                </key>
+                <key id="3" time="82" spin="-1">
+                    <object folder="0" file="1" x="66.328369" y="-41.794871" pivot_x="0.538001" pivot_y="0.493037" angle="351.293334" scale_x="0.361022" scale_y="0.361022"/>
+                </key>
+                <key id="4" time="116">
+                    <object folder="0" file="1" x="97.485064" y="-48.021885" pivot_x="0.538001" pivot_y="0.493037" angle="281.398809" scale_x="0.415032" scale_y="0.414261" a="0.37255"/>
+                </key>
+                <key id="5" time="164">
+                    <object folder="0" file="1" x="116.660419" y="-56.906768" pivot_x="0.538001" pivot_y="0.493037" angle="53.081891" scale_x="0.234459" scale_y="0.234024" a="0"/>
+                </key>
+                <key id="6" time="164" spin="0">
+                    <object folder="0" file="1" x="118.875328" y="-57.892661" pivot_x="0.586181" pivot_y="0.295051" angle="53.081891" scale_x="0.234459" scale_y="0.234024" a="0"/>
+                </key>
+                <key id="7" time="224" spin="0">
+                    <object folder="0" file="1" x="125.962893" y="-61.007784" pivot_x="0.586181" pivot_y="0.295051" angle="53.081891" scale_x="0.248398" scale_y="0.24662" a="0"/>
+                </key>
+                <key id="8" time="300" spin="-1">
+                    <object folder="0" file="1" x="143.164243" y="-69.684655" pivot_x="0.586181" pivot_y="0.295051" angle="53.081891" scale_x="0.282227" scale_y="0.281703" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="18" name="effect_yingxiongdazhao_2_016">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-1.390366" y="-10.201663" pivot_x="0.538001" pivot_y="0.493037" angle="48.333182" scale_x="0.468131" scale_y="0.468131" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-6.546666" y="-41.989763" pivot_x="0.538001" pivot_y="0.493037" angle="48.333182" scale_x="0.529674" scale_y="0.529674"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-5.67676" y="-58.765767" pivot_x="0.538001" pivot_y="0.493037" angle="345.216799" scale_x="0.568994" scale_y="0.568994"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-7.009669" y="-74.175133" pivot_x="0.538001" pivot_y="0.493037" angle="345.216799" scale_x="0.654116" scale_y="0.652902" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-7.491101" y="-84.115814" pivot_x="0.538001" pivot_y="0.493037" angle="345.216799" scale_x="0.701349" scale_y="0.700047" a="0.45098"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-8.488941" y="-118.842016" pivot_x="0.538001" pivot_y="0.493037" angle="238.293959" scale_x="0.36278" scale_y="0.360181" a="0.139958"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-9.5984" y="-135.746255" pivot_x="0.538001" pivot_y="0.493037" angle="238.293959" scale_x="0.412186" scale_y="0.41142" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="19" name="effect_yingxiongdazhao_2_017">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-15.402705" y="-42.858756" pivot_x="0.538001" pivot_y="0.493037" angle="48.333182" scale_x="0.256916" scale_y="0.256916" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="-17.38258" y="-48.491311" pivot_x="0.538001" pivot_y="0.493037" angle="48.333182" scale_x="0.453195" scale_y="0.453195"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-18.128631" y="-52.654575" pivot_x="0.538001" pivot_y="0.493037" angle="92.14729" scale_x="0.486838" scale_y="0.486838"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-20.835158" y="-60.326417" pivot_x="0.538001" pivot_y="0.493037" angle="92.14729" scale_x="0.55967" scale_y="0.558631" a="0.84314"/>
+                </key>
+                <key id="4" time="164">
+                    <object folder="0" file="1" x="-23.552326" y="-65.326719" pivot_x="0.538001" pivot_y="0.493037" angle="92.14729" scale_x="0.600083" scale_y="0.598968" a="0.396773"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-27.796414" y="-89.354966" pivot_x="0.538001" pivot_y="0.493037" angle="188.048541" scale_x="0.420599" scale_y="0.50527" a="0.123136"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="-31.535332" y="-102.064443" pivot_x="0.538001" pivot_y="0.493037" angle="188.048541" scale_x="0.477879" scale_y="0.577148" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="20" name="effect_yingxiongdazhao_2_018">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-11.175157" y="-9.366741" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.399672" scale_y="0.399672" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-40.373173" y="-18.875629" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.669184" scale_y="0.669184"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-51.536498" y="-20.4118" pivot_x="0.538001" pivot_y="0.493037" angle="237.310337" scale_x="0.71886" scale_y="0.71886"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-71.478097" y="-26.184214" pivot_x="0.538001" pivot_y="0.493037" angle="237.310337" scale_x="0.395118" scale_y="0.49651" a="0.90196"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-84.868767" y="-26.698269" pivot_x="0.538001" pivot_y="0.493037" angle="237.310337" scale_x="0.423649" scale_y="0.532362" a="0.84314"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-89.893904" y="-28.134466" pivot_x="0.538001" pivot_y="0.493037" angle="237.310337" scale_x="0.448835" scale_y="0.561015" a="0.54902"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-106.533134" y="-31.366833" pivot_x="0.538001" pivot_y="0.493037" angle="237.310337" scale_x="0.304948" scale_y="0.313196" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="21" name="effect_yingxiongdazhao_2_019">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-29.10606" y="14.421036" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.295097" scale_y="0.295097" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="-40.911991" y="19.929741" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.333892" scale_y="0.333892"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-60.130516" y="27.206215" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.358678" scale_y="0.358678"/>
+                </key>
+                <key id="3" time="116" spin="0">
+                    <object folder="0" file="1" x="-82.581521" y="32.53497" pivot_x="0.538001" pivot_y="0.493037" angle="221.975357" scale_x="0.412338" scale_y="0.411572" a="0.29412"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-88.519892" y="34.88527" pivot_x="0.538001" pivot_y="0.493037" angle="221.975357" scale_x="0.442112" scale_y="0.441291" a="0.29412"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-114.957525" y="36.193779" pivot_x="0.538001" pivot_y="0.493037" angle="124.78801" scale_x="0.233697" scale_y="0.271586" a="0.091278"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="-130.566794" y="41.344584" pivot_x="0.538001" pivot_y="0.493037" angle="124.78801" scale_x="0.265524" scale_y="0.310221" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="22" name="effect_yingxiongdazhao_2_020">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-0.032494" y="-2.077189" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.496257" scale_y="0.496257" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="-41.33099" y="-44.299093" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.561497" scale_y="0.561497"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="-55.945127" y="-61.708064" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.442777" scale_y="0.449714"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="-62.429513" y="-68.502891" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.509018" scale_y="0.516033" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="-80.210945" y="-93.624992" pivot_x="0.538001" pivot_y="0.493037" angle="247.51316" scale_x="0.545773" scale_y="0.553295" a="0.139958"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-87.823421" y="-103.221726" pivot_x="0.538001" pivot_y="0.493037" angle="247.51316" scale_x="0.57822" scale_y="0.583074" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="-99.737333" y="-117.903858" pivot_x="0.538001" pivot_y="0.493037" angle="247.51316" scale_x="0.656967" scale_y="0.66602" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="23" name="effect_yingxiongdazhao_2_021">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="32.891551" y="22.884017" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.308727" scale_y="0.308727" a="0"/>
+                </key>
+                <key id="1" time="53">
+                    <object folder="0" file="1" x="41.750547" y="28.288875" pivot_x="0.538001" pivot_y="0.493037" angle="332.614857" scale_x="0.669184" scale_y="0.669184"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="58.628971" y="40.233223" pivot_x="0.538001" pivot_y="0.493037" angle="41.930166" scale_x="0.71886" scale_y="0.71886"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="69.445121" y="44.627701" pivot_x="0.538001" pivot_y="0.493037" angle="349.6748" scale_x="0.585968" scale_y="0.655963"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="72.00955" y="47.026256" pivot_x="0.538001" pivot_y="0.493037" angle="308.958601" scale_x="0.449167" scale_y="0.538723" a="0.47059"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="95.787804" y="61.52394" pivot_x="0.538001" pivot_y="0.493037" angle="269.223957" scale_x="0.387137" scale_y="0.444836" a="0.146044"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="108.87965" y="70.278157" pivot_x="0.538001" pivot_y="0.493037" angle="269.223957" scale_x="0.439861" scale_y="0.508118" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="24" name="effect_yingxiongdazhao_2_022">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-1.395816" y="8.569452" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.292098" scale_y="0.268622" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="-7.750149" y="41.114641" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.330498" scale_y="0.303936"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="-11.983477" y="59.895887" pivot_x="0.538001" pivot_y="0.493037" angle="353.500185" scale_x="0.355033" scale_y="0.326498"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="-26.743679" y="86.889017" pivot_x="0.538001" pivot_y="0.493037" angle="219.23537" scale_x="0.408147" scale_y="0.374646" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="-34.611342" y="112.423626" pivot_x="0.538001" pivot_y="0.493037" angle="127.884153" scale_x="0.437618" scale_y="0.401699" a="0.139958"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="-39.512895" y="129.301476" pivot_x="0.538001" pivot_y="0.493037" angle="94.007027" scale_x="0.463635" scale_y="0.423318" a="0"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="-44.847464" y="147.697574" pivot_x="0.538001" pivot_y="0.493037" angle="94.007027" scale_x="0.526777" scale_y="0.483539" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="25" name="effect_yingxiongdazhao_2_023">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="40.563188" y="6.8106" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.343969" scale_y="0.289937" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="45.94079" y="7.707756" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.389189" scale_y="0.328054"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="56.571095" y="9.107167" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.41808" scale_y="0.352406"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="79.724448" y="16.253858" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.480627" scale_y="0.404375" a="0.608299"/>
+                </key>
+                <key id="4" time="164" spin="-1">
+                    <object folder="0" file="1" x="100.179858" y="16.969962" pivot_x="0.538001" pivot_y="0.493037" angle="271.821283" scale_x="0.325422" scale_y="0.257918" a="0.56863"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="121.622905" y="16.744439" pivot_x="0.538001" pivot_y="0.493037" angle="196.28004" scale_x="0.344768" scale_y="0.2718" a="0.17647"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="138.233198" y="19.128424" pivot_x="0.538001" pivot_y="0.493037" angle="196.28004" scale_x="0.391722" scale_y="0.310466" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="26" name="effect_yingxiongdazhao_2_024">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="21.867052" y="-22.673459" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.271762" scale_y="0.271762" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="32.008901" y="-40.899055" pivot_x="0.538001" pivot_y="0.493037" angle="33.857847" scale_x="0.464133" scale_y="0.464133"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="39.595313" y="-61.163684" pivot_x="0.538001" pivot_y="0.493037" angle="323.686649" scale_x="0.498588" scale_y="0.498588"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="45.03523" y="-74.485121" pivot_x="0.538001" pivot_y="0.493037" angle="323.686649" scale_x="0.573178" scale_y="0.572114" a="0.482442"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="61.151543" y="-101.414869" pivot_x="0.538001" pivot_y="0.493037" angle="240.926299" scale_x="0.614566" scale_y="0.613425" a="0.139958"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="67.671644" y="-112.570477" pivot_x="0.538001" pivot_y="0.493037" angle="240.926299" scale_x="0.651103" scale_y="0.64644" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="76.934389" y="-128.582542" pivot_x="0.538001" pivot_y="0.493037" angle="240.926299" scale_x="0.739775" scale_y="0.738401" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="27" name="effect_yingxiongdazhao_2_025">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="4.298346" y="37.03995" pivot_x="0.538001" pivot_y="0.493037" angle="103.38146" scale_x="0.258804" scale_y="0.258804" a="0"/>
+                </key>
+                <key id="1" time="53" spin="-1">
+                    <object folder="0" file="1" x="4.908442" y="41.911166" pivot_x="0.538001" pivot_y="0.493037" angle="103.38146" scale_x="0.292827" scale_y="0.292827"/>
+                </key>
+                <key id="2" time="82" spin="-1">
+                    <object folder="0" file="1" x="11.128983" y="72.310524" pivot_x="0.538001" pivot_y="0.493037" angle="36.38646" scale_x="0.314565" scale_y="0.314565"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="13.933718" y="93.31503" pivot_x="0.538001" pivot_y="0.493037" angle="277.943256" scale_x="0.361625" scale_y="0.360954" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="17.606969" y="127.999106" pivot_x="0.538001" pivot_y="0.493037" angle="162.831957" scale_x="0.292663" scale_y="0.292119" a="0"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="18.674072" y="134.888939" pivot_x="0.538001" pivot_y="0.493037" angle="162.831957" scale_x="0.310062" scale_y="0.307841" a="0"/>
+                </key>
+                <key id="6" time="300" spin="-1">
+                    <object folder="0" file="1" x="21.263907" y="154.079896" pivot_x="0.538001" pivot_y="0.493037" angle="162.831957" scale_x="0.352288" scale_y="0.351634" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="28" name="effect_yingxiongdazhao_2_026">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="3.101234" y="-43.096863" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.277448" scale_y="0.277448" a="0"/>
+                </key>
+                <key id="1" time="53" spin="0">
+                    <object folder="0" file="1" x="3.553953" y="-48.760721" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.313922" scale_y="0.313922"/>
+                </key>
+                <key id="2" time="82" spin="0">
+                    <object folder="0" file="1" x="9.97031" y="-68.765452" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.337226" scale_y="0.337226"/>
+                </key>
+                <key id="3" time="116" spin="-1">
+                    <object folder="0" file="1" x="11.312359" y="-91.016165" pivot_x="0.538001" pivot_y="0.493037" angle="332.425633" scale_x="0.387676" scale_y="0.386956" a="0.45098"/>
+                </key>
+                <key id="4" time="164" spin="0">
+                    <object folder="0" file="1" x="14.913367" y="-100.4423" pivot_x="0.538001" pivot_y="0.493037" angle="272.216861" scale_x="0.283178" scale_y="0.282652" a="0"/>
+                </key>
+                <key id="5" time="224" spin="0">
+                    <object folder="0" file="1" x="15.820334" y="-105.847504" pivot_x="0.538001" pivot_y="0.493037" angle="272.216861" scale_x="0.300013" scale_y="0.297865" a="0"/>
+                </key>
+                <key id="6" time="300">
+                    <object folder="0" file="1" x="18.021522" y="-120.903174" pivot_x="0.538001" pivot_y="0.493037" angle="272.216861" scale_x="0.340872" scale_y="0.340238" a="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

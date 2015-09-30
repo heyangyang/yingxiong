@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:5a52265e027219c67569ecddaffcc9cf$ -->
+<TextureAtlas imagePath="effect_123.png">
+    <SubTexture name="effect_123_1" x="2" y="2" width="132" height="133"/>
+</TextureAtlas>

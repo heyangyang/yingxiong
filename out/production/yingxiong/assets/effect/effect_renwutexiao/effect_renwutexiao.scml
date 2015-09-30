@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="effect_renwutexiao2.png" width="154" height="156" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effect_renwutexiao1.png" width="154" height="156" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_renwutexiao" length="2000" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="effect_renwutexiao1" folder="0" file="1" abs_x="1.980645" abs_y="1" abs_pivot_x="0.519355" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" name="effect_renwutexiao2" folder="0" file="0" abs_x="3.993548" abs_y="-2.987261" abs_pivot_x="0.506452" abs_pivot_y="0.487261" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="862">
+                    <object_ref id="0" timeline="1" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="1552">
+                    <object_ref id="0" timeline="1" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="2000">
+                    <object_ref id="0" timeline="1" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="3" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_renwutexiao2">
+                <key id="0" spin="-1">
+                    <object folder="0" file="0" x="3.993548" y="-2.987261" pivot_x="0.506452" pivot_y="0.487261"/>
+                </key>
+                <key id="1" time="862" spin="-1">
+                    <object folder="0" file="0" x="3.993548" y="-2.987261" pivot_x="0.506452" pivot_y="0.487261" angle="194.203216"/>
+                </key>
+                <key id="2" time="1552" spin="-1">
+                    <object folder="0" file="0" x="3.993548" y="-2.987261" pivot_x="0.506452" pivot_y="0.487261" angle="73.001647"/>
+                </key>
+                <key id="3" time="2000" spin="0">
+                    <object folder="0" file="0" x="3.993548" y="-2.987261" pivot_x="0.506452" pivot_y="0.487261"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="effect_renwutexiao1">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="1.980645" y="1" pivot_x="0.519355" pivot_y="0.5"/>
+                </key>
+                <key id="1" time="862" spin="0">
+                    <object folder="0" file="1" x="1.980645" y="1" pivot_x="0.519355" pivot_y="0.5" scale_x="1.341697" scale_y="1.341697"/>
+                </key>
+                <key id="2" time="1552" spin="0">
+                    <object folder="0" file="1" x="1.980645" y="1" pivot_x="0.519355" pivot_y="0.5" scale_x="1.341697" scale_y="1.341697"/>
+                </key>
+                <key id="3" time="2000" spin="0">
+                    <object folder="0" file="1" x="1.980645" y="1" pivot_x="0.519355" pivot_y="0.5"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="ui_background_intensify_indicate1.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="effect_zhuxianjiantou.png" width="92" height="92" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_zhuxianjiantou" length="3000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="effect_zhuxianjiantou" folder="0" file="1" abs_x="-62" abs_y="46" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="700">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="1442">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="2254">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                </key>
+                <key id="4" time="2998">
+                    <object_ref id="0" timeline="0" key="4" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="effect_zhuxianjiantou">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-62" y="46"/>
+                </key>
+                <key id="1" time="700" spin="0">
+                    <object folder="0" file="1" x="-58" y="46"/>
+                </key>
+                <key id="2" time="1442" spin="0">
+                    <object folder="0" file="1" x="-64.850098" y="46"/>
+                </key>
+                <key id="3" time="2254" spin="0">
+                    <object folder="0" file="1" x="-58" y="46"/>
+                </key>
+                <key id="4" time="2998" spin="0">
+                    <object folder="0" file="1" x="-64.850098" y="46"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

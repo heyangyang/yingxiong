@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b4">
+    <folder id="0">
+        <file id="0" name="texiaoshengji1.png" width="100" height="100" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="texiaoshengji.png" width="100" height="100" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="ui_jiesan_shengjila.PNG" width="67" height="33" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="effect_shengjixiaoguo" length="1000" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="texiaoshengji1" folder="0" file="0" abs_x="0.352941" abs_y="-0.352941" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="texiaoshengji" folder="0" file="1" abs_x="1" abs_y="1.352941" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="ui_jiesan_shengjila" folder="0" file="2" abs_x="21.176471" abs_y="-63.529412" abs_pivot_x="0" abs_pivot_y="1" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="0" timeline="2" key="0" z_index="2"/>
+                </key>
+                <key id="1" time="216">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                </key>
+                <key id="2" time="480">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                </key>
+                <key id="3" time="747">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                </key>
+                <key id="4" time="999">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="texiaoshengji1">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="0.352941" y="-0.352941" angle="0" a="0"/>
+                </key>
+                <key id="1" time="480" spin="0">
+                    <object folder="0" file="0" x="0.352941" y="10.647059" angle="0"/>
+                </key>
+                <key id="2" time="747" spin="0">
+                    <object folder="0" file="0" x="0.352941" y="17.647059" angle="0"/>
+                </key>
+                <key id="3" time="999" spin="0">
+                    <object folder="0" file="0" x="0.352941" y="23.647059" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="texiaoshengji">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="1" y="1.352941" angle="0" a="0"/>
+                </key>
+                <key id="1" time="216" spin="0">
+                    <object folder="0" file="1" x="1" y="1.352941" angle="0"/>
+                </key>
+                <key id="2" time="747" spin="0">
+                    <object folder="0" file="1" x="1" y="0.352941" angle="0" a="0.77778"/>
+                </key>
+                <key id="3" time="999" spin="0">
+                    <object folder="0" file="1" x="1" y="1.352941" angle="0" a="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="ui_jiesan_shengjila">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="21.176471" y="-63.529412" angle="0" a="0"/>
+                </key>
+                <key id="1" time="480" spin="0">
+                    <object folder="0" file="2" x="21.882353" y="-33.647059" angle="0" a="0"/>
+                </key>
+                <key id="2" time="747" spin="0">
+                    <object folder="0" file="2" x="22.181612" y="4.443413" angle="0" a="0.92395"/>
+                </key>
+                <key id="3" time="999" spin="0">
+                    <object folder="0" file="2" x="22.181612" y="4.443413" angle="0" a="0.92395"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

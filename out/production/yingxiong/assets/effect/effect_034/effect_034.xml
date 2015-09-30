@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:d32da83b7a794db07a2466aa7064934c$ -->
+<TextureAtlas imagePath="effect_034.png">
+    <SubTexture name="ui_background_intensify_indicate1" x="0" y="0" width="64" height="64"/>
+</TextureAtlas>

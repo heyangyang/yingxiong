@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:8493f81108482bdc4c1f3be7cd795c04$ -->
+<TextureAtlas imagePath="effect_jinjie.png">
+    <SubTexture name="effect_jinjie_1" x="2" y="184" width="132" height="133"/>
+    <SubTexture name="effect_jinjie_2" x="151" y="2" width="48" height="49"/>
+    <SubTexture name="effect_jinjie_3" x="2" y="46" width="135" height="136"/>
+    <SubTexture name="effect_jinjie_5" x="2" y="2" width="147" height="42"/>
+</TextureAtlas>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b6.1">
+    <folder id="0">
+        <file id="0" name="progressbar_home_2.png" width="500" height="32" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="progressbar_home_3.png" width="489" height="18" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="progressbar_home_1.png" width="20" height="18" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="progressbar_4.png" width="62" height="36" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="progressbar_home" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="1" time="1000">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="progressbar_home_2">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="236.027944" y="-16" pivot_x="0.472056" pivot_y="0.5"/>
+                </key>
+                <key id="1" time="1000" spin="0">
+                    <object folder="0" file="0" x="236.027944" y="-16" pivot_x="0.472056" pivot_y="0.5"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="progressbar_home_3">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="12.42258" y="-14.912458" pivot_x="0.01473" pivot_y="0.455193" scale_x="0.01323"/>
+                </key>
+                <key id="1" time="1000" spin="0">
+                    <object folder="0" file="1" x="12.023731" y="-14.912458" pivot_x="0.01473" pivot_y="0.455193"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="progressbar_home_1">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="6.898235" y="-14.890682" pivot_x="0.085065" pivot_y="0.459444" scale_x="0.746963"/>
+                </key>
+                <key id="1" time="1000" spin="0">
+                    <object folder="0" file="2" x="6.898235" y="-14.890682" pivot_x="0.085065" pivot_y="0.459444"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="progressbar_4">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="24" y="-13.402836" pivot_x="0.717805" pivot_y="0.509674" scale_y="1.059978"/>
+                </key>
+                <key id="1" time="1000" spin="0">
+                    <object folder="0" file="3" x="492.517237" y="-13.402836" pivot_x="0.717805" pivot_y="0.509674" scale_y="1.059978"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

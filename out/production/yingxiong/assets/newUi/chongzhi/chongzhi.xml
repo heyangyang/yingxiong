@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a164562a1b2fde2f6c3815f57b807ad1:1/1$ -->
+<TextureAtlas imagePath="chongzhi.png">
+    <SubTexture name="ui_chongzhijiekou_01" x="326" y="2" width="106" height="86"/>
+    <SubTexture name="ui_chongzhijiekou_02" x="218" y="2" width="106" height="86"/>
+    <SubTexture name="ui_chongzhijiekou_03" x="110" y="90" width="106" height="86"/>
+    <SubTexture name="ui_chongzhijiekou_04" x="110" y="2" width="106" height="86"/>
+    <SubTexture name="yinlian" x="2" y="90" width="106" height="86"/>
+    <SubTexture name="zhifubao" x="2" y="2" width="106" height="86"/>
+</TextureAtlas>

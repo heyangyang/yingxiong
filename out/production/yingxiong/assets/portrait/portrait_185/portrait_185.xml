@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:99b9290dd768e91db4a500dd7f319f4d$ -->
+<TextureAtlas imagePath="portrait_185.png">
+    <SubTexture name="portrait_185" x="1" y="1" width="423" height="381"/>
+</TextureAtlas>

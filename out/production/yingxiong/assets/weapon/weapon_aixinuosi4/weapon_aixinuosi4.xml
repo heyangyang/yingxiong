@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:59efc907b653ea4d435bc6ed27646761$ -->
+<TextureAtlas imagePath="weapon_aixinuosi4.png">
+    <SubTexture name="weapon_aixinuosi4" x="2" y="2" width="183" height="84" frameX="-83" frameY="-3" frameWidth="279" frameHeight="104"/>
+</TextureAtlas>

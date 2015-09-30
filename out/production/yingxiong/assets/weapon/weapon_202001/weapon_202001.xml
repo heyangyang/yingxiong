@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:aea4ea51cffe5269feb3f189fb9f88ef$ -->
+<TextureAtlas imagePath="weapon_202001.png">
+    <SubTexture name="weapon_202001" x="2" y="2" width="117" height="94" frameX="-36" frameY="-7" frameWidth="159" frameHeight="112"/>
+</TextureAtlas>

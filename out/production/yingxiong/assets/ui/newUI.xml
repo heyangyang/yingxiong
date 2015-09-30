@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:342a8924076377d4fc3c7e245faace6d:1/1$ -->
+<TextureAtlas imagePath="newUI.png">
+    <SubTexture name="42" x="531" y="1797" width="53" height="56" frameX="-4" frameY="0" frameWidth="57" frameHeight="60"/>
+    <SubTexture name="baoji" x="730" y="1512" width="40" height="31" frameX="-16" frameY="-6" frameWidth="74" frameHeight="43"/>
+    <SubTexture name="green0" x="473" y="1830" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green1" x="708" y="852" width="11" height="24" frameX="-3" frameY="-2" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green2" x="454" y="1830" width="17" height="24" frameX="0" frameY="-2" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green3" x="435" y="1830" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green4" x="416" y="1830" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green5" x="277" y="1797" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green6" x="207" y="1328" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green7" x="207" y="1302" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green8" x="1552" y="1405" width="17" height="24" frameX="0" frameY="-1" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="green9" x="1552" y="1379" width="17" height="24" frameX="0" frameY="-2" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="greenAdd" x="207" y="1354" width="17" height="20" frameX="0" frameY="-3" frameWidth="17" frameHeight="26"/>
+    <SubTexture name="icon_300000" x="1062" y="1588" width="42" height="42" frameX="-3" frameY="-3" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300010" x="686" y="1503" width="42" height="42" frameX="-3" frameY="-3" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300020" x="1774" y="1095" width="46" height="46" frameX="-1" frameY="-1" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300030" x="1775" y="767" width="48" height="46" frameX="0" frameY="-1" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300040" x="1775" y="717" width="48" height="48"/>
+    <SubTexture name="icon_300045" x="1457" y="1886" width="40" height="40" frameX="-4" frameY="-5" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300046" x="629" y="1714" width="40" height="44" frameX="-4" frameY="-1" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300047" x="587" y="1714" width="40" height="44" frameX="-4" frameY="-2" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300048" x="1529" y="1548" width="40" height="44" frameX="-4" frameY="-2" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300049" x="1774" y="1047" width="46" height="46" frameX="-1" frameY="-1" frameWidth="48" frameHeight="48"/>
+    <SubTexture name="icon_300050" x="1775" y="667" width="48" height="48"/>
+    <SubTexture name="icon_baoxiang_tubiao" x="389" y="1609" width="68" height="68"/>
+    <SubTexture name="icon_beibao_tubiao" x="543" y="1418" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="icon_chengjiu_tubiao" x="260" y="1952" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="icon_chongzhi_tubiao" x="650" y="1609" width="60" height="66" frameX="-3" frameY="-1" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="icon_dakaicaozuolan_tubiao" x="448" y="1886" width="98" height="64" frameX="0" frameY="0" frameWidth="98" frameHeight="80"/>
+    <SubTexture name="icon_gonggao_tubiao" x="378" y="1315" width="68" height="68"/>
+    <SubTexture name="icon_huchucaozuolan02_tubiao" x="1762" y="1528" width="52" height="62"/>
+    <SubTexture name="icon_huchucaozuolan_tubiao" x="2" y="1870" width="98" height="80"/>
+    <SubTexture name="icon_liaotian_tubiao" x="1966" y="1772" width="80" height="98"/>
+    <SubTexture name="icon_liaotianguanbi_tubiao" x="1966" y="1672" width="80" height="98"/>
+    <SubTexture name="icon_qiandao_tubiao" x="459" y="1609" width="62" height="68" frameX="-3" frameY="0" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="icon_renwu_tubiao" x="174" y="1952" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="icon_shouchong_tubiao" x="584" y="1609" width="64" height="66" frameX="-2" frameY="-1" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="icon_shouqicaozuolan02_tubiao" x="1762" y="1464" width="52" height="62"/>
+    <SubTexture name="icon_shouqicaozuolan_tubiao" x="348" y="1886" width="98" height="64" frameX="0" frameY="0" frameWidth="98" frameHeight="80"/>
+    <SubTexture name="icon_tujian_tubiao" x="88" y="1952" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="icon_viplibao_tubiao" x="461" y="1762" width="68" height="66" frameX="0" frameY="-1" frameWidth="68" frameHeight="68"/>
+    <SubTexture name="icon_xingyunxing_tubiao" x="2" y="1952" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="icon_youxiang_tubiao" x="1728" y="1691" width="84" height="86" frameX="-1" frameY="0" frameWidth="86" frameHeight="86"/>
+    <SubTexture name="lifebar2x" x="1822" y="1126" width="201" height="40" frameX="0" frameY="-7" frameWidth="201" frameHeight="56"/>
+    <SubTexture name="lifebg2x" x="1821" y="1203" width="187" height="24" frameX="-7" frameY="-15" frameWidth="201" frameHeight="56"/>
+    <SubTexture name="red0" x="630" y="1830" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red1" x="712" y="772" width="10" height="22" frameX="-6" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red2" x="207" y="1278" width="18" height="22" frameX="-2" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red3" x="207" y="1254" width="18" height="22" frameX="-2" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red4" x="608" y="1830" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red5" x="586" y="1830" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red6" x="850" y="1583" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red7" x="394" y="1830" width="20" height="24"/>
+    <SubTexture name="red8" x="828" y="1583" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="red9" x="492" y="1830" width="20" height="22" frameX="0" frameY="-1" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="redSub" x="712" y="796" width="10" height="10" frameX="-6" frameY="-7" frameWidth="20" frameHeight="24"/>
+    <SubTexture name="saodangwanbi" x="1134" y="1420" width="147" height="42"/>
+    <SubTexture name="shadow" x="817" y="1317" width="144" height="50"/>
+    <SubTexture name="shanbi" x="1328" y="1244" width="69" height="32" frameX="-3" frameY="-5" frameWidth="75" frameHeight="42"/>
+    <SubTexture name="ui_8888_wenzi" x="964" y="1144" width="183" height="48"/>
+    <SubTexture name="ui_TAB01_anniu" x="964" y="1194" width="173" height="86"/>
+    <SubTexture name="ui_TAB02_anniu" x="1134" y="1464" width="133" height="86" frameX="-7" frameY="0" frameWidth="173" frameHeight="86"/>
+    <SubTexture name="ui_anniuzhixiangjiantou01_anniu" x="1985" y="1331" width="16" height="9"/>
+    <SubTexture name="ui_array_base_map" x="713" y="1676" width="89" height="36"/>
+    <SubTexture name="ui_baozhu_taitou_wenzi" x="1599" y="1867" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_baozhuchouqu_00_anniu" x="442" y="1392" width="99" height="112"/>
+    <SubTexture name="ui_baozhuchouqu_01_anniu" x="341" y="1392" width="99" height="112"/>
+    <SubTexture name="ui_beibao_taitou_wenzi" x="1513" y="1797" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_bukaifang" x="1772" y="1420" width="42" height="42"/>
+    <SubTexture name="ui_button_look_iocn" x="711" y="1886" width="57" height="59" frameX="-16" frameY="-14" frameWidth="89" frameHeight="89"/>
+    <SubTexture name="ui_button_mail" x="1968" y="1501" width="78" height="85"/>
+    <SubTexture name="ui_button_mail_new" x="671" y="1714" width="61" height="43"/>
+    <SubTexture name="ui_button_mail_read" x="241" y="1714" width="61" height="47"/>
+    <SubTexture name="ui_button_zhuxianfubenpaizidi" x="1610" y="1041" width="162" height="240"/>
+    <SubTexture name="ui_caifubang_xiaotaitou_wenzi" x="730" y="1392" width="78" height="30"/>
+    <SubTexture name="ui_changjingtouxiangdi01_01" x="667" y="1242" width="148" height="148"/>
+    <SubTexture name="ui_chenghaodi01" x="1044" y="1886" width="53" height="52"/>
+    <SubTexture name="ui_chengjiu_01_jindutiao" x="1266" y="1581" width="128" height="32"/>
+    <SubTexture name="ui_chengjiu_02_jindutiao" x="1814" y="1733" width="116" height="18" frameX="-6" frameY="-5" frameWidth="128" frameHeight="32"/>
+    <SubTexture name="ui_chongzhi_taitou_wenzi" x="1062" y="1748" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_chongzhi_wenzi" x="876" y="1511" width="77" height="41"/>
+    <SubTexture name="ui_danxiangkuangdi" x="317" y="1608" width="70" height="70"/>
+    <SubTexture name="ui_daojukuang01" x="1499" y="1836" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang02" x="1357" y="1830" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang03" x="1339" y="1932" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang04" x="962" y="1688" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang05" x="962" y="1588" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang06" x="729" y="1947" width="98" height="98"/>
+    <SubTexture name="ui_daojukuang07" x="629" y="1947" width="98" height="98"/>
+    <SubTexture name="ui_dengjishuzi_0" x="60" y="1830" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_1" x="708" y="808" width="12" height="28" frameX="-4" frameY="0" frameWidth="20" frameHeight="28"/>
+    <SubTexture name="ui_dengjishuzi_2" x="1738" y="1560" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_3" x="1112" y="1426" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_4" x="1112" y="1396" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_5" x="1112" y="1366" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_6" x="1112" y="1336" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_7" x="1112" y="1306" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_8" x="2025" y="1156" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_9" x="2025" y="1126" width="20" height="28"/>
+    <SubTexture name="ui_dengjishuzi_LV" x="865" y="1797" width="42" height="28"/>
+    <SubTexture name="ui_dicengying01_jiemian" x="1372" y="1765" width="65" height="35"/>
+    <SubTexture name="ui_dicengying02_jiemian" x="1773" y="1323" width="44" height="44"/>
+    <SubTexture name="ui_dicengying03_jiemian" x="1933" y="1710" width="30" height="30"/>
+    <SubTexture name="ui_dingbuxinxi_01_anniu" x="1821" y="1273" width="184" height="56"/>
+    <SubTexture name="ui_district_genghuanxuanqu" x="817" y="1242" width="144" height="73"/>
+    <SubTexture name="ui_district_iocn_huobao" x="178" y="1714" width="61" height="47"/>
+    <SubTexture name="ui_district_iocn_jijiangkaifang" x="686" y="1547" width="96" height="60"/>
+    <SubTexture name="ui_district_iocn_xinqu" x="1985" y="1452" width="61" height="47"/>
+    <SubTexture name="ui_ditu_biaotilan01" x="449" y="892" width="247" height="61"/>
+    <SubTexture name="ui_ditu_guankajiedian" x="629" y="1418" width="27" height="27" frameX="-7" frameY="-7" frameWidth="41" frameHeight="41"/>
+    <SubTexture name="ui_ditu_guankajiedian02" x="436" y="1857" width="27" height="27"/>
+    <SubTexture name="ui_ditu_guankajiediandi" x="1934" y="1605" width="31" height="31"/>
+    <SubTexture name="ui_ditu_zhezhaoding" x="2" y="1511" width="96" height="96"/>
+    <SubTexture name="ui_ditu_zhishibiaoshi" x="743" y="1759" width="53" height="36"/>
+    <SubTexture name="ui_ditu_zhishibiaoshidi" x="667" y="1098" width="15" height="31"/>
+    <SubTexture name="ui_ditu_zhishibiaoshiyanse" x="1113" y="1282" width="22" height="22"/>
+    <SubTexture name="ui_ditudi" x="970" y="534" width="803" height="505"/>
+    <SubTexture name="ui_duihuanmashuru_xiaotaitou_wenzi" x="1396" y="1600" width="125" height="30"/>
+    <SubTexture name="ui_gonggao_xiaotaitou_wenzi" x="754" y="1797" width="54" height="30"/>
+    <SubTexture name="ui_gongji01_tubiao" x="2008" y="1254" width="38" height="38"/>
+    <SubTexture name="ui_gongyong_heisetongmingding50" x="119" y="1588" width="16" height="16"/>
+    <SubTexture name="ui_gongyong_iocn_zhandouli" x="1931" y="1788" width="32" height="28"/>
+    <SubTexture name="ui_gongyong_jianglilingqu" x="1515" y="1678" width="93" height="39" frameX="0" frameY="0" frameWidth="95" frameHeight="39"/>
+    <SubTexture name="ui_gongyong_jinbi1" x="791" y="1714" width="52" height="43"/>
+    <SubTexture name="ui_guanbi01_anniu" x="875" y="1554" width="72" height="76"/>
+    <SubTexture name="ui_guanbi02_anniu" x="100" y="1511" width="74" height="75"/>
+    <SubTexture name="ui_guankajiangli_xiaotaitou_wenzi" x="771" y="1609" width="102" height="30"/>
+    <SubTexture name="ui_guyongbing_taitou_wenzi" x="945" y="1830" width="115" height="37"/>
+    <SubTexture name="ui_haohuadalibao_wenzi" x="1821" y="1229" width="185" height="42"/>
+    <SubTexture name="ui_hong02_01_anniu" x="1710" y="1857" width="99" height="39"/>
+    <SubTexture name="ui_hong03_01_anniu" x="1610" y="1688" width="116" height="62"/>
+    <SubTexture name="ui_huang01_01_anniu" x="1816" y="1524" width="150" height="36"/>
+    <SubTexture name="ui_huang01_02_anniu" x="1816" y="1486" width="150" height="36"/>
+    <SubTexture name="ui_huoqu01_anniu" x="548" y="1886" width="58" height="62"/>
+    <SubTexture name="ui_icon_acceleration1" x="1439" y="1952" width="60" height="37"/>
+    <SubTexture name="ui_icon_acceleration1_0" x="1604" y="1830" width="104" height="35" frameX="0" frameY="0" frameWidth="108" frameHeight="37"/>
+    <SubTexture name="ui_icon_acceleration1_5" x="339" y="1254" width="108" height="37"/>
+    <SubTexture name="ui_icon_acceleration2_0" x="1153" y="1680" width="104" height="35" frameX="0" frameY="0" frameWidth="108" frameHeight="37"/>
+    <SubTexture name="ui_icon_acceleration2_5" x="637" y="1760" width="104" height="35" frameX="0" frameY="0" frameWidth="108" frameHeight="37"/>
+    <SubTexture name="ui_icon_acceleration3_0" x="607" y="1677" width="104" height="35" frameX="0" frameY="0" frameWidth="108" frameHeight="37"/>
+    <SubTexture name="ui_icon_acceleration3_5" x="531" y="1760" width="104" height="35" frameX="0" frameY="0" frameWidth="108" frameHeight="37"/>
+    <SubTexture name="ui_icon_chat1" x="1775" y="534" width="49" height="45"/>
+    <SubTexture name="ui_icon_chat2" x="934" y="1738" width="25" height="26"/>
+    <SubTexture name="ui_icon_newkip" x="730" y="1424" width="77" height="43"/>
+    <SubTexture name="ui_jiazhi_wenzi" x="730" y="1469" width="77" height="41"/>
+    <SubTexture name="ui_jikelingqu_wenzi" x="1816" y="1562" width="149" height="41"/>
+    <SubTexture name="ui_jinbi01_tubiao" x="934" y="1710" width="25" height="26"/>
+    <SubTexture name="ui_jineng_xiaotaitou_wenzi" x="841" y="1765" width="53" height="30"/>
+    <SubTexture name="ui_jinengkuangdi01" x="1775" y="999" width="46" height="46"/>
+    <SubTexture name="ui_jingyan_01_jindutiao" x="1610" y="1402" width="160" height="21"/>
+    <SubTexture name="ui_jingyan_02_jindutiao" x="963" y="1282" width="148" height="7" frameX="-6" frameY="-5" frameWidth="160" frameHeight="21"/>
+    <SubTexture name="ui_jiuguan_taitou_wenzi" x="784" y="1544" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_juedouchang_taitou_wenzi" x="804" y="1641" width="115" height="37"/>
+    <SubTexture name="ui_juesexinxi_xiaotaitou_wenzi" x="772" y="1512" width="102" height="30"/>
+    <SubTexture name="ui_kexuanyingxiong_xiaotaitou_wenzi" x="603" y="1854" width="100" height="30" frameX="-1" frameY="0" frameWidth="102" frameHeight="30"/>
+    <SubTexture name="ui_kexuanzhuangtai1" x="296" y="1763" width="59" height="65"/>
+    <SubTexture name="ui_kexuanzhuangtai2" x="1738" y="1592" width="76" height="67"/>
+    <SubTexture name="ui_kezhixing" x="1328" y="1194" width="69" height="48"/>
+    <SubTexture name="ui_lan03_01_anniu" x="1815" y="1669" width="116" height="62"/>
+    <SubTexture name="ui_linhunlunpan_taitou_wenzi" x="277" y="1830" width="115" height="37"/>
+    <SubTexture name="ui_lv02_01_anniu" x="844" y="1829" width="99" height="39"/>
+    <SubTexture name="ui_lv03_01_anniu" x="1816" y="1605" width="116" height="62"/>
+    <SubTexture name="ui_mingzidi01" x="1139" y="1265" width="156" height="37"/>
+    <SubTexture name="ui_paihangbang_taitou_wenzi" x="543" y="1379" width="115" height="37"/>
+    <SubTexture name="ui_paihangshuzi_0" x="1571" y="1514" width="37" height="46" frameX="-1" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_01_01" x="1107" y="1456" width="25" height="47" frameX="-6" frameY="0" frameWidth="37" frameHeight="47"/>
+    <SubTexture name="ui_paihangshuzi_01_02" x="1571" y="1273" width="37" height="47"/>
+    <SubTexture name="ui_paihangshuzi_01_03" x="1573" y="1176" width="35" height="47" frameX="-1" frameY="0" frameWidth="37" frameHeight="47"/>
+    <SubTexture name="ui_paihangshuzi_1" x="1107" y="1505" width="25" height="46" frameX="-6" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_2" x="1571" y="1466" width="37" height="46" frameX="0" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_3" x="489" y="1714" width="35" height="46" frameX="-1" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_4" x="1571" y="1418" width="37" height="46" frameX="0" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_5" x="2007" y="1294" width="39" height="46"/>
+    <SubTexture name="ui_paihangshuzi_6" x="304" y="1713" width="35" height="46" frameX="-1" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_7" x="1571" y="1370" width="37" height="46" frameX="-2" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_8" x="1571" y="1322" width="37" height="46" frameX="0" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_paihangshuzi_9" x="1573" y="1225" width="35" height="46" frameX="-3" frameY="0" frameWidth="39" frameHeight="46"/>
+    <SubTexture name="ui_qiandao_taitou_wenzi" x="1723" y="1818" width="89" height="37" frameX="-13" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_qianghua_xiaotaitou_wenzi" x="705" y="1853" width="54" height="30"/>
+    <SubTexture name="ui_renwu_new1" x="1062" y="1830" width="52" height="52"/>
+    <SubTexture name="ui_renwu_shishibiaoqian" x="748" y="1830" width="94" height="21"/>
+    <SubTexture name="ui_renwu_taitou_wenzi" x="1515" y="1758" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_renwu_zhuxianbiaoqian" x="652" y="1830" width="94" height="21"/>
+    <SubTexture name="ui_renwujiangli_xiaotaitou_wenzi" x="463" y="1680" width="102" height="31"/>
+    <SubTexture name="ui_renwujieshao_xiaotaitou_wenzi" x="359" y="1680" width="102" height="31"/>
+    <SubTexture name="ui_renwukapai_01" x="449" y="1098" width="216" height="279"/>
+    <SubTexture name="ui_renwukapai_02" x="1824" y="845" width="216" height="279"/>
+    <SubTexture name="ui_renwukapai_03" x="1826" y="564" width="216" height="279"/>
+    <SubTexture name="ui_renwukapai_04" x="1826" y="283" width="216" height="279"/>
+    <SubTexture name="ui_renwukapai_05" x="1826" y="2" width="216" height="279"/>
+    <SubTexture name="ui_renwumubiao_xiaotaitou_wenzi" x="357" y="1797" width="102" height="31"/>
+    <SubTexture name="ui_renyijine_wenzi" x="1399" y="1379" width="151" height="43"/>
+    <SubTexture name="ui_reward_yilingqu" x="945" y="1788" width="95" height="40"/>
+    <SubTexture name="ui_rongyuzhi_01_tubiao" x="1931" y="1845" width="27" height="39"/>
+    <SubTexture name="ui_rongyuzhidi_taitou_wenzi" x="90" y="1340" width="115" height="37"/>
+    <SubTexture name="ui_saodang_xiaotaitou_wenzi" x="804" y="1680" width="54" height="30"/>
+    <SubTexture name="ui_shangcheng_jinxiangzi" x="1610" y="1425" width="150" height="133"/>
+    <SubTexture name="ui_shangcheng_jinxiangzi1" x="963" y="1291" width="147" height="148"/>
+    <SubTexture name="ui_shangcheng_jinxiangzi2" x="116" y="1155" width="109" height="97"/>
+    <SubTexture name="ui_shangchengyeqian01_jiemian" x="724" y="650" width="242" height="421"/>
+    <SubTexture name="ui_shangdian_taitou_wenzi" x="1723" y="1779" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_shangzhenyingxiong_xiaotaitou_wenzi" x="357" y="1765" width="102" height="30"/>
+    <SubTexture name="ui_shenglidi" x="90" y="1714" width="86" height="48"/>
+    <SubTexture name="ui_shenglidi_jiantou" x="31" y="1830" width="27" height="38"/>
+    <SubTexture name="ui_shenglizi_01" x="1774" y="1234" width="45" height="41"/>
+    <SubTexture name="ui_shengming01_tubiao" x="567" y="1678" width="38" height="34" frameX="0" frameY="-2" frameWidth="38" frameHeight="38"/>
+    <SubTexture name="ui_shengyin01_anniu" x="1529" y="1594" width="78" height="82"/>
+    <SubTexture name="ui_shengyin02_anniu" x="1967" y="1588" width="78" height="82"/>
+    <SubTexture name="ui_shibaidi" x="2" y="1714" width="86" height="48"/>
+    <SubTexture name="ui_shibaidi_jiantou" x="2" y="1830" width="27" height="38"/>
+    <SubTexture name="ui_shibaizi_01" x="1774" y="1191" width="45" height="41"/>
+    <SubTexture name="ui_shouchongjiangli_taitou_wenzi" x="1814" y="1831" width="115" height="37"/>
+    <SubTexture name="ui_shuaxin01_01_anniu" x="974" y="1886" width="68" height="52"/>
+    <SubTexture name="ui_shuaxin02_01_anniu" x="2" y="1392" width="113" height="113"/>
+    <SubTexture name="ui_taitoudi01_jiemian" x="2" y="650" width="720" height="56"/>
+    <SubTexture name="ui_tanchukuangdi01_jiemian" x="970" y="2" width="854" height="530" frameX="0" frameY="0" frameWidth="856" frameHeight="530"/>
+    <SubTexture name="ui_tanchukuangdi02_jiemian" x="2" y="2" width="966" height="646" frameX="-1" frameY="-4" frameWidth="972" frameHeight="652"/>
+    <SubTexture name="ui_texingtubiao_01" x="1541" y="1491" width="28" height="28"/>
+    <SubTexture name="ui_texingtubiao_02" x="1541" y="1461" width="28" height="28"/>
+    <SubTexture name="ui_texingtubiao_03" x="1541" y="1431" width="28" height="28"/>
+    <SubTexture name="ui_texingtubiao_04" x="2018" y="1186" width="28" height="28"/>
+    <SubTexture name="ui_tiejiangpu_taitou_wenzi" x="1606" y="1791" width="115" height="37"/>
+    <SubTexture name="ui_tili01_tubiao" x="1106" y="1609" width="25" height="26"/>
+    <SubTexture name="ui_tipstanchukuangdi01_jiemian" x="817" y="1369" width="140" height="140"/>
+    <SubTexture name="ui_tishi_xiaotaitou_wenzi" x="698" y="1797" width="54" height="30"/>
+    <SubTexture name="ui_touxiangdi01_01" x="117" y="1254" width="84" height="84"/>
+    <SubTexture name="ui_touxiangdi01_02" x="266" y="1870" width="80" height="80" frameX="-2" frameY="-2" frameWidth="84" frameHeight="84"/>
+    <SubTexture name="ui_touxiangdi02_02" x="2" y="1312" width="86" height="78" frameX="0" frameY="-5" frameWidth="86" frameHeight="84"/>
+    <SubTexture name="ui_touxiangdi02_02_2" x="1960" y="1872" width="86" height="78" frameX="0" frameY="-5" frameWidth="86" frameHeight="84"/>
+    <SubTexture name="ui_touxiangdi02_03" x="184" y="1870" width="80" height="80" frameX="-4" frameY="-1" frameWidth="86" frameHeight="84"/>
+    <SubTexture name="ui_touxiangdi02_03_2" x="102" y="1870" width="80" height="80" frameX="-4" frameY="-1" frameWidth="86" frameHeight="84"/>
+    <SubTexture name="ui_touxiangkuang_01" x="1270" y="1714" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_02" x="1255" y="1830" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_03" x="1237" y="1932" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_04" x="1168" y="1717" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_05" x="1153" y="1830" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_06" x="1135" y="1940" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_07" x="1033" y="1940" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_08" x="931" y="1944" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_09" x="829" y="1944" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_10" x="584" y="1506" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_11" x="482" y="1506" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_12" x="380" y="1506" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_13" x="278" y="1506" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_14" x="176" y="1506" width="100" height="100"/>
+    <SubTexture name="ui_touxiangkuang_15" x="1297" y="1278" width="100" height="100"/>
+    <SubTexture name="ui_tubiao_rongyufenleianniu_zhandong" x="316" y="1333" width="60" height="57"/>
+    <SubTexture name="ui_tubiao_zhuxianpilaozhi_xiao_jian" x="1283" y="1460" width="114" height="34"/>
+    <SubTexture name="ui_tujian_taitou_wenzi" x="1515" y="1719" width="89" height="37" frameX="-12" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_tunshi_xiaotaitou_wenzi" x="642" y="1797" width="54" height="30"/>
+    <SubTexture name="ui_vipmeiridalibao_xiaotaitou_wenzi" x="1816" y="1453" width="164" height="31"/>
+    <SubTexture name="ui_vipzuoshang01_tubiao" x="770" y="1886" width="50" height="59"/>
+    <SubTexture name="ui_weizhihou_wenzi" x="1775" y="863" width="47" height="46"/>
+    <SubTexture name="ui_weizhiqian_wenzi" x="1775" y="815" width="47" height="46"/>
+    <SubTexture name="ui_weizhizhong_wenzi" x="1774" y="1143" width="45" height="46" frameX="-1" frameY="0" frameWidth="47" frameHeight="46"/>
+    <SubTexture name="ui_wenzi_tianjiayingxiong" x="784" y="1583" width="42" height="22" frameX="0" frameY="-1" frameWidth="44" frameHeight="24"/>
+    <SubTexture name="ui_world_nandusuo" x="523" y="1609" width="59" height="67"/>
+    <SubTexture name="ui_xialatiaodi01_xianshi" x="708" y="878" width="11" height="22"/>
+    <SubTexture name="ui_xialatiaoding01_xianshi" x="708" y="902" width="7" height="18" frameX="-2" frameY="-2" frameWidth="11" frameHeight="22"/>
+    <SubTexture name="ui_xiangqian_xiaotaitou_wenzi" x="586" y="1797" width="54" height="30"/>
+    <SubTexture name="ui_xiangqiancaodi01_01" x="629" y="1447" width="26" height="26"/>
+    <SubTexture name="ui_xiangqiancaodi02_01" x="1099" y="1886" width="52" height="52"/>
+    <SubTexture name="ui_xiangshangtishi01_anniu" x="2" y="1242" width="109" height="68"/>
+    <SubTexture name="ui_xiangxiatishi01_anniu" x="206" y="1609" width="109" height="68"/>
+    <SubTexture name="ui_xiangyoutishi01_anniu" x="1062" y="1637" width="68" height="109"/>
+    <SubTexture name="ui_xiangzuotishi01_anniu" x="660" y="1392" width="68" height="109"/>
+    <SubTexture name="ui_xiaojiahao_anniu" x="708" y="838" width="12" height="12"/>
+    <SubTexture name="ui_xingxing_tubiao01" x="684" y="1040" width="38" height="38"/>
+    <SubTexture name="ui_xingxing_tubiao02" x="684" y="1000" width="38" height="38"/>
+    <SubTexture name="ui_xingyunxing01_tubiao" x="629" y="1475" width="25" height="26"/>
+    <SubTexture name="ui_xingyunxing02_tubiao" x="90" y="1312" width="25" height="26"/>
+    <SubTexture name="ui_xingyunxing_beijingtu" x="684" y="1080" width="278" height="160"/>
+    <SubTexture name="ui_xingyunxingtaitou_01" x="968" y="1041" width="429" height="101"/>
+    <SubTexture name="ui_xinxiaoxitishi_tubiao" x="698" y="927" width="23" height="26"/>
+    <SubTexture name="ui_xuanzhongfaguang01_jiemian" x="900" y="1870" width="72" height="72"/>
+    <SubTexture name="ui_yeqian01_xianshi" x="1931" y="1818" width="28" height="25"/>
+    <SubTexture name="ui_yeqian02_xianshi" x="1541" y="1521" width="28" height="25"/>
+    <SubTexture name="ui_yichushou_tishi_wenzi" x="1738" y="1661" width="75" height="28"/>
+    <SubTexture name="ui_yijianfankui_xiaotaitou_wenzi" x="192" y="1765" width="102" height="30"/>
+    <SubTexture name="ui_yingxionghun_tubiao_01" x="712" y="1609" width="57" height="65"/>
+    <SubTexture name="ui_yingxionghun_tubiao_02" x="1571" y="1562" width="30" height="30"/>
+    <SubTexture name="ui_yingxionghundi_jindutiao" x="449" y="708" width="273" height="38"/>
+    <SubTexture name="ui_yingxionghunding02_jindutiao" x="449" y="774" width="261" height="24" frameX="-6" frameY="-5" frameWidth="273" frameHeight="38"/>
+    <SubTexture name="ui_yingxionghunding_jindutiao" x="449" y="748" width="261" height="24" frameX="-6" frameY="-5" frameWidth="273" frameHeight="38"/>
+    <SubTexture name="ui_yingxiongjianjie_xiaotaitou_wenzi" x="255" y="1680" width="102" height="31"/>
+    <SubTexture name="ui_yingxiongjinjie_taitou_wenzi" x="1814" y="1792" width="115" height="37"/>
+    <SubTexture name="ui_yingxiongshengxing_taitou_wenzi" x="1606" y="1752" width="115" height="37"/>
+    <SubTexture name="ui_yingxiongtexing_xiaotaitou_wenzi" x="110" y="1680" width="102" height="31"/>
+    <SubTexture name="ui_yingxiongzhijia_taitou_wenzi" x="1814" y="1753" width="115" height="37"/>
+    <SubTexture name="ui_yiwancheng" x="1328" y="1144" width="69" height="48"/>
+    <SubTexture name="ui_youxiang_taitou_wenzi" x="1690" y="1898" width="87" height="37" frameX="-14" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_yuanhonganniu01_anniu" x="227" y="1392" width="112" height="112"/>
+    <SubTexture name="ui_zengjia01_anniu" x="2010" y="1216" width="36" height="36"/>
+    <SubTexture name="ui_zengjia02_anniu" x="1932" y="1742" width="32" height="34" frameX="-5" frameY="-4" frameWidth="42" frameHeight="42"/>
+    <SubTexture name="ui_zhandouli01_tubiao" x="1821" y="1168" width="195" height="33"/>
+    <SubTexture name="ui_zhandouli02_tubiao" x="1107" y="1581" width="25" height="26"/>
+    <SubTexture name="ui_zhandouzhongnuqitiaodi" x="2" y="1216" width="110" height="24"/>
+    <SubTexture name="ui_zhandouzhongnuqitiaoding" x="339" y="1293" width="108" height="20" frameX="-2" frameY="-2" frameWidth="110" frameHeight="24"/>
+    <SubTexture name="ui_zhandouzhongtouxiangdi" x="227" y="1221" width="110" height="110"/>
+    <SubTexture name="ui_zhezhaoyinyingdi" x="712" y="748" width="10" height="22"/>
+    <SubTexture name="ui_zhishijiantou01_tubiao" x="1985" y="1397" width="61" height="53"/>
+    <SubTexture name="ui_zhishijiantou02_tubiao" x="1985" y="1342" width="61" height="53"/>
+    <SubTexture name="ui_zhixianrenwu_anniuzi_wenzi" x="860" y="1680" width="100" height="28"/>
+    <SubTexture name="ui_zhuangbei_taitou_wenzi" x="1811" y="1870" width="87" height="37" frameX="-13" frameY="0" frameWidth="115" frameHeight="37"/>
+    <SubTexture name="ui_zhuangbei_xiaotaitou_wenzi" x="810" y="1797" width="53" height="30"/>
+    <SubTexture name="ui_zhuangshihuawen01_jiemian" x="1931" y="1778" width="33" height="8"/>
+    <SubTexture name="ui_zhuangshihuawen02_jiemian" x="698" y="892" width="8" height="33"/>
+    <SubTexture name="ui_zhuangshixianquan01_jiemian" x="1774" y="1277" width="44" height="44"/>
+    <SubTexture name="ui_zhuangshixianquan02_jiemian" x="708" y="922" width="9" height="1"/>
+    <SubTexture name="ui_zhuangshixianquan03_jiemian" x="826" y="1870" width="72" height="72"/>
+    <SubTexture name="ui_zhuangshixianquan04_jiemian" x="1610" y="1560" width="126" height="126"/>
+    <SubTexture name="ui_zhuanpandi03_tietu" x="2" y="708" width="445" height="445"/>
+    <SubTexture name="ui_zhuxianrenwu_anniuzi_wenzi" x="465" y="1856" width="100" height="28"/>
+    <SubTexture name="ui_zuanshi01_tubiao" x="1107" y="1553" width="25" height="26"/>
+    <SubTexture name="worldmap_boat" x="1775" y="581" width="49" height="43"/>
+    <SubTexture name="worldmap_city1" x="357" y="1713" width="66" height="50" frameX="-6" frameY="-9" frameWidth="80" frameHeight="66"/>
+    <SubTexture name="worldmap_city2" x="1399" y="1424" width="140" height="102" frameX="-2" frameY="-4" frameWidth="142" frameHeight="106"/>
+    <SubTexture name="worldmap_city3" x="1399" y="1041" width="209" height="133" frameX="-8" frameY="-7" frameWidth="225" frameHeight="143"/>
+    <SubTexture name="worldmap_desert1" x="734" y="1714" width="55" height="43" frameX="-7" frameY="-5" frameWidth="69" frameHeight="53"/>
+    <SubTexture name="worldmap_desert2" x="341" y="1155" width="106" height="53" frameX="-7" frameY="-8" frameWidth="122" frameHeight="71"/>
+    <SubTexture name="worldmap_desert3" x="227" y="1333" width="87" height="57" frameX="-9" frameY="-9" frameWidth="105" frameHeight="73"/>
+    <SubTexture name="worldmap_desert4" x="2" y="1155" width="112" height="59" frameX="0" frameY="0" frameWidth="118" frameHeight="59"/>
+    <SubTexture name="worldmap_desert5" x="761" y="1857" width="63" height="26" frameX="0" frameY="-4" frameWidth="63" frameHeight="30"/>
+    <SubTexture name="worldmap_desert6" x="341" y="1210" width="105" height="42" frameX="0" frameY="-3" frameWidth="111" frameHeight="50"/>
+    <SubTexture name="worldmap_desert7" x="1457" y="1765" width="54" height="35" frameX="-3" frameY="0" frameWidth="62" frameHeight="37"/>
+    <SubTexture name="worldmap_desert8" x="608" y="1886" width="101" height="59" frameX="0" frameY="-4" frameWidth="101" frameHeight="63"/>
+    <SubTexture name="worldmap_dong" x="531" y="1797" width="53" height="56" frameX="-4" frameY="0" frameWidth="57" frameHeight="60"/>
+    <SubTexture name="worldmap_farmland1" x="845" y="1712" width="87" height="51" frameX="0" frameY="-6" frameWidth="87" frameHeight="61"/>
+    <SubTexture name="worldmap_farmland2" x="425" y="1714" width="62" height="46" frameX="-10" frameY="-8" frameWidth="72" frameHeight="54"/>
+    <SubTexture name="worldmap_grave1" x="1933" y="1675" width="30" height="33" frameX="-3" frameY="-4" frameWidth="38" frameHeight="37"/>
+    <SubTexture name="worldmap_grave2" x="567" y="1855" width="34" height="29" frameX="0" frameY="-2" frameWidth="34" frameHeight="31"/>
+    <SubTexture name="worldmap_grave3" x="798" y="1759" width="41" height="36" frameX="-4" frameY="-3" frameWidth="45" frameHeight="42"/>
+    <SubTexture name="worldmap_grave4" x="1775" y="626" width="49" height="39" frameX="-2" frameY="-2" frameWidth="51" frameHeight="41"/>
+    <SubTexture name="worldmap_grave5" x="1149" y="1144" width="177" height="119" frameX="0" frameY="-4" frameWidth="181" frameHeight="129"/>
+    <SubTexture name="worldmap_house1" x="192" y="1797" width="83" height="70"/>
+    <SubTexture name="worldmap_house2" x="346" y="1952" width="87" height="77"/>
+    <SubTexture name="worldmap_house3" x="540" y="1952" width="87" height="73" frameX="-8" frameY="0" frameWidth="111" frameHeight="73"/>
+    <SubTexture name="worldmap_house4" x="435" y="1952" width="103" height="76" frameX="-8" frameY="0" frameWidth="115" frameHeight="76"/>
+    <SubTexture name="worldmap_house5" x="1934" y="1638" width="30" height="35"/>
+    <SubTexture name="worldmap_house6" x="394" y="1857" width="40" height="27" frameX="-1" frameY="-2" frameWidth="44" frameHeight="33"/>
+    <SubTexture name="worldmap_house7" x="921" y="1632" width="36" height="34" frameX="-4" frameY="-5" frameWidth="42" frameHeight="42"/>
+    <SubTexture name="worldmap_lake1" x="1391" y="1632" width="122" height="131" frameX="0" frameY="-6" frameWidth="126" frameHeight="137"/>
+    <SubTexture name="worldmap_lake2" x="1134" y="1552" width="130" height="126"/>
+    <SubTexture name="worldmap_mountain1" x="227" y="1155" width="112" height="64" frameX="-4" frameY="0" frameWidth="120" frameHeight="64"/>
+    <SubTexture name="worldmap_mountain10" x="526" y="1714" width="59" height="44" frameX="-2" frameY="-3" frameWidth="63" frameHeight="50"/>
+    <SubTexture name="worldmap_mountain2" x="1269" y="1496" width="128" height="83" frameX="0" frameY="-3" frameWidth="134" frameHeight="91"/>
+    <SubTexture name="worldmap_mountain3" x="117" y="1379" width="108" height="125" frameX="0" frameY="-10" frameWidth="108" frameHeight="135"/>
+    <SubTexture name="worldmap_mountain4" x="1399" y="1528" width="128" height="70" frameX="0" frameY="-4" frameWidth="136" frameHeight="74"/>
+    <SubTexture name="worldmap_mountain5" x="1819" y="1331" width="164" height="120" frameX="-11" frameY="-6" frameWidth="184" frameHeight="134"/>
+    <SubTexture name="worldmap_mountain6" x="1286" y="1380" width="111" height="78"/>
+    <SubTexture name="worldmap_mountain7" x="1399" y="1176" width="172" height="91" frameX="-8" frameY="-12" frameWidth="180" frameHeight="103"/>
+    <SubTexture name="worldmap_mountain8" x="1266" y="1615" width="123" height="97" frameX="-6" frameY="0" frameWidth="129" frameHeight="97"/>
+    <SubTexture name="worldmap_mountain9" x="896" y="1765" width="35" height="28"/>
+    <SubTexture name="worldmap_rift1" x="449" y="800" width="257" height="90" frameX="0" frameY="-10" frameWidth="257" frameHeight="100"/>
+    <SubTexture name="worldmap_rift2" x="1399" y="1269" width="170" height="108" frameX="-11" frameY="-15" frameWidth="194" frameHeight="138"/>
+    <SubTexture name="worldmap_sheep" x="100" y="1588" width="17" height="18"/>
+    <SubTexture name="worldmap_tree1" x="449" y="955" width="233" height="141" frameX="-4" frameY="-14" frameWidth="237" frameHeight="155"/>
+    <SubTexture name="worldmap_tree10" x="1610" y="1283" width="161" height="117" frameX="-8" frameY="-6" frameWidth="177" frameHeight="131"/>
+    <SubTexture name="worldmap_tree11" x="1775" y="955" width="47" height="42" frameX="0" frameY="-4" frameWidth="47" frameHeight="46"/>
+    <SubTexture name="worldmap_tree12" x="214" y="1679" width="39" height="33" frameX="0" frameY="-4" frameWidth="43" frameHeight="37"/>
+    <SubTexture name="worldmap_tree13" x="1775" y="911" width="47" height="42" frameX="0" frameY="-6" frameWidth="47" frameHeight="48"/>
+    <SubTexture name="worldmap_tree2" x="1137" y="1304" width="147" height="114" frameX="-7" frameY="-15" frameWidth="161" frameHeight="138"/>
+    <SubTexture name="worldmap_tree3" x="2" y="1609" width="106" height="102" frameX="-4" frameY="-5" frameWidth="116" frameHeight="114"/>
+    <SubTexture name="worldmap_tree4" x="2" y="1765" width="82" height="63"/>
+    <SubTexture name="worldmap_tree5" x="1599" y="1906" width="86" height="39" frameX="0" frameY="0" frameWidth="86" frameHeight="43"/>
+    <SubTexture name="worldmap_tree6" x="684" y="955" width="38" height="43" frameX="-4" frameY="-6" frameWidth="42" frameHeight="53"/>
+    <SubTexture name="worldmap_tree7" x="1773" y="1369" width="43" height="49" frameX="-1" frameY="0" frameWidth="47" frameHeight="53"/>
+    <SubTexture name="worldmap_tree8" x="909" y="1795" width="34" height="26" frameX="-6" frameY="-7" frameWidth="46" frameHeight="40"/>
+    <SubTexture name="worldmap_tree9" x="110" y="1608" width="94" height="70" frameX="0" frameY="0" frameWidth="98" frameHeight="74"/>
+    <SubTexture name="yanse_hong" x="1457" y="1844" width="40" height="40"/>
+    <SubTexture name="yanse_huang" x="1457" y="1802" width="40" height="40"/>
+    <SubTexture name="yanse_lan" x="1126" y="1787" width="40" height="40"/>
+    <SubTexture name="yanse_lv" x="1084" y="1787" width="40" height="40"/>
+    <SubTexture name="yanse_zi" x="1042" y="1788" width="40" height="40"/>
+    <SubTexture name="yuanxingtouxiangkuangfaguang" x="86" y="1764" width="104" height="104"/>
+    <SubTexture name="zhandoupingxing" x="959" y="1441" width="146" height="145"/>
+</TextureAtlas>

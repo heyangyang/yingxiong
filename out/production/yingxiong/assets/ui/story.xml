@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:d1617f58c470f3559fd078f5bc318108$ -->
+<TextureAtlas imagePath="story.png">
+    <SubTexture name="story_words" x="2" y="2" width="960" height="241"/>
+</TextureAtlas>

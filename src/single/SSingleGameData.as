@@ -1,11 +1,14 @@
 package single
 {
 	import com.scene.SceneMgr;
+	import com.utils.ArrayUtil;
 	import com.view.base.event.ViewDispatcher;
 
 	import flash.data.EncryptedLocalStore;
 	import flash.utils.ByteArray;
+	import flash.utils.describeType;
 	import flash.utils.getDefinitionByName;
+	import flash.utils.setInterval;
 
 	import avmplus.getQualifiedClassName;
 
@@ -16,7 +19,12 @@ package single
 	import game.net.data.s.SAllgoods;
 	import game.net.data.s.SGet_all_hero;
 	import game.net.data.s.SGet_game_data;
+	import game.net.data.s.SSearchhero;
+	import game.net.data.s.SSign;
+	import game.net.data.vo.EquipVO;
+	import game.net.data.vo.GoodsVO;
 	import game.net.data.vo.HeroVO;
+	import game.net.data.vo.SignState;
 	import game.scene.GameLoadingScene;
 
 	/**
@@ -46,11 +54,11 @@ package single
 		/**
 		 * 所有数据
 		 */
-		private var mBytes : Object;
+		internal var mBytes : Object;
 		/**
 		 * 是否创建了角色
 		 */
-		private var mIsCreate : Boolean;
+		internal var mIsCreate : Boolean;
 		/**
 		 * 所搜英雄的cd
 		 */
@@ -67,6 +75,15 @@ package single
 		 * 玩家所有物品数据
 		 */
 		internal var mGameGoods : SAllgoods;
+		/**
+		 * 探索英雄
+		 */
+		internal var mSearchHeroData : SSearchhero;
+		/**
+		 * 签到信息
+		 */
+		internal var mSign : SSign;
+		internal var mSignDay : int;
 
 		private function init() : void
 		{
@@ -93,6 +110,8 @@ package single
 
 			mIsCreate = mBytes.mIsCreate;
 			mSearchHeroCD = mBytes.mSearchHeroCD;
+			mSignDay = mBytes.mSignDay;
+			setInterval(save, 30000);
 		}
 
 		/**
@@ -107,7 +126,7 @@ package single
 				mGameData.level = 99;
 				mGameData.tollgateid = 99;
 				mGameData.tired = 100;
-				mGameData.diamond = mGameData.coin = 99999;
+				mGameData.diamond = 99999;
 				mGameData.arenaname = "";
 				mGameData.herotab = 8;
 				mGameData.bagequ = mGameData.bagmat = mGameData.bagprop = 20;
@@ -120,9 +139,31 @@ package single
 				mBytes.heros = mGameHeros;
 
 				mGameGoods = new SAllgoods();
+				mGameGoods.type = 1;
 				mGameGoods.equip = new Vector.<IData>();
 				mGameGoods.props = new Vector.<IData>();
+
+				mSearchHeroData = new SSearchhero();
+				mSearchHeroData.heroes = new Vector.<IData>();
 				mBytes.goods = mGameGoods;
+
+				mBytes.mSearchHeroData = mSearchHeroData;
+
+				mSign = new SSign();
+				mSign.type = 1;
+				mSign.days1 = 1;
+				mSign.days2 = 1;
+				mSign.days = new Vector.<IData>();
+				var state : SignState;
+				for (var i : int = 0; i < 7; i++)
+				{
+					state = new SignState();
+					state.day = i + 1;
+					state.state = i == 0 ? 1 : 0;
+					mSign.days.push(state);
+				}
+				mBytes.mSign = mSign;
+				mSignDay = new Date().getDay();
 			}
 			mIsCreate = true;
 			readRoleInfomation();
@@ -143,6 +184,40 @@ package single
 
 			mGameGoods = mBytes.goods;
 			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
+
+			mSearchHeroData = mBytes.mSearchHeroData;
+
+			mSign = mBytes.mSign;
+			//新一天登录签到
+			if (mSignDay != new Date().getDay())
+			{
+				onSignHanlder();
+			}
+		}
+
+		internal function onSignHanlder() : void
+		{
+			var state : SignState;
+			for (var i : int = 0; i < 7; i++)
+			{
+				state = mSign.days[i] as SignState;
+				if (state.state == 0)
+				{
+					state.state = 1;
+					return;
+				}
+			}
+
+			//清零
+			for (i = 0; i < 7; i++)
+			{
+				state = mSign.days[i] as SignState;
+				if (state.state == 0)
+				{
+					state.state = i == 0 ? 1 : 0;
+					return;
+				}
+			}
 		}
 
 		/**
@@ -172,22 +247,51 @@ package single
 			return heroVo;
 		}
 
-		internal function addGoodsByType(type : int, count : int) : Goods
+		/**
+		 * 添加物品到背包
+		 * @param type
+		 * @param count 数量
+		 * @return
+		 *
+		 */
+		internal function addGoodsByType(type : int, count : int = 1) : void
 		{
 			var data : WidgetData = new WidgetData(Goods.goods.getValue(type));
+			data.pile = count;
 			switch (data.tab)
 			{
 				//材料
 				case 1:
-					break;
 				//道具
 				case 2:
+					//幸运星
+					if (data.type == 3)
+					{
+						mGameData.lucknum += count;
+						return;
+					}
+					goodsVo = ArrayUtil.getArrayObjByField(mGameGoods.props, type, "type") as GoodsVO;
+					if (goodsVo)
+					{
+						goodsVo.pile += count;
+					}
+					else
+					{
+						var goodsVo : GoodsVO = new GoodsVO();
+						readObject(goodsVo, data);
+						goodsVo.pile = count;
+						goodsVo.id = type;
+						mGameGoods.props.push(goodsVo);
+					}
 					break;
 				//装备
 				case 5:
+					var equipVo : EquipVO = new EquipVO();
+					readObject(equipVo, data);
+					equipVo.id = type;
+					mGameGoods.equip.push(equipVo);
 					break;
 			}
-			return null;
 		}
 
 		/**
@@ -229,6 +333,46 @@ package single
 			return data;
 		}
 
+		public function readObject(child : *, obj : Object) : void
+		{
+			var value : *;
+			var key : String;
+			var data : XML = describeType(child);
+
+			for each (var variable : * in data.variable)
+			{
+				key = String(variable.@name);
+				value = obj[key];
+
+				if (value == null || value == undefined)
+				{
+					continue;
+				}
+
+				if (child[key] is int)
+				{
+					child[key] = int(value);
+				}
+				else if (child[key] is Number)
+				{
+					child[key] = Number(value);
+				}
+				else if (child[key] is Boolean)
+				{
+					child[key] = Boolean(int(value));
+				}
+				else if (child[key] is String)
+				{
+					child[key] = value;
+				}
+				else
+				{
+					child[key] = new Vector.<IData>();
+					ArrayUtil.copyArrayFormArray(child[key], value);
+				}
+			}
+		}
+
 		/**
 		 * 存档
 		 *
@@ -246,6 +390,7 @@ package single
 			}
 			data.mIsCreate = mIsCreate;
 			data.mSearchHeroCD = mSearchHeroCD;
+			data.mSignDay = mSignDay;
 			bytes.writeObject(data);
 			EncryptedLocalStore.setItem("s_d", bytes);
 		}

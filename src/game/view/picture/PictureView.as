@@ -38,11 +38,13 @@ package game.view.picture {
 //            list_pic.snapToPages = true;
             list_pic.horizontalScrollPolicy = Scroller.SCROLL_POLICY_OFF;
             list_pic.itemRendererFactory = itemRendererFactory;
-
-            //请求图鉴列表
-            sendMessage(CPictorialial);
         }
 
+        override protected function show():void
+		{
+			//请求图鉴列表
+			sendMessage(CPictorialial);
+		}
         override protected function addListenerHandler():void {
             super.addListenerHandler();
             this.addViewListener(list_pic, Event.CHANGE, onListHandler);

@@ -7,7 +7,7 @@ package
 	import com.sound.SoundManager;
 	import com.utils.Assets;
 	import com.utils.Constants;
-
+	
 	import flash.desktop.NativeApplication;
 	import flash.desktop.SystemIdleMode;
 	import flash.display.Bitmap;
@@ -21,7 +21,7 @@ package
 	import flash.system.Capabilities;
 	import flash.system.System;
 	import flash.ui.Keyboard;
-
+	
 	import game.data.Val;
 	import game.dialog.MsgDialog;
 	import game.manager.GameMgr;
@@ -32,22 +32,22 @@ package
 	import game.utils.Config;
 	import game.utils.GmView;
 	import game.utils.LocalShareManager;
-	import game.view.new2Guide.NewGuide2Manager;
-
+	
 	import sdk.AccountManager;
 	import sdk.DataEyeManger;
-
+	
+	import single.SSingleGameData;
+	
 	import spriter.core.Animation;
 	import spriter.core.ChildReference;
 	import spriter.core.Mainline;
 	import spriter.core.MainlineKey;
 	import spriter.core.Timeline;
 	import spriter.core.TimelineKey;
-
+	
 	import starling.core.Starling;
 	import starling.events.Event;
 	import starling.events.ResizeEvent;
-	import single.SSingleGameData;
 
 	public class Main extends Sprite
 	{
@@ -135,7 +135,7 @@ package
 			mStarling.removeEventListener(starling.events.Event.ROOT_CREATED, onRootCreated);
 
 			//debug版本去掉激活操作
-			if (!Constants.WINDOWS)
+//			if (!Constants.WINDOWS)
 			{
 				NativeApplication.nativeApplication.addEventListener(flash.events.Event.ACTIVATE, onActive, false, 0, true);
 				NativeApplication.nativeApplication.addEventListener(flash.events.Event.DEACTIVATE, deActive, false, 0, true);
@@ -172,6 +172,7 @@ package
 		private function deActive(e : *) : void
 		{
 			DataEyeManger.instance.onActive();
+			SSingleGameData.getInstance().save();
 			mStarling.stop();
 			System.pause();
 			AccountManager.instance.hideBar();

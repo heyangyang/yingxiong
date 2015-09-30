@@ -96,6 +96,19 @@ package game.data {
             }
             return count;
         }
+		
+		public static function getCountByTab(tab:int):int {
+			var count:int = 0;
+			var props:Vector.<*> = hash.values();
+			var len:int = props.length;
+			for (var i:int = 0; i < len; i++) {
+				var widget:WidgetData = props[i] as WidgetData;
+				if (widget.tab == tab) {
+					count++;
+				}
+			}
+			return count;
+		}
 
         public static function getWidgetByType(type:int):WidgetData {
             var props:Vector.<*> = hash.values();

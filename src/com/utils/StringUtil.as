@@ -510,7 +510,7 @@
             if ((price / PRICE) > 1000)
                 point=0;
 
-            if (price >= PRICE)
+            if (price >= 100000)
             {
                 return int(price / PRICE) + (point > 0 ? "." + point : "") + (isAddW ? " W" : "");
             }

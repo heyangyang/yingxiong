@@ -512,6 +512,14 @@ package com.utils
 			return tmpArr;
 		}
 
+		public static function copyArrayFormArray(list : *, list2 : *) : void
+		{
+			for (var i : int = 0, len : int = list2.length; i < len; i++)
+			{
+				list.push(list2[i]);
+			}
+		}
+
 		/**
 		 * 根据字段删除元素
 		 * @param arr
@@ -536,17 +544,17 @@ package com.utils
 			}
 			return -1;
 		}
-		
+
 		public static function getArrayObjByField(arr : *, value : Object, field : String = "") : Object
 		{
 			if (arr == null)
 				return null;
-			
+
 			for (var i : int = arr.length - 1; i >= 0; i--)
 			{
 				if (arr[i] == null)
 					continue;
-				
+
 				if ((field == "" && arr[i] == value) || (field != "" && arr[i][field] == value))
 				{
 					return arr[i];

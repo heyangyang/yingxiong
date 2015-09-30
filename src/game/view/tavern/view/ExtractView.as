@@ -197,9 +197,9 @@ package game.view.tavern.view
 					for (var i : int = 0; i < len; i++)
 					{
 						info = arr[i] as TavernHeroVo;
-						if (info.id == heroVotype.id)
+						if (info && info.id == heroVotype.id)
 						{
-							arr.splice(i, 1);
+							arr[i]=null;
 							break;
 						}
 					}

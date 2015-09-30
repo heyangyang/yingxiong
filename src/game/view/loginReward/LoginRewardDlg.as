@@ -4,12 +4,12 @@ package game.view.loginReward {
     import com.langue.Langue;
     import com.mvc.interfaces.INotification;
     import com.view.base.event.EventType;
-
+    
     import feathers.controls.Scroller;
     import feathers.data.ListCollection;
     import feathers.layout.TiledColumnsLayout;
     import feathers.layout.TiledRowsLayout;
-
+    
     import game.data.Goods;
     import game.data.HeroData;
     import game.data.IconData;
@@ -29,7 +29,7 @@ package game.view.loginReward {
     import game.view.new2Guide.NewGuide2Manager;
     import game.view.uitils.Res;
     import game.view.viewBase.LoginRewardDlgBase;
-
+    
     import starling.display.Button;
     import starling.display.DisplayObjectContainer;
     import starling.display.Image;
@@ -48,8 +48,8 @@ package game.view.loginReward {
         private var CAN_RECEIVE:int = 1; //可领取
         private var Not_AVAILABLE:int = 0; //未签到
         private var _selectedDay:int; //选中的登录天数
-        private var _receiveStatusList:Vector.<int> = new Vector.<int>;
-        private var _signPrograssStatusList:Vector.<int> = new Vector.<int>;
+        private var _receiveStatusList:Vector.<int> = new Vector.<int>();
+        private var _signPrograssStatusList:Vector.<int> = new Vector.<int>();
         private var dataVector:Vector.<IconData> = null;
 
         public function LoginRewardDlg() {
@@ -117,22 +117,23 @@ package game.view.loginReward {
                 updateUserData(parameter as SSign);
                 return;
             }
+            ShowLoader.add();
             var cmd:CSign = new CSign();
             GameSocket.instance.sendData(cmd);
-            ShowLoader.add();
         }
+		
+		override protected function addListenerHandler():void
+		{
+			super.addListenerHandler();
+			addContextListener(SSign.CMD+"",handleNotification);
+			addContextListener(SGet_sign.CMD+"",handleNotification);
+		}
 
-        override public function listNotificationName():Vector.<String> {
-            var vect:Vector.<String> = new Vector.<String>;
-            vect.push(SSign.CMD, SGet_sign.CMD);
-            return vect;
-        }
-
-        override public function handleNotification(_arg1:INotification):void {
-            if (_arg1.getName() == String(SSign.CMD)) {
+        private function handleNotification(evt:Event,_arg1:IData):void {
+            if (_arg1.getCmd() == SSign.CMD) {
                 var ssign:SSign = _arg1 as SSign;
                 updateUserData(ssign);
-            } else if (_arg1.getName() == String(SGet_sign.CMD)) {
+            } else if (_arg1.getCmd() == SGet_sign.CMD) {
                 var sget_sign:SGet_sign = _arg1 as SGet_sign;
                 updateReceive(sget_sign);
             }
@@ -374,10 +375,10 @@ package game.view.loginReward {
 
         //请求领取登录奖励
         private function receiveRewards(value:int):void {
+            ShowLoader.add();
             var cmd:CGet_sign = new CGet_sign();
             cmd.day = value;
             GameSocket.instance.sendData(cmd);
-            ShowLoader.add();
         }
 
         /**

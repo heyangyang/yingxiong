@@ -3,10 +3,10 @@ package single
 	import com.utils.ArrayUtil;
 	import com.view.base.event.EventType;
 	import com.view.base.event.ViewDispatcher;
-
+	
 	import flash.utils.Dictionary;
 	import flash.utils.getQualifiedClassName;
-
+	
 	import game.data.ConfigData;
 	import game.data.Goods;
 	import game.data.HeroData;
@@ -16,7 +16,6 @@ package single
 	import game.data.SignData;
 	import game.data.SkillData;
 	import game.data.TollgateData;
-	import game.data.WidgetData;
 	import game.manager.HeroDataMgr;
 	import game.net.data.IData;
 	import game.net.data.c.CBattle;
@@ -27,6 +26,7 @@ package single
 	import game.net.data.c.CLuck_start;
 	import game.net.data.c.CPictorialial;
 	import game.net.data.c.CSearchhero;
+	import game.net.data.c.CSetEquip;
 	import game.net.data.c.CShop;
 	import game.net.data.c.CSign;
 	import game.net.data.s.SBattle;
@@ -38,8 +38,11 @@ package single
 	import game.net.data.s.SLuck_start;
 	import game.net.data.s.SPictorialial;
 	import game.net.data.s.SSearchhero;
+	import game.net.data.s.SSetEquip;
 	import game.net.data.s.SShop;
+	import game.net.data.vo.AotoEquipVO;
 	import game.net.data.vo.BattleVo;
+	import game.net.data.vo.EquipVO;
 	import game.net.data.vo.HeroPosition;
 	import game.net.data.vo.HeroVO;
 	import game.net.data.vo.Pictorial;
@@ -76,6 +79,7 @@ package single
 			addHandler(CLuck_start.CMD, onLuckStartHanlder);
 			addHandler(CSign.CMD, onSingnHandler);
 			addHandler(CGet_sign.CMD, onStartSingnHandler);
+			addHandler(CSetEquip.CMD, onEquipHandler);
 		}
 
 		public function addHandler(eventString : int, listener : Function) : void
@@ -370,14 +374,7 @@ package single
 			{
 				if (mSingleGameMgr.mGameData.lucknum == 0)
 					return 1;
-				//道具
-				if (mSingleGameMgr.mGameData.bagprop == WidgetData.getCountByTab(2))
-					return 3;
-				//材料
-				if (mSingleGameMgr.mGameData.bagmat == WidgetData.getCountByTab(1))
-					return 3;
-				//装备
-				if (mSingleGameMgr.mGameData.bagequ == WidgetData.getCountByTab(5))
+				if (mSingleGameMgr.isPackageIsFull(goods.tab))
 					return 3;
 				return 0;
 			}
@@ -436,6 +433,46 @@ package single
 				sendMsg.code = 1;
 			else
 				sendMsg.code = 2;
+			sendMessage(sendMsg);
+		}
+
+		/**
+		 * 穿戴装备
+		 * @param data
+		 *
+		 */
+		private function onEquipHandler(data : CSetEquip) : void
+		{
+			var sendMsg : SSetEquip = new SSetEquip();
+			var equipVo : EquipVO;
+			var goods : Goods;
+			var heroVO : HeroVO;
+			for each (var vo : AotoEquipVO in data.aotoEquipVO)
+			{
+				equipVo = mSingleGameMgr.getEquipByType(vo.equipID);
+				if (equipVo == null)
+					equipVo = mSingleGameMgr.getEquipByHeroId(vo.heroID);
+				heroVO = mSingleGameMgr.getRoleByType(vo.heroID);
+				if (equipVo)
+				{
+					goods = Goods.goods.getValue(equipVo.type);
+					//背包是否满了
+					if (vo.equipID == 0 && mSingleGameMgr.isPackageIsFull(goods.tab))
+					{
+						sendMsg.code = 1;
+						break;
+					}
+					if (mSingleGameMgr.mGameData.level < goods.level)
+					{
+						sendMsg.code = 2;
+						break;
+					}
+					equipVo.equip = vo.heroID;
+					heroVO["seat" + vo.seat] = equipVo.id;
+				}
+				else
+					heroVO["seat" + vo.seat] = 0;
+			}
 			sendMessage(sendMsg);
 		}
 

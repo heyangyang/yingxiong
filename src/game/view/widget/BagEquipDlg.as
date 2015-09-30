@@ -175,7 +175,8 @@ package game.view.widget {
 
         /**更新*/
         private function update():void {
-			
+			if(_widgetData==null)
+				return;
             text_Item.text = _widgetData.name;
             if (_widgetData.picture) {
                 icon.texture = AssetMgr.instance.getTexture(_widgetData.picture);

@@ -15,6 +15,7 @@ package com.dialog
 	import game.common.JTGlobalDef;
 	import game.managers.JTFunctionManager;
 	import game.view.achievement.AchievementDlg;
+	import game.view.activity.ActivityDlg;
 	import game.view.arena.ArenaCreateNameDlg;
 	import game.view.email.EmailDlg;
 	import game.view.rank.RankDlg;
@@ -114,7 +115,7 @@ package com.dialog
 		{
 			if (SSingleGameData.isSingleGame)
 			{
-				if (className == AchievementDlg || className == EmailDlg || className == RankDlg || className == ArenaCreateNameDlg)
+				if (className == AchievementDlg || className == EmailDlg || className == RankDlg || className == ArenaCreateNameDlg || className == ActivityDlg)
 				{
 					RollTips.add("暂未开放!");
 					cancelFun != null && cancelFun(null);

@@ -177,13 +177,10 @@ package single
 		private function readRoleInfomation() : void
 		{
 			mGameData = mBytes.data;
-			ViewDispatcher.dispatch(mGameData.getCmd() + "", mGameData);
-
 			mGameHeros = mBytes.heros;
-			ViewDispatcher.dispatch(mGameHeros.getCmd() + "", mGameHeros);
-
 			mGameGoods = mBytes.goods;
-			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
+			initHeroEquip();
+
 
 			mSearchHeroData = mBytes.mSearchHeroData;
 
@@ -193,6 +190,9 @@ package single
 			{
 				onSignHanlder();
 			}
+			ViewDispatcher.dispatch(mGameData.getCmd() + "", mGameData);
+			ViewDispatcher.dispatch(mGameHeros.getCmd() + "", mGameHeros);
+			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
 		}
 
 		internal function onSignHanlder() : void
@@ -292,6 +292,80 @@ package single
 					mGameGoods.equip.push(equipVo);
 					break;
 			}
+		}
+
+
+		/**
+		 * 否个类型包包是否已满
+		 * @param tab
+		 * @return
+		 *
+		 */
+		internal function isPackageIsFull(tab : int) : Boolean
+		{
+			//道具
+			if (tab == 2 && mGameData.bagprop == WidgetData.getCountByTab(2))
+				return true;
+			//材料
+			if (tab == 1 && mGameData.bagmat == WidgetData.getCountByTab(1))
+				return true;
+			//装备
+			if (tab == 5 && mGameData.bagequ == WidgetData.getCountByTab(5))
+				return true;
+			return false;
+		}
+
+		/**
+		 * 初始化人物装备
+		 *
+		 */
+		internal function initHeroEquip() : void
+		{
+			var vo : EquipVO;
+			var heroVo : HeroVO;
+			var goods : Goods;
+			for each (vo in mGameGoods.equip)
+			{
+				goods = Goods.goods.getValue(vo.type);
+				if (vo.equip == 0)
+					continue;
+				heroVo = getRoleByType(vo.equip);
+				heroVo["seat" + goods.seat] = vo.id;
+			}
+		}
+
+		/**
+		 * 根据type获得装备
+		 * @param type
+		 * @return
+		 *
+		 */
+		internal function getEquipByType(type : int) : EquipVO
+		{
+			var vo : EquipVO;
+			for each (vo in mGameGoods.equip)
+			{
+				if (vo.type == type)
+					return vo;
+			}
+			return null;
+		}
+
+		/**
+		 * 根据英雄id获得装备
+		 * @param id
+		 * @return
+		 *
+		 */
+		internal function getEquipByHeroId(id : int) : EquipVO
+		{
+			var vo : EquipVO;
+			for each (vo in mGameGoods.equip)
+			{
+				if (vo.equip == id)
+					return vo;
+			}
+			return null;
 		}
 
 		/**

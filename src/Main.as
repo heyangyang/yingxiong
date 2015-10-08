@@ -135,7 +135,7 @@ package
 			mStarling.removeEventListener(starling.events.Event.ROOT_CREATED, onRootCreated);
 
 			//debug版本去掉激活操作
-//			if (!Constants.WINDOWS)
+			if (!Constants.WINDOWS)
 			{
 				NativeApplication.nativeApplication.addEventListener(flash.events.Event.ACTIVATE, onActive, false, 0, true);
 				NativeApplication.nativeApplication.addEventListener(flash.events.Event.DEACTIVATE, deActive, false, 0, true);

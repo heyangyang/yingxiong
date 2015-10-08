@@ -1,5 +1,6 @@
 package game.common
 {
+	import game.data.HeroStarData;
 	import game.data.JTPVPRuleData;
 	import game.data.JTPvpNewRuleData;
 
@@ -49,6 +50,15 @@ package game.common
 		{
 			var property : int = Math.ceil(baseValue * cValue / 100);
 			return property;
+		}
+
+		public static function getStarValue(baseValue : int, star : int, heroStar : HeroStarData) : int
+		{
+			for (var i : int = 1; i <= star; i++)
+			{
+				baseValue = getNextStarDeff(baseValue, heroStar.stars[i]);
+			}
+			return baseValue;
 		}
 
 

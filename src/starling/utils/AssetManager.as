@@ -1,5 +1,7 @@
 package starling.utils
 {
+    import com.utils.Constants;
+    
     import flash.display.Bitmap;
     import flash.display.Loader;
     import flash.display.LoaderInfo;
@@ -15,8 +17,6 @@ package starling.utils
     import flash.media.SoundTransform;
     import flash.net.FileReference;
     import flash.net.URLLoader;
-    import flash.net.URLLoaderDataFormat;
-    import flash.net.URLRequest;
     import flash.system.ImageDecodingPolicy;
     import flash.system.LoaderContext;
     import flash.system.System;
@@ -150,7 +150,7 @@ package starling.utils
             mXmls = new Dictionary();
             mObjects = new Dictionary();
             mByteArrays = new Dictionary();
-            if (SystemUtil.isDesktop)
+            if (Constants.WINDOWS)
             {
                 mMaxConnections = 10;
             }

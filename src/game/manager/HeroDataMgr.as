@@ -36,19 +36,12 @@ package game.manager {
          * 本场战斗内的英雄包括对手
          */
         public var battleHeros:HashMap;
-		
-		/**
-		 * 怪物列表 
-		 */
-		public var monsterHashMap:HashMap;
-
         /**
          *
          */
         public function HeroDataMgr() {
             hash = new HashMap();
             battleHeros = new HashMap();
-			monsterHashMap=new HashMap();
         }
 
 
@@ -151,10 +144,9 @@ package game.manager {
                 hash.put(heroData.id, heroData);
                 heroData.updataPropertys(baseHero);
             }
-            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_LEVEL_HEROS, onUpdataLevelHeros);
-            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_QUALITY_HERO, onUpdataQualityHero);
-            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_STAR_HERO, onUpdataStarHero);
-
+	            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_LEVEL_HEROS, onUpdataLevelHeros);
+	            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_QUALITY_HERO, onUpdataQualityHero);
+	            JTFunctionManager.registerFunction(JTGlobalDef.UPDATA_STAR_HERO, onUpdataStarHero);
         }
 
 
@@ -366,7 +358,6 @@ package game.manager {
                 monster.id = monster.seat = int(monsters[i][1]) + 20;
                 monster.team = HeroData.RED;
                 battleHeros.put(monster.id, monster);
-				monsterHashMap.put(monster.id, monster);
             }
         }
 

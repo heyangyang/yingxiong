@@ -3,18 +3,20 @@ package single
 	import com.utils.ArrayUtil;
 	import com.view.base.event.EventType;
 	import com.view.base.event.ViewDispatcher;
-	
+
 	import flash.utils.Dictionary;
 	import flash.utils.getQualifiedClassName;
-	
+
 	import game.data.ConfigData;
 	import game.data.Goods;
 	import game.data.HeroData;
 	import game.data.HeroPriceData;
 	import game.data.LuckyStarData;
+	import game.data.PurgeData;
 	import game.data.ShopData;
 	import game.data.SignData;
 	import game.data.SkillData;
+	import game.data.StarData;
 	import game.data.TollgateData;
 	import game.manager.HeroDataMgr;
 	import game.net.data.IData;
@@ -22,9 +24,11 @@ package single
 	import game.net.data.c.CBuyhero;
 	import game.net.data.c.CEmbattle;
 	import game.net.data.c.CGet_sign;
+	import game.net.data.c.CHeroStar;
 	import game.net.data.c.CLuckInitInfo;
 	import game.net.data.c.CLuck_start;
 	import game.net.data.c.CPictorialial;
+	import game.net.data.c.CPurge;
 	import game.net.data.c.CSearchhero;
 	import game.net.data.c.CSetEquip;
 	import game.net.data.c.CShop;
@@ -34,9 +38,11 @@ package single
 	import game.net.data.s.SEmbattle;
 	import game.net.data.s.SGet_game_luck;
 	import game.net.data.s.SGet_sign;
+	import game.net.data.s.SHeroStar;
 	import game.net.data.s.SLuckInitInfo;
 	import game.net.data.s.SLuck_start;
 	import game.net.data.s.SPictorialial;
+	import game.net.data.s.SPurge;
 	import game.net.data.s.SSearchhero;
 	import game.net.data.s.SSetEquip;
 	import game.net.data.s.SShop;
@@ -48,6 +54,7 @@ package single
 	import game.net.data.vo.Pictorial;
 	import game.net.data.vo.SignState;
 	import game.net.data.vo.TavernHeroVo;
+	import game.view.tavern.data.TavernData;
 
 	public class SSingleNotify
 	{
@@ -80,6 +87,8 @@ package single
 			addHandler(CSign.CMD, onSingnHandler);
 			addHandler(CGet_sign.CMD, onStartSingnHandler);
 			addHandler(CSetEquip.CMD, onEquipHandler);
+			addHandler(CPurge.CMD, onPurgeHandler);
+			addHandler(CHeroStar.CMD, onHeroStarHandler);
 		}
 
 		public function addHandler(eventString : int, listener : Function) : void
@@ -142,7 +151,7 @@ package single
 					if (!skillData)
 						continue;
 					vo.skill = skillData.id;
-
+					sendData.battleCommands.push(vo);
 				}
 				if (count++ > 50)
 					break;
@@ -199,7 +208,7 @@ package single
 				vo.id = i + 1
 				vo.type = heroData.type;
 				vo.quality = 1 + 6 * Math.random();
-				vo.star = Math.random() * 5;
+				vo.star = Math.round(Math.random() * 5);
 				searchList.push(vo);
 			}
 			if (cd == 0)
@@ -238,8 +247,7 @@ package single
 			else
 			{
 				mSingleGameMgr.mGameData.diamond -= heroPriceData.price;
-				var heroVo : HeroVO = mSingleGameMgr.createRoleByType(vo.type);
-				heroVo.quality = vo.quality;
+				var heroVo : HeroVO = mSingleGameMgr.createRoleByType(vo.type, vo.quality, vo.star);
 				mSingleGameMgr.mGameHeros.heroes.push(heroVo);
 				sendMessage(mSingleGameMgr.mGameHeros);
 				dispatch(EventType.UPDATE_MONEY);
@@ -445,35 +453,154 @@ package single
 		{
 			var sendMsg : SSetEquip = new SSetEquip();
 			var equipVo : EquipVO;
-			var goods : Goods;
 			var heroVO : HeroVO;
 			for each (var vo : AotoEquipVO in data.aotoEquipVO)
 			{
-				equipVo = mSingleGameMgr.getEquipByType(vo.equipID);
-				if (equipVo == null)
-					equipVo = mSingleGameMgr.getEquipByHeroId(vo.heroID);
 				heroVO = mSingleGameMgr.getRoleByType(vo.heroID);
+				//从背包里获取装备
+				equipVo = mSingleGameMgr.getEquipByType(vo.equipID);
+
 				if (equipVo)
-				{
-					goods = Goods.goods.getValue(equipVo.type);
-					//背包是否满了
-					if (vo.equipID == 0 && mSingleGameMgr.isPackageIsFull(goods.tab))
-					{
-						sendMsg.code = 1;
-						break;
-					}
-					if (mSingleGameMgr.mGameData.level < goods.level)
-					{
-						sendMsg.code = 2;
-						break;
-					}
-					equipVo.equip = vo.heroID;
-					heroVO["seat" + vo.seat] = equipVo.id;
-				}
+					sendMsg.code = equipGoods(equipVo, heroVO);
 				else
-					heroVO["seat" + vo.seat] = 0;
+				{
+					equipVo = mSingleGameMgr.getEquipById(heroVO["seat" + vo.seat]);
+					sendMsg.code = unEquipGoods(equipVo, heroVO);
+				}
+				if (sendMsg.code > 0)
+					break;
 			}
 			sendMessage(sendMsg);
+
+			/**
+			 * 穿戴装备
+			 * @param equip
+			 * @param heroVO
+			 * @return
+			 *
+			 */
+			function equipGoods(equip : EquipVO, heroVO : HeroVO) : int
+			{
+				var goods : Goods = Goods.goods.getValue(equip.type);
+
+				if (heroVO.level < goods.level)
+				{
+					return 2;
+				}
+
+				var oldSeatId : int = heroVO["seat" + vo.seat];
+				//卸载原来的装备
+				if (oldSeatId > 0)
+				{
+					unEquipGoods(mSingleGameMgr.getEquipById(oldSeatId), heroVO);
+				}
+				equip.equip = vo.heroID;
+				heroVO["seat" + vo.seat] = equip.id;
+				return 0;
+			}
+
+			/**
+			 * 卸载装备
+			 * @param equip
+			 * @param heroVO
+			 * @return
+			 *
+			 */
+			function unEquipGoods(equip : EquipVO, heroVO : HeroVO) : int
+			{
+				var goods : Goods = Goods.goods.getValue(equip.type);
+
+				//背包是否满了
+				if (vo.equipID == 0 && mSingleGameMgr.isPackageIsFull(goods.tab))
+				{
+					return 1;
+				}
+
+				equip.equip = 0;
+				heroVO["seat" + vo.seat] = 0;
+				return 0;
+			}
+		}
+
+
+		/**
+		 * 英雄进阶
+		 * @param data
+		 *
+		 */
+		private function onPurgeHandler(data : CPurge) : void
+		{
+			var heroVo : HeroVO = mSingleGameMgr.getRoleById(data.heroid);
+			if (!heroVo)
+				return;
+			var heroData : HeroData = HeroDataMgr.instance.hash.getValue(data.heroid);
+			var heroPriceData : HeroPriceData = HeroPriceData.hash.getValue(heroData.rarity + "" + (heroVo.quality + 1));
+			var price : int = TavernData.AddPrice[heroData.foster] + heroPriceData.price;
+			var sendMsg : SPurge = new SPurge();
+			var purgeData : PurgeData = PurgeData.hash.getValue(heroVo.quality); //净化数据
+			var goods_id : int = purgeData ? purgeData.materials[0][0] : 0;
+			var count : int = purgeData ? purgeData.materials[0][1] : 0;
+			sendMsg.code = checkErrorCode();
+			if (sendMsg.code == 0)
+			{
+				mSingleGameMgr.mGameData.diamond -= price;
+				heroVo.quality = heroVo.quality + 1;
+				heroVo.updateQualityPropertys(heroVo.quality);
+				mSingleGameMgr.deleteGoodsCountByType(goods_id, count);
+				sendMessage(mSingleGameMgr.mGameGoods);
+				dispatch(EventType.UPDATE_MONEY);
+			}
+			sendMessage(sendMsg);
+
+
+			function checkErrorCode() : int
+			{
+				//金币
+				if (heroPriceData.type == 1 && mSingleGameMgr.mGameData.coin < price)
+					return 1;
+				//钻石
+				else if (heroPriceData.type == 2 && mSingleGameMgr.mGameData.diamond < price)
+					return 2;
+				else if (mSingleGameMgr.getGoodsCountByType(goods_id) < count)
+					return 3;
+				else if (heroVo.quality == 7)
+					return 4;
+				return 0;
+			}
+		}
+
+		/**
+		 * 英雄升星
+		 * @param data
+		 *
+		 */
+		private function onHeroStarHandler(data : CHeroStar) : void
+		{
+			var heroVo : HeroVO = mSingleGameMgr.getRoleById(data.heroid);
+			if (!heroVo)
+				return;
+			var heroData : HeroData = HeroDataMgr.instance.hash.getValue(data.heroid);
+			var starData : StarData = StarData.hash.getValue(heroVo.foster + 1);
+			var sendMsg : SHeroStar = new SHeroStar();
+			sendMsg.code = checkErrorCode();
+
+			if (sendMsg.code == 0)
+			{
+				heroData.foster = heroVo.foster = heroVo.foster + 1;
+				heroVo.updateQualityPropertys(heroVo.quality);
+				heroVo.updateStarPropertys(heroVo.foster);
+				mSingleGameMgr.deleteGoodsCountByType(heroVo.type, starData.materialNum);
+				sendMessage(mSingleGameMgr.mGameGoods);
+			}
+			sendMessage(sendMsg);
+			dispatch(EventType.NOTIFY_HERO_STAR, heroData);
+
+			function checkErrorCode() : int
+			{
+				if (mSingleGameMgr.getGoodsCountByType(heroVo.type) < starData.materialNum)
+					return 3;
+				return 0;
+			}
 		}
 
 		private function sendMessage(data : IData) : void

@@ -199,7 +199,7 @@ package game.view.tavern.view
 						info = arr[i] as TavernHeroVo;
 						if (info && info.id == heroVotype.id)
 						{
-							arr[i]=null;
+							info.id=0;
 							break;
 						}
 					}

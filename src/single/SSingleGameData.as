@@ -3,15 +3,15 @@ package single
 	import com.scene.SceneMgr;
 	import com.utils.ArrayUtil;
 	import com.view.base.event.ViewDispatcher;
-
+	
 	import flash.data.EncryptedLocalStore;
 	import flash.utils.ByteArray;
 	import flash.utils.describeType;
 	import flash.utils.getDefinitionByName;
 	import flash.utils.setInterval;
-
+	
 	import avmplus.getQualifiedClassName;
-
+	
 	import game.data.Goods;
 	import game.data.HeroData;
 	import game.data.WidgetData;
@@ -50,7 +50,10 @@ package single
 			}
 			return instance;
 		}
-
+		/**
+		 * 唯一id标示
+		 */
+		private var mId : int;
 		/**
 		 * 所有数据
 		 */
@@ -109,9 +112,15 @@ package single
 			}
 
 			mIsCreate = mBytes.mIsCreate;
+			mId = mBytes.mId;
 			mSearchHeroCD = mBytes.mSearchHeroCD;
 			mSignDay = mBytes.mSignDay;
 			setInterval(save, 30000);
+		}
+
+		public function get id() : int
+		{
+			return ++mId;
 		}
 
 		/**
@@ -120,13 +129,14 @@ package single
 		 */
 		public function checkIsCreateRole() : void
 		{
-			if (!mIsCreate)
+//			if (!mIsCreate)
 			{
 				mGameData = new SGet_game_data();
 				mGameData.level = 99;
 				mGameData.tollgateid = 99;
 				mGameData.tired = 100;
 				mGameData.diamond = 99999;
+				mGameData.coin = 999999;
 				mGameData.arenaname = "";
 				mGameData.herotab = 8;
 				mGameData.bagequ = mGameData.bagmat = mGameData.bagprop = 20;
@@ -134,7 +144,7 @@ package single
 
 				mGameHeros = new SGet_all_hero();
 				var heros : Vector.<IData> = new Vector.<IData>();
-				heros.push(createRoleByType(30013));
+				heros.push(createRoleByType(30001, 1, 0));
 				mGameHeros.heroes = heros;
 				mBytes.heros = mGameHeros;
 
@@ -162,6 +172,15 @@ package single
 					state.state = i == 0 ? 1 : 0;
 					mSign.days.push(state);
 				}
+
+				addGoodsByType(13001, 99);
+				addGoodsByType(13002, 99);
+				addGoodsByType(13003, 99);
+				addGoodsByType(13004, 99);
+				addGoodsByType(13005, 99);
+				addGoodsByType(13006, 99);
+				addGoodsByType(30001, 999);
+
 				mBytes.mSign = mSign;
 				mSignDay = new Date().getDay();
 			}
@@ -226,7 +245,7 @@ package single
 		 * @return
 		 *
 		 */
-		internal function createRoleByType(type : int) : HeroVO
+		internal function createRoleByType(type : int, quality : int, star : int) : HeroVO
 		{
 			var heroData : HeroData = HeroData.hero.getValue(type) as HeroData;
 			var heroVo : HeroVO = new HeroVO();
@@ -241,9 +260,11 @@ package single
 			heroVo.anitCrit = heroData.anitCrit;
 			heroVo.toughness = heroData.toughness;
 			heroVo.level = 1;
-			heroVo.id = type;
+			heroVo.id = id;
 			heroVo.type = type;
-			heroVo.quality = 2;
+			heroVo.quality = quality;
+			heroVo.foster = star;
+			heroVo.updateQualityPropertys(quality);
 			return heroVo;
 		}
 
@@ -280,7 +301,7 @@ package single
 						var goodsVo : GoodsVO = new GoodsVO();
 						readObject(goodsVo, data);
 						goodsVo.pile = count;
-						goodsVo.id = type;
+						goodsVo.id = id;
 						mGameGoods.props.push(goodsVo);
 					}
 					break;
@@ -288,7 +309,7 @@ package single
 				case 5:
 					var equipVo : EquipVO = new EquipVO();
 					readObject(equipVo, data);
-					equipVo.id = type;
+					equipVo.id = id;
 					mGameGoods.equip.push(equipVo);
 					break;
 			}
@@ -352,17 +373,56 @@ package single
 		}
 
 		/**
-		 * 根据英雄id获得装备
-		 * @param id
+		 * 根据物品type获得数量
+		 * @param type
 		 * @return
 		 *
 		 */
-		internal function getEquipByHeroId(id : int) : EquipVO
+		internal function getGoodsCountByType(type : int) : int
+		{
+			var vo : GoodsVO;
+			var count : int = 0;
+			for each (vo in mGameGoods.props)
+			{
+				if (vo.type == type)
+					count += vo.pile;
+			}
+			return count;
+		}
+
+		internal function deleteGoodsCountByType(type : int, count : int) : void
+		{
+			var vo : GoodsVO;
+			for each (vo in mGameGoods.props)
+			{
+				if (vo.type == type)
+				{
+					if (vo.pile > count)
+					{
+						vo.pile -= count;
+						return;
+					}
+					var index : int = mGameGoods.props.indexOf(vo);
+					mGameGoods.props.splice(index, 1);
+					count -= vo.pile;
+				}
+			}
+			
+			throw new Error("物品不足！");
+		}
+
+		/**
+		 * 根据id获得装备
+		 * @param type
+		 * @return
+		 *
+		 */
+		internal function getEquipById(id : int) : EquipVO
 		{
 			var vo : EquipVO;
 			for each (vo in mGameGoods.equip)
 			{
-				if (vo.equip == id)
+				if (vo.id == id)
 					return vo;
 			}
 			return null;
@@ -380,6 +440,23 @@ package single
 			for each (var hero : HeroVO in allHeros.heroes)
 			{
 				if (hero.type == type)
+					return hero;
+			}
+			return null;
+		}
+		
+		/**
+		 * 根据id获取英雄
+		 * @param type
+		 * @return
+		 *
+		 */
+		public function getRoleById(id : int) : HeroVO
+		{
+			var allHeros : SGet_all_hero = mBytes.heros;
+			for each (var hero : HeroVO in allHeros.heroes)
+			{
+				if (hero.id == id)
 					return hero;
 			}
 			return null;
@@ -463,6 +540,7 @@ package single
 				data[key] = changeData2Object(mBytes[key]);
 			}
 			data.mIsCreate = mIsCreate;
+			data.mId = mId;
 			data.mSearchHeroCD = mSearchHeroCD;
 			data.mSignDay = mSignDay;
 			bytes.writeObject(data);

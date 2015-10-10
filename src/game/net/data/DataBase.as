@@ -32,9 +32,25 @@ package game.net.data
 			return "";
 		}
 		
-		public function toString():String{
+		/**
+		 *  打印当前对象所有公共属性值
+		 * @return
+		 *
+		 */
+		public function toString() : String
+		{
+			var ba : ByteArray = new ByteArray();
+			ba.writeObject(this);
+			ba.position = 0;
 			
-			return "";
+			var obj : Object = ba.readObject();
+			var str : String = "";
+			
+			for (var key : String in obj)
+			{
+				str += key + ": " + obj[key] + " ";
+			}
+			return str;
 		}
 
 		public function serialize() : ByteArray

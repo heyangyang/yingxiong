@@ -83,6 +83,11 @@ package game.view.blacksmith.view {
          * @param goods
          */
         private function onEmbedHandler(e:Event):void {
+			if(stoneVector==null)
+			{
+				RollTips.add(Langue.getLangue("SELECED_EQUIP_TIPS"));
+				return;
+			}
             if (stoneVector.length > 0) {
                 var ball:EmbedBallItem = null;
                 var hasEmbed:Boolean;
@@ -106,6 +111,11 @@ package game.view.blacksmith.view {
             }
             var item:EmbedBallItem = e.currentTarget as EmbedBallItem;
             var vo:Object = item.data;
+			if(vo==null)
+			{
+				RollTips.add(Langue.getLangue("SELECED_EQUIP_TIPS"));
+				return;
+			}
             if (vo.statue == 2) //已开启 已镶嵌
             {
                 DialogMgr.instance.isVisibleDialogs(true);
@@ -174,6 +184,8 @@ package game.view.blacksmith.view {
         }
 
         private function updateData(widgetData:WidgetData):void {
+			if(!widgetData)
+				return;
             equipData = widgetData;
             if (widgetData && widgetData.id > 0) {
                 list_equip.selectedItem = widgetData;

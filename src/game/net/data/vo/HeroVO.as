@@ -1,15 +1,13 @@
 package game.net.data.vo
 {
 	import flash.utils.ByteArray;
-
+	
 	import game.common.JTFormulaUtil;
 	import game.common.JTLogger;
 	import game.data.HeroData;
 	import game.data.HeroQualityData;
 	import game.data.HeroStarData;
 	import game.data.Val;
-	import game.data.WidgetData;
-	import game.manager.HeroDataMgr;
 	import game.net.data.DataBase;
 
 	public class HeroVO extends DataBase
@@ -105,7 +103,7 @@ package game.net.data.vo
 		 * @param star
 		 *
 		 */
-		public function updateStarPropertys(star : int) : void
+		private function updateStarPropertys(star : int) : void
 		{
 			var heroStar : HeroStarData = HeroStarData.hash.getValue(this.type);
 			var propertys : Array = getPropertys;
@@ -155,7 +153,6 @@ package game.net.data.vo
 				this[property] = currValue;
 			}
 			this.updateStarPropertys(foster);
-			this.updataEquipPropertys(this);
 		}
 
 		public function get getPropertys() : Array
@@ -163,40 +160,6 @@ package game.net.data.vo
 			return [attack, hp, defend, puncture, hit, dodge, crit, critPercentage, anitCrit, toughness];
 		}
 
-		public function updataEquipPropertys(heroInfo : HeroVO) : void
-		{
-			updataEquipProperty(heroInfo.seat1); // 叠加装备的属性
-			updataEquipProperty(heroInfo.seat2);
-			updataEquipProperty(heroInfo.seat3);
-			updataEquipProperty(heroInfo.seat4);
-			updataEquipProperty(heroInfo.seat5);
-		}
-
-		public function updataEquipProperty(widgetid : int) : void
-		{
-			if (widgetid > 0)
-			{
-				var le : int = Val.MAGICBALL.length;
-				var widgetData : WidgetData = WidgetData.hash.getValue(widgetid);
-
-				if (widgetData == null)
-				{
-					trace("装备添加属性错误");
-					return;
-				}
-
-				for (var k : int = 0; k < le; k++)
-				{
-					var equipProperty : String = Val.MAGICBALL[k];
-					var value : int = widgetData[equipProperty];
-
-					if (value > 0)
-					{
-						this[equipProperty] += value;
-					}
-				}
-			}
-		}
 	}
 }
 

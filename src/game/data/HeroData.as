@@ -284,7 +284,6 @@ package game.data
 				this[property] = nextValue;
 			}
 			this.updateStarPropertys(foster);
-			this.updataEquipPropertys(this);
 		}
 
 		/**
@@ -465,6 +464,7 @@ package game.data
 					trace("装备添加属性错误");
 					return;
 				}
+				widgetData.updateStrengthen();
 
 				for (var k : int = 0; k < le; k++)
 				{
@@ -474,6 +474,37 @@ package game.data
 					if (value > 0)
 					{
 						this[equipProperty] += value;
+					}
+				}
+			}
+		}
+
+		/**
+		 * 移除装备属性
+		 * @param widgetid
+		 *
+		 */
+		public function removeEquipProperty(widgetid : int) : void
+		{
+			if (widgetid > 0)
+			{
+				var le : int = Val.MAGICBALL.length;
+				var widgetData : WidgetData = WidgetData.hash.getValue(widgetid);
+
+				if (widgetData == null)
+				{
+					trace("装备添加属性错误");
+					return;
+				}
+
+				for (var k : int = 0; k < le; k++)
+				{
+					var equipProperty : String = Val.MAGICBALL[k];
+					var value : int = widgetData[equipProperty];
+
+					if (value > 0)
+					{
+						this[equipProperty] -= value;
 					}
 				}
 			}

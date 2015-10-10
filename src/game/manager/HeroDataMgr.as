@@ -310,9 +310,8 @@ package game.manager {
             var heroInfo:HeroData = result as HeroData;
             var baseHero:HeroData = this.getHeroInfo(heroInfo.id) as HeroData;
             var star:int = heroInfo.getUpStar();
-            heroInfo.updateStarPropertys(star);
             heroInfo.foster = star;
-
+            heroInfo.updateQualityPropertys(heroInfo.quality);
         }
 
         private function onUpdataLevelHeros(result:Object):void {

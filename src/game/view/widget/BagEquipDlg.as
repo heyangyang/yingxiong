@@ -81,6 +81,7 @@ package game.view.widget {
                     goods_title.text = langue[i];
                 }
             }
+			clickBackroundClose();
         }
 
         private function listItemRendererFactory():HeroEquipBagRender {

@@ -549,7 +549,7 @@ package game.net.message {
 
             switch (info.code) {
                 case 0:
-                    curr_hero.updateStarPropertys(curr_hero.foster);
+                    curr_hero.updateQualityPropertys(curr_hero.quality);
                     this.dispatch(EventType.NOTIFY_HERO_STAR, curr_hero);
                     addTips("starSuccess"); //升星成功
                     break;

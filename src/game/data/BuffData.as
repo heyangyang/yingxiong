@@ -36,10 +36,6 @@ package game.data
 		{
 			hash = new HashMap();
 			initData(data, hash, BuffData);
-			for each(var buff:BuffData in hash.values())
-			{
-				trace(buff.type,buff.desc,buff.position,buff.buffEffect)
-			}
 		}
 	}
 }

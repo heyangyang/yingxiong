@@ -2,7 +2,7 @@ package game.data {
     import com.data.Data;
     import com.data.HashMap;
     import com.utils.ArrayUtil;
-
+    
     import game.manager.HeroDataMgr;
     import game.net.data.IData;
     import game.net.data.vo.MagicBallVO;
@@ -336,6 +336,20 @@ package game.data {
                 data.mathValues();
             }
         }
+		
+		public function updateStrengthen():void 
+		{
+			var strengthenData : StrengthenData ;
+			var goods:Goods=Goods.goods.getValue(type);
+			attack = goods.attack;
+			defend = goods.defend;
+			for(var i:int=1;i<=level;i++)
+			{
+				strengthenData  = StrengthenData.hash.getValue(sort + "" + i);
+				attack *=strengthenData.rise;
+				defend *=strengthenData.rise;
+			}
+		}
 
         public function addStrengthen(rise:Number):void {
             var i:int;

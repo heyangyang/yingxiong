@@ -3,28 +3,33 @@ package single
 	import com.scene.SceneMgr;
 	import com.utils.ArrayUtil;
 	import com.view.base.event.ViewDispatcher;
-	
+
 	import flash.data.EncryptedLocalStore;
 	import flash.utils.ByteArray;
 	import flash.utils.describeType;
 	import flash.utils.getDefinitionByName;
 	import flash.utils.setInterval;
-	
+
 	import avmplus.getQualifiedClassName;
-	
+
 	import game.data.Goods;
 	import game.data.HeroData;
+	import game.data.MercenaryData;
 	import game.data.WidgetData;
 	import game.net.data.IData;
 	import game.net.data.s.SAllgoods;
 	import game.net.data.s.SGet_all_hero;
 	import game.net.data.s.SGet_game_data;
+	import game.net.data.s.SIsHeroBuy;
+	import game.net.data.s.SMagicOrbsState;
 	import game.net.data.s.SSearchhero;
 	import game.net.data.s.SSign;
 	import game.net.data.vo.EquipVO;
+	import game.net.data.vo.GateHero;
 	import game.net.data.vo.GoodsVO;
 	import game.net.data.vo.HeroVO;
 	import game.net.data.vo.SignState;
+	import game.net.data.vo.magicOrbsStateVO;
 	import game.scene.GameLoadingScene;
 
 	/**
@@ -83,6 +88,14 @@ package single
 		 */
 		internal var mSearchHeroData : SSearchhero;
 		/**
+		 * 探索宝珠
+		 */
+		internal var mMagicOrbsState : SMagicOrbsState;
+		/**
+		 * 关卡英雄
+		 */
+		internal var mGateHero : SIsHeroBuy;
+		/**
 		 * 签到信息
 		 */
 		internal var mSign : SSign;
@@ -129,13 +142,14 @@ package single
 		 */
 		public function checkIsCreateRole() : void
 		{
-//			if (!mIsCreate)
+			if (!mIsCreate)
 			{
+				mId = 0;
 				mGameData = new SGet_game_data();
-				mGameData.level = 99;
+				mGameData.level = 1;
 				mGameData.tollgateid = 99;
 				mGameData.tired = 100;
-				mGameData.diamond = 99999;
+				mGameData.diamond = 199999;
 				mGameData.coin = 999999;
 				mGameData.arenaname = "";
 				mGameData.herotab = 8;
@@ -156,8 +170,34 @@ package single
 				mSearchHeroData = new SSearchhero();
 				mSearchHeroData.heroes = new Vector.<IData>();
 				mBytes.goods = mGameGoods;
-
 				mBytes.mSearchHeroData = mSearchHeroData;
+
+
+				mMagicOrbsState = new SMagicOrbsState();
+				mMagicOrbsState.magicOrbs = new Vector.<IData>();
+				var magicOrbVo : magicOrbsStateVO;
+				for (var i : int = 2; i <= 5; i++)
+				{
+					magicOrbVo = new magicOrbsStateVO();
+					magicOrbVo.level = i;
+					magicOrbVo.state = 0;
+					mMagicOrbsState.magicOrbs.push(magicOrbVo);
+				}
+				mBytes.mMagicOrbsState = mMagicOrbsState;
+
+				mGateHero = new SIsHeroBuy();
+				mGateHero.heroes = new Vector.<IData>();
+				var list : Array = ArrayUtil.change2Array(MercenaryData.hash.values());
+				var mercenaryData : MercenaryData;
+				var gateHero : GateHero;
+				for each (mercenaryData in list)
+				{
+					gateHero = new GateHero();
+					gateHero.id = mercenaryData.id;
+					gateHero.state = 1;
+					mGateHero.heroes.push(gateHero);
+				}
+				mBytes.mGateHero = mGateHero;
 
 				mSign = new SSign();
 				mSign.type = 1;
@@ -165,21 +205,13 @@ package single
 				mSign.days2 = 1;
 				mSign.days = new Vector.<IData>();
 				var state : SignState;
-				for (var i : int = 0; i < 7; i++)
+				for (i = 0; i < 7; i++)
 				{
 					state = new SignState();
 					state.day = i + 1;
 					state.state = i == 0 ? 1 : 0;
 					mSign.days.push(state);
 				}
-
-				addGoodsByType(13001, 99);
-				addGoodsByType(13002, 99);
-				addGoodsByType(13003, 99);
-				addGoodsByType(13004, 99);
-				addGoodsByType(13005, 99);
-				addGoodsByType(13006, 99);
-				addGoodsByType(30001, 999);
 
 				mBytes.mSign = mSign;
 				mSignDay = new Date().getDay();
@@ -202,6 +234,8 @@ package single
 
 
 			mSearchHeroData = mBytes.mSearchHeroData;
+			mMagicOrbsState = mBytes.mMagicOrbsState;
+			mGateHero = mBytes.mGateHero;
 
 			mSign = mBytes.mSign;
 			//新一天登录签到
@@ -209,9 +243,9 @@ package single
 			{
 				onSignHanlder();
 			}
+			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
 			ViewDispatcher.dispatch(mGameData.getCmd() + "", mGameData);
 			ViewDispatcher.dispatch(mGameHeros.getCmd() + "", mGameHeros);
-			ViewDispatcher.dispatch(mGameGoods.getCmd() + "", mGameGoods);
 		}
 
 		internal function onSignHanlder() : void
@@ -245,7 +279,7 @@ package single
 		 * @return
 		 *
 		 */
-		internal function createRoleByType(type : int, quality : int, star : int) : HeroVO
+		internal function createRoleByType(type : int, quality : int, star : int, level : int = 1) : HeroVO
 		{
 			var heroData : HeroData = HeroData.hero.getValue(type) as HeroData;
 			var heroVo : HeroVO = new HeroVO();
@@ -259,7 +293,7 @@ package single
 			heroVo.critPercentage = heroData.critPercentage;
 			heroVo.anitCrit = heroData.anitCrit;
 			heroVo.toughness = heroData.toughness;
-			heroVo.level = 1;
+			heroVo.level = level;
 			heroVo.id = id;
 			heroVo.type = type;
 			heroVo.quality = quality;
@@ -275,10 +309,10 @@ package single
 		 * @return
 		 *
 		 */
-		internal function addGoodsByType(type : int, count : int = 1) : void
+		internal function addGoodsByType(type : int, count : int = 1, level : int = 1) : void
 		{
 			var data : WidgetData = new WidgetData(Goods.goods.getValue(type));
-			data.pile = count;
+
 			switch (data.tab)
 			{
 				//材料
@@ -292,21 +326,28 @@ package single
 						return;
 					}
 					goodsVo = ArrayUtil.getArrayObjByField(mGameGoods.props, type, "type") as GoodsVO;
-					if (goodsVo)
+					if (goodsVo && goodsVo.pile + count < 99)
 					{
 						goodsVo.pile += count;
 					}
 					else
 					{
+						//最大堆叠数99
+						var maxCount : int = Math.min(count, 99);
+						count -= maxCount;
 						var goodsVo : GoodsVO = new GoodsVO();
 						readObject(goodsVo, data);
-						goodsVo.pile = count;
+						data.pile = goodsVo.pile = maxCount;
 						goodsVo.id = id;
+						goodsVo.level = level;
 						mGameGoods.props.push(goodsVo);
+						if (count > 0)
+							addGoodsByType(type, count);
 					}
 					break;
 				//装备
 				case 5:
+					data.pile = 1;
 					var equipVo : EquipVO = new EquipVO();
 					readObject(equipVo, data);
 					equipVo.id = id;
@@ -325,13 +366,13 @@ package single
 		internal function isPackageIsFull(tab : int) : Boolean
 		{
 			//道具
-			if (tab == 2 && mGameData.bagprop == WidgetData.getCountByTab(2))
+			if (tab == 2 && mGameData.bagprop <= WidgetData.getCountByTab(2))
 				return true;
 			//材料
-			if (tab == 1 && mGameData.bagmat == WidgetData.getCountByTab(1))
+			if (tab == 1 && mGameData.bagmat <= WidgetData.getCountByTab(1))
 				return true;
 			//装备
-			if (tab == 5 && mGameData.bagequ == WidgetData.getCountByTab(5))
+			if (tab == 5 && mGameData.bagequ <= WidgetData.getCountByTab(5))
 				return true;
 			return false;
 		}
@@ -350,7 +391,7 @@ package single
 				goods = Goods.goods.getValue(vo.type);
 				if (vo.equip == 0)
 					continue;
-				heroVo = getRoleByType(vo.equip);
+				heroVo = getRoleById(vo.equip);
 				heroVo["seat" + goods.seat] = vo.id;
 			}
 		}
@@ -390,7 +431,31 @@ package single
 			return count;
 		}
 
-		internal function deleteGoodsCountByType(type : int, count : int) : void
+		internal function getGoodsCountById(id : int) : int
+		{
+			var vo : GoodsVO;
+			var count : int = 0;
+			for each (vo in mGameGoods.props)
+			{
+				if (vo.id == id)
+					count += vo.pile;
+			}
+			return count;
+		}
+
+		internal function getGoodsById(id : int) : GoodsVO
+		{
+			var vo : GoodsVO;
+			var count : int = 0;
+			for each (vo in mGameGoods.props)
+			{
+				if (vo.id == id)
+					return vo;
+			}
+			return null;
+		}
+
+		internal function deleteGoodsCountByType(type : int, count : int = 1) : void
 		{
 			var vo : GoodsVO;
 			for each (vo in mGameGoods.props)
@@ -407,8 +472,36 @@ package single
 					count -= vo.pile;
 				}
 			}
-			
+
 			throw new Error("物品不足！");
+		}
+
+		/**
+		 * 根据id删除物品。
+		 * @param id
+		 * @param count 默认0，删除全部
+		 *
+		 */
+		internal function deleteGoodsCountById(id : int, count : int = 0) : GoodsVO
+		{
+			var vo : GoodsVO;
+			for each (vo in mGameGoods.props)
+			{
+				if (vo.id == id)
+				{
+					if (count > 0)
+					{
+						vo.pile -= count;
+						return vo;
+					}
+					var index : int = mGameGoods.props.indexOf(vo);
+					mGameGoods.props.splice(index, 1);
+					return vo;
+				}
+			}
+
+			throw new Error("物品不足！");
+			return null;
 		}
 
 		/**
@@ -444,7 +537,7 @@ package single
 			}
 			return null;
 		}
-		
+
 		/**
 		 * 根据id获取英雄
 		 * @param type

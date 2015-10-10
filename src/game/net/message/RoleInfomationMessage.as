@@ -123,6 +123,7 @@ package game.net.message {
                 return;
             var equip:Vector.<IData> = info.equip;
             var props:Vector.<IData> = info.props;
+			WidgetData.hash.clear();
             WidgetData.createProps(props);
             WidgetData.createEquip(equip);
         }

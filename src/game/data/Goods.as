@@ -2,7 +2,7 @@ package game.data
 {
 	import com.data.Data;
 	import com.data.HashMap;
-
+	
 	import flash.utils.ByteArray;
 
 
@@ -301,6 +301,20 @@ package game.data
 			return tmp_list;
 		}
 
+		
+		public static function getMagicBalls(quality:int):Vector.<Goods> {
+			var list:Vector.<Goods> = new Vector.<Goods>;
+			var vector:Vector.<*> = goods.values();
+			var len:int = vector.length;
+			var k:int = 0;
+			for (var i:int = 0; i < len; i++) {
+				var tgoods:Goods = vector[i] as Goods;
+				if (quality == tgoods.quality && 4 == tgoods.sort && 2 == tgoods.tab) {
+					list[k++] = tgoods;
+				}
+			}
+			return list;
+		}
 	}
 }
 

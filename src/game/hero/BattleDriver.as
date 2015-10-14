@@ -6,8 +6,8 @@ package game.hero
 	import com.scene.SceneMgr;
 	import com.sound.SoundManager;
 	import com.utils.Constants;
-import com.utils.Delegate;
-import com.view.base.event.EventType;
+	import com.utils.Delegate;
+	import com.view.base.event.EventType;
 	import com.view.base.event.ViewDispatcher;
 
 	import game.common.JTGlobalDef;
@@ -17,13 +17,12 @@ import com.view.base.event.EventType;
 	import game.data.SkillData;
 	import game.data.StoryConfigData;
 	import game.data.TollgateData;
-import game.data.Val;
-import game.data.WidgetData;
+	import game.data.Val;
+	import game.data.WidgetData;
 	import game.dialog.MsgDialog;
 	import game.dialog.ShowLoader;
 	import game.fight.Position;
-import game.fight.PowerSkill;
-import game.fight.PowerSkill;
+	import game.fight.PowerSkill;
 	import game.hero.command.AttackCommand;
 	import game.hero.command.Command;
 	import game.hero.command.GameoverCommand;
@@ -51,10 +50,12 @@ import game.fight.PowerSkill;
 	import game.view.gameover.WinView;
 	import game.view.new2Guide.NewGuide2Manager;
 
-import org.osflash.signals.ISignal;
-import org.osflash.signals.Signal;
+	import org.osflash.signals.ISignal;
+	import org.osflash.signals.Signal;
 
-import spriter.SpriterClip;
+	import single.SSingleGameData;
+
+	import spriter.SpriterClip;
 
 	import starling.core.Starling;
 	import starling.display.DisplayObject;
@@ -66,58 +67,58 @@ import spriter.SpriterClip;
 	 */
 	public class BattleDriver
 	{
-		private var _container:BattleScene;
-		public static var point:int;
-		public var skip:Boolean=false;
-        public var freePowerSkill:ISignal;
+		private var _container : BattleScene;
+		public static var point : int;
+		public var skip : Boolean = false;
+		public var freePowerSkill : ISignal;
 
-		public function BattleDriver(container:BattleScene)
+		public function BattleDriver(container : BattleScene)
 		{
-			this._container=container;
+			this._container = container;
 
-            freePowerSkill = new Signal(HeroData);
+			freePowerSkill = new Signal(HeroData);
 		}
 
 		/**
 		 * 技能
 		 *
 		 */
-		public function skillDeal(powerSkill:PowerSkill,sponsor:Hero, target:Hero, command:BattleVo):void
+		public function skillDeal(powerSkill : PowerSkill, sponsor : Hero, target : Hero, command : BattleVo) : void
 		{
 			/*1：移动攻击
 			 2：远程施法*/
-			var skillID:int=command.skill;
-			var skillData:SkillData=SkillData.getSkill(skillID);
-			var attackType:int=skillData.attackType;
+			var skillID : int = command.skill;
+			var skillData : SkillData = SkillData.getSkill(skillID);
+			var attackType : int = skillData.attackType;
 
 			if (attackType == 1)
 			{
-				var moveCMD:MoveCommand=new MoveCommand(sponsor);
-				moveCMD.gapx=sponsor.getDis(target);
-				moveCMD.target=target;
+				var moveCMD : MoveCommand = new MoveCommand(sponsor);
+				moveCMD.gapx = sponsor.getDis(target);
+				moveCMD.target = target;
 				sponsor.command.addCommand(moveCMD);
 
-				var skillCMD:Command;
-				skillCMD=new SkillCommand(sponsor);
-				skillCMD.command=command;
+				var skillCMD : Command;
+				skillCMD = new SkillCommand(sponsor);
+				skillCMD.command = command;
 				sponsor.command.addCommand(skillCMD);
 
 
-				moveCMD=new MoveCommand(sponsor);
-				var sp:DisplayObject=Position.instance.getPos(sponsor.data.seat);
-				moveCMD.gapx=0;
-				moveCMD.gapy=0;
-				moveCMD.target=sp;
+				moveCMD = new MoveCommand(sponsor);
+				var sp : DisplayObject = Position.instance.getPos(sponsor.data.seat);
+				moveCMD.gapx = 0;
+				moveCMD.gapy = 0;
+				moveCMD.target = sp;
 				sponsor.command.addCommand(moveCMD);
 			}
 			else
 			{
-				var mage:MageBallCommand=new MageBallCommand(sponsor);
-				mage.command=command;
+				var mage : MageBallCommand = new MageBallCommand(sponsor);
+				mage.command = command;
 				sponsor.command.addCommand(mage);
 
-				skillCMD=new SkillCommand(sponsor);
-				skillCMD.command=command;
+				skillCMD = new SkillCommand(sponsor);
+				skillCMD.command = command;
 				sponsor.command.addCommand(skillCMD);
 			}
 		}
@@ -126,10 +127,10 @@ import spriter.SpriterClip;
 		 * 远程攻击
 		 *
 		 */
-		public function remoteAttackDeal(sponsor:Hero, target:Hero, command:BattleVo):void
+		public function remoteAttackDeal(sponsor : Hero, target : Hero, command : BattleVo) : void
 		{
-			var attackCMD:AttackCommand=new AttackCommand(sponsor);
-			attackCMD.command=command;
+			var attackCMD : AttackCommand = new AttackCommand(sponsor);
+			attackCMD.command = command;
 			sponsor.command.addCommand(attackCMD);
 		}
 
@@ -137,23 +138,23 @@ import spriter.SpriterClip;
 		 * 近程攻击
 		 *
 		 */
-		public function attackDeal(sponsor:Hero, target:Hero, command:BattleVo):void
+		public function attackDeal(sponsor : Hero, target : Hero, command : BattleVo) : void
 		{
-			var moveCMD:MoveCommand=new MoveCommand(sponsor);
-			moveCMD.gapx=sponsor.getDis(target);
-			moveCMD.target=target;
+			var moveCMD : MoveCommand = new MoveCommand(sponsor);
+			moveCMD.gapx = sponsor.getDis(target);
+			moveCMD.target = target;
 			sponsor.command.addCommand(moveCMD);
 
-			var attackCMD:AttackCommand=new AttackCommand(sponsor);
-			attackCMD.command=command;
+			var attackCMD : AttackCommand = new AttackCommand(sponsor);
+			attackCMD.command = command;
 			sponsor.command.addCommand(attackCMD);
 
-			moveCMD=new MoveCommand(sponsor);
+			moveCMD = new MoveCommand(sponsor);
 
-			var sp:DisplayObject=Position.instance.getPos(sponsor.data.seat);
-			moveCMD.gapx=0;
-			moveCMD.gapy=0;
-			moveCMD.target=sp;
+			var sp : DisplayObject = Position.instance.getPos(sponsor.data.seat);
+			moveCMD.gapx = 0;
+			moveCMD.gapy = 0;
+			moveCMD.target = sp;
 			sponsor.command.addCommand(moveCMD);
 		}
 
@@ -161,24 +162,25 @@ import spriter.SpriterClip;
 		 * 治疗
 		 *
 		 */
-		public function treatDeal(sponsor:Hero, target:Hero, command:BattleVo):void
+		public function treatDeal(sponsor : Hero, target : Hero, command : BattleVo) : void
 		{
-			var treatCommand:TreatCommand=new TreatCommand(sponsor);
-			treatCommand.command=command;
+			var treatCommand : TreatCommand = new TreatCommand(sponsor);
+			treatCommand.command = command;
 			sponsor.command.addCommand(treatCommand);
 		}
 
-		public function starup(tollgateID:int=0):void
+		public function starup(tollgateID : int = 0) : void
 		{
-			point=tollgateID;
+			point = tollgateID;
 			execute();
 		}
 
-        private var _powerSkill:PowerSkill;
-		private function execute(hero:Hero=null):void
+		private var _powerSkill : PowerSkill;
+
+		private function execute(hero : Hero = null) : void
 		{
 			if (Config.isWarPass)
-				skip=true;
+				skip = true;
 
 			if (skip)
 			{
@@ -186,28 +188,28 @@ import spriter.SpriterClip;
 				return;
 			}
 
-			var command:BattleVo=CommandSet.instance.getCommand();
-			var skillData:SkillData=null;
+			var command : BattleVo = CommandSet.instance.getCommand();
+			var skillData : SkillData = null;
 			if (command)
 			{
-				var sponsor:Hero=BattleHeroMgr.instance.hash.getValue(command.sponsor) as Hero;
-				command=CommandSet.instance.pop();
-				var target:Hero=BattleHeroMgr.instance.hash.getValue((command.targets[0] as BattleTarget).id) as Hero;
+				var sponsor : Hero = BattleHeroMgr.instance.hash.getValue(command.sponsor) as Hero;
+				command = CommandSet.instance.pop();
+				var target : Hero = BattleHeroMgr.instance.hash.getValue((command.targets[0] as BattleTarget).id) as Hero;
 				sponsor.onNextOne.addOnce(execute);
-				var roleShow:RoleShow=RoleShow.hash.getValue(sponsor.data.show);
+				var roleShow : RoleShow = RoleShow.hash.getValue(sponsor.data.show);
 
 				if (command.skill > 0)
 				{
-					skillData=SkillData.getSkill(command.skill);
+					skillData = SkillData.getSkill(command.skill);
 					if (skillData.type == 3 || skillData.type == 6)
 					{
-                        freePowerSkill.dispatch(sponsor.data);
-                        _powerSkill =new PowerSkill(skillData, command.targets, command);
-                        _powerSkill.onComplete.addOnce(Delegate.createFunction(skillDeal,sponsor,target,command));
+						freePowerSkill.dispatch(sponsor.data);
+						_powerSkill = new PowerSkill(skillData, command.targets, command);
+						_powerSkill.onComplete.addOnce(Delegate.createFunction(skillDeal, sponsor, target, command));
 					}
 					else
 					{
-						skillDeal(null,sponsor, target, command);
+						skillDeal(null, sponsor, target, command);
 					}
 				}
 				else
@@ -235,26 +237,26 @@ import spriter.SpriterClip;
 			}
 		}
 
-		private function showUpgrade():void
+		private function showUpgrade() : void
 		{
-			var storyData:StoryConfigData;
-			var animation:SpriterClip;
-			var mask:CloseDlgBackground;
+			var storyData : StoryConfigData;
+			var animation : SpriterClip;
+			var mask : CloseDlgBackground;
 
 			if (GameMgr.instance.sBattle)
 			{
 				if (GameMgr.instance.sBattle.success == 1)
 				{
-					storyData=StoryConfigData.getStory(point, 2);
+					storyData = StoryConfigData.getStory(point, 2);
 				}
 				else
 				{
-					storyData=StoryConfigData.getStory(point, 3);
+					storyData = StoryConfigData.getStory(point, 3);
 				}
 
 				if (storyData)
 				{
-                    _container.addChild(new NewBattleWords(storyData, startBoxAnimation));
+					_container.addChild(new NewBattleWords(storyData, startBoxAnimation));
 				}
 				else
 				{
@@ -266,7 +268,7 @@ import spriter.SpriterClip;
 				callback();
 			}
 
-			function startBoxAnimation():void
+			function startBoxAnimation() : void
 			{
 
 				if (GameMgr.instance.sBattle && GameMgr.instance.sBattle.success == 1 && GameMgr.instance.game_type == 0)
@@ -280,7 +282,7 @@ import spriter.SpriterClip;
 				}
 			}
 
-			function showBoxAnimation():void
+			function showBoxAnimation() : void
 			{
 				SoundManager.instance.stopAllSounds();
 				SoundManager.instance.playSound("diaoluo");
@@ -288,7 +290,7 @@ import spriter.SpriterClip;
 			}
 
 
-			function callback():void
+			function callback() : void
 			{
 				animation && animation.removeFromParent(true);
 				mask && mask.removeFromParent(true);
@@ -301,19 +303,19 @@ import spriter.SpriterClip;
 				else if (GameMgr.instance.sBattle.success == 1)
 				{
 					saidComplete();
-					function saidComplete():void
+					function saidComplete() : void
 					{
 						ViewDispatcher.dispatch(EventType.BATTLE_GAME_OVER);
 						DialogMgr.instance.open(WinView, point, ck, null, Dialog.OPEN_MODE_TRANSLUCENCE, 0x000, 0.5);
 						DisparkControl.instance.checkBattleOpen();
 					}
-					NewGuide2Manager.isLoading=false;
+					NewGuide2Manager.isLoading = false;
 					NewGuide2Manager.gotoNext();
 				}
 				else
 				{
 					saidComplete1();
-					function saidComplete1():void
+					function saidComplete1() : void
 					{
 						ViewDispatcher.dispatch(EventType.BATTLE_GAME_OVER);
 						DialogMgr.instance.open(LostView, point, ck, null, Dialog.OPEN_MODE_TRANSLUCENCE, 0x000, 0.5);
@@ -323,15 +325,18 @@ import spriter.SpriterClip;
 
 				if (!GameSocket.instance.connected)
 				{
-					DialogMgr.instance.open(MsgDialog,Val.getlange("connect_again"));
-					ShowLoader.remove();
+					if (!SSingleGameData.isSingleGame)
+					{
+						DialogMgr.instance.open(MsgDialog, Val.getlange("connect_again"));
+						ShowLoader.remove();
+					}
 				}
 			}
 			// 结算对话框返回
-			function ck(type:int, win:String="win", agin:String=""):void
+			function ck(type : int, win : String = "win", agin : String = "") : void
 			{
-				var tollgateData:TollgateData;
-				var goods:Goods;
+				var tollgateData : TollgateData;
+				var goods : Goods;
 				if (win == "win") // 赢了
 				{
 					if (GameMgr.instance.game_type == GameMgr.MAIN_LINE)
@@ -339,7 +344,7 @@ import spriter.SpriterClip;
 						if (agin != "agin")
 						{
 							if (TollgateData.hash.getValue(point + 1) == null)
-								point-=1;
+								point -= 1;
 
 							if (GameMgr.instance.tired < (TollgateData.hash.getValue(point + 1) as TollgateData).tired)
 							{
@@ -353,8 +358,8 @@ import spriter.SpriterClip;
 						}
 						else
 						{
-							tollgateData=TollgateData.hash.getValue(point);
-							goods=tollgateData.castNightmareGoods;
+							tollgateData = TollgateData.hash.getValue(point);
+							goods = tollgateData.castNightmareGoods;
 
 							if (GameMgr.instance.tired < tollgateData.tired)
 							{
@@ -386,11 +391,11 @@ import spriter.SpriterClip;
 				}
 				else //输了
 				{
-					tollgateData=TollgateData.hash.getValue(point);
+					tollgateData = TollgateData.hash.getValue(point);
 
 					if (GameMgr.instance.game_type == GameMgr.MAIN_LINE)
 					{
-						goods=tollgateData.castNightmareGoods;
+						goods = tollgateData.castNightmareGoods;
 
 						if (GameMgr.instance.tired < tollgateData.tired)
 						{
@@ -434,27 +439,27 @@ import spriter.SpriterClip;
 		 * 游戏结束，复活所有所有死去的战友
 		 *
 		 * */
-		private function regeneracyAllHero():void
+		private function regeneracyAllHero() : void
 		{
 
 			BattleHeroMgr.instance.hash.eachValue(forEachHero);
-			function forEachHero(hero:Hero):void
+			function forEachHero(hero : Hero) : void
 			{
 				if (hero.data.team == HeroData.BLUE)
 				{
 					if (!hero.visible)
 					{
-						var gameoverCommand:GameoverCommand=new GameoverCommand(hero);
+						var gameoverCommand : GameoverCommand = new GameoverCommand(hero);
 						hero.command.addCommand(gameoverCommand);
 					}
 				}
 			}
 		}
 
-		private function playHeroWinAnimation():void
+		private function playHeroWinAnimation() : void
 		{
 			BattleHeroMgr.instance.hash.eachValue(forEachHero);
-			function forEachHero(hero:Hero):void
+			function forEachHero(hero : Hero) : void
 			{
 				if (hero.data.team == HeroData.BLUE)
 				{
@@ -464,19 +469,19 @@ import spriter.SpriterClip;
 			}
 		}
 
-        public function dispose():void
-        {
-            freePowerSkill.removeAll();
-        }
+		public function dispose() : void
+		{
+			freePowerSkill.removeAll();
+		}
 
-		private function gameOver():void
+		private function gameOver() : void
 		{
 			if (GameMgr.instance.isGameover)
 			{
 				return;
 			}
-			GameMgr.instance.isGameover=true;
-			Constants.speed=1;
+			GameMgr.instance.isGameover = true;
+			Constants.speed = 1;
 
 			showUpgrade();
 		}

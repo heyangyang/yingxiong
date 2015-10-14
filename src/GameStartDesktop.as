@@ -28,6 +28,7 @@ package
 			ConverURL.AssetsRoot = "assets_atf/";
 
 			Config.data_version = "data_ios_2_0_0";
+			Config.data_version = "data";
 
 			var str : String = new String(new Assets.Dirtyword());
 			WordFilter.instance.init(str);

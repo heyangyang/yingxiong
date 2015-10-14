@@ -71,6 +71,7 @@ package game.data
 		 * @default
 		 */
 		public var desc:String="";
+		public var target:String="";
 
 		/**
 		 *

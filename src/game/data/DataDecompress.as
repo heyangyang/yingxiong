@@ -106,12 +106,11 @@ package game.data {
                 var fullFileName:String = byteArray.readUTF();
                 var len:int = byteArray.readUnsignedInt();
                 var fileBytes:ByteArray = new ByteArray();
-                byteArray.readBytes(fileBytes, 0, len);
+				fileBytes.writeObject(byteArray.readObject());
                 var fileNameList:Array = fullFileName.split(".");
-//				var fileType:String=fileNameList[1];
                 var fileName:String = fileNameList[0];
                 var fun:Function = _hash.getValue(fileName);
-
+				fileBytes.position=0;
                 if (fun != null)
                     fun(fileBytes);
                 else

@@ -147,7 +147,7 @@ package single
 				mId = 0;
 				mGameData = new SGet_game_data();
 				mGameData.level = 1;
-				mGameData.tollgateid = 99;
+				mGameData.tollgateid = 1;
 				mGameData.tired = 100;
 				mGameData.diamond = 199999;
 				mGameData.coin = 999999;

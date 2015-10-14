@@ -60,7 +60,6 @@ package single
 			addHandler(CEmbattle.CMD, onEmbattleHanlder);
 			addHandler(CSearchhero.CMD, onSearchHeroHanlder);
 			addHandler(CBuyhero.CMD, onBuyHeroHanlder);
-			addHandler(CBattle.CMD, onBattleHanlder);
 			addHandler(CPurge.CMD, onPurgeHandler);
 			addHandler(CHeroStar.CMD, onHeroStarHandler);
 			addHandler(CHeroPotion.CMD, onAddHeroExpHandler);
@@ -165,55 +164,10 @@ package single
 			var vo : HeroVO;
 			for each (var position : HeroPosition in data.heroes)
 			{
-				vo = mSingleGameMgr.getRoleByType(position.id);
+				vo = mSingleGameMgr.getRoleById(position.id);
 				vo.seat = position.position;
 			}
 			sendMessage(embattle);
-		}
-
-		/**
-		 * 战斗
-		 * @param data
-		 *
-		 */
-		private function onBattleHanlder(data : CBattle) : void
-		{
-			var sendData : SBattle = new SBattle();
-			var tollgateData : TollgateData = TollgateData.hash.getValue(data.currentCheckPoint);
-			var heroList : Array = HeroDataMgr.instance.getOnBattleHero();
-			var battleHeros : Array = ArrayUtil.change2Array(HeroDataMgr.instance.battleHeros.values());
-			var list : Array = [].concat(heroList, battleHeros);
-			var heroData : HeroData;
-			var vo : BattleVo;
-			var skillData : SkillData;
-			var count : int = 0;
-			while (true)
-			{
-				for each (heroData in list)
-				{
-					vo = new BattleVo();
-					skillData = getSpell(heroData);
-					if (!skillData)
-						continue;
-					vo.skill = skillData.id;
-					sendData.battleCommands.push(vo);
-				}
-				if (count++ > 50)
-					break;
-				if (heroList.length == 0)
-					break;
-				if (battleHeros.length == 0)
-					break;
-			}
-			sendMessage(sendData);
-		}
-
-		private function getSpell(heroData : HeroData) : SkillData
-		{
-			var index : int = Math.random() * 3;
-			if (index == 0)
-				return null;
-			return SkillData.getSkill(heroData["skill" + index]);
 		}
 
 		/**
